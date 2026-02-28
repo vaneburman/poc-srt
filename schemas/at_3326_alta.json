@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "norma": "Resolución 3326/2014",
+    "tipo": "AT",
+    "operacion": "A",
+    "version": "2024.1",
+    "longitud_registro": 200,
+    "encoding": "latin-1",
+    "line_separator": "\r\n",
+    "descripcion": "Alta de Accidente de Trabajo - Formato posicional"
+  },
+  "campos": [
+    {
+      "nombre": "tipo_registro",
+      "descripcion": "Tipo de registro (siempre '1' para detalle)",
+      "posicion_inicio": 1,
+      "longitud": 1,
+      "tipo": "N",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": ["1"],
+      "fuente_dato": "constante:1"
+    },
+    {
+      "nombre": "cuil_trabajador",
+      "descripcion": "CUIL del trabajador sin guiones",
+      "posicion_inicio": 2,
+      "longitud": 11,
+      "tipo": "N",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:cuil_trabajador"
+    },
+    {
+      "nombre": "apellido_trabajador",
+      "descripcion": "Apellido del trabajador",
+      "posicion_inicio": 13,
+      "longitud": 30,
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:apellido"
+    },
+    {
+      "nombre": "nombres_trabajador",
+      "descripcion": "Nombres del trabajador",
+      "posicion_inicio": 43,
+      "longitud": 30,
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:nombres"
+    },
+    {
+      "nombre": "fecha_nacimiento",
+      "descripcion": "Fecha de nacimiento del trabajador (YYYYMMDD)",
+      "posicion_inicio": 73,
+      "longitud": 8,
+      "tipo": "F",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:fecha_nacimiento"
+    },
+    {
+      "nombre": "sexo",
+      "descripcion": "Sexo del trabajador (M=Masculino, F=Femenino)",
+      "posicion_inicio": 81,
+      "longitud": 1,
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
+      "obligatorio": true,
+      "valores_validos": ["M", "F"],
+      "fuente_dato": "endpoint:sexo"
+    },
+    {
+      "nombre": "codigo_provincia",
+      "descripcion": "Código de provincia donde ocurrió el siniestro",
+      "posicion_inicio": 82,
+      "longitud": 2,
+      "tipo": "N",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"],
+      "fuente_dato": "endpoint:codigo_provincia"
+    },
+    {
+      "nombre": "fecha_siniestro",
+      "descripcion": "Fecha en que ocurrió el siniestro (YYYYMMDD)",
+      "posicion_inicio": 84,
+      "longitud": 8,
+      "tipo": "F",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:fecha_siniestro"
+    },
+    {
+      "nombre": "hora_siniestro",
+      "descripcion": "Hora del siniestro (HHMM, formato 24hs)",
+      "posicion_inicio": 92,
+      "longitud": 4,
+      "tipo": "N",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:hora_siniestro"
+    },
+    {
+      "nombre": "codigo_diagnostico",
+      "descripcion": "Código de diagnóstico CIE-10",
+      "posicion_inicio": 96,
+      "longitud": 6,
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
+      "obligatorio": true,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:codigo_diagnostico_cie10"
+    },
+    {
+      "nombre": "dias_baja",
+      "descripcion": "Cantidad de días de baja estimados",
+      "posicion_inicio": 102,
+      "longitud": 4,
+      "tipo": "N",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": false,
+      "valores_validos": null,
+      "fuente_dato": "endpoint:dias_baja"
+    },
+    {
+      "nombre": "tipo_accidente",
+      "descripcion": "Tipo de accidente (01=In itinere, 02=En lugar de trabajo, etc.)",
+      "posicion_inicio": 106,
+      "longitud": 2,
+      "tipo": "N",
+      "padding_char": "0",
+      "alineacion": "right",
+      "obligatorio": true,
+      "valores_validos": ["01", "02", "03", "04", "05"],
+      "fuente_dato": "endpoint:tipo_accidente"
+    },
+    {
+      "nombre": "filler",
+      "descripcion": "Espacios reservados para uso futuro",
+      "posicion_inicio": 108,
+      "longitud": 93,
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
+      "obligatorio": false,
+      "valores_validos": null,
+      "fuente_dato": "constante: "
+    }
+  ]
+}
