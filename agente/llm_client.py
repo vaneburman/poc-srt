@@ -105,8 +105,6 @@ class GeminiClient(LLMClient):
     
     def _convertir_mensajes(self, messages: list[dict]) -> list:
         """Convierte mensajes al formato Gemini Content."""
-        from google.generativeai.types import content_types
-        
         gemini_msgs = []
         for msg in messages:
             role = "user" if msg["role"] == "user" else "model"
@@ -126,7 +124,7 @@ class GeminiClient(LLMClient):
                 return {
                     "type": "tool_call",
                     "tool_name": part.function_call.name,
-                    "tool_args": dict(part.function_call.args),
+                    "tool_args": {k: v for k, v in part.function_call.args.items()},
                 }
             # Si hay texto
             if hasattr(part, "text") and part.text:
