@@ -1,0 +1,1002 @@
+[
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n     M inisteriodeT rabajo, Empleoy S eguridad S ocial\n         S uperintendencia deR iesgosdel T rabajo\n\n                                                                                          ANEXO II\n\n1.    PROCEDIMIENTO             COMPLEMENTARIO                PARA       LA      DENUNCIA      DE\n\nENFERMEDADES PROFESIONALES\n\n\n\nPor medio del presente, se establece la forma y el procedimiento que deben seguir las\n\nAseguradoras de Riesgos del Trabajo (A.R.T.) y los Empleadores Autoasegurados (E.A.) para\n\nremitir la información complementaria que se detalla a continuación correspondiente a las\n\nEnfermedades Profesionales al Registro de Enfermedades Profesionales (R.E.P.) creado por la\n\nResolución de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.) N° 840 de\n\nfecha 22 de abril de 2005.\n\n\n\nLa información de las Enfermedades Profesionales a ser remitida mantiene la forma y el",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Resolución de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.) N° 840 de\n\nfecha 22 de abril de 2005.\n\n\n\nLa información de las Enfermedades Profesionales a ser remitida mantiene la forma y el\n\nprocedimiento detallado en el Anexo I de la Resolución S.R.T. N° 3.327 de fecha 09 de\n\ndiciembre de 2014, incluido lo establecido en la Disposición de esta Gerencia de Control\n\nPrestacional (G.C.P) N° 5 de fecha 13 de agosto de 2020. Asimismo, se le adiciona a dicho\n\nAnexo I de la Resolución S.R.T. N° 3.327/14 las especificaciones de la estructura de datos\n\ncomplementaria determinadas en el punto 2 y las aclaraciones derivadas de ésta y de la\n\naplicación de la Ley N° 27.348 determinadas en el punto 3, ambas del presente Anexo.\n\n\n\n\n2. ESTRUCTURA DE DATOS COMPLEMENTARIA A ENVIAR POR LAS A.R.T. Y\n\nLOS E.A.\n\n\n                                                         DI-2022-10319057-APN-GCP#SRT\n\n\n                                                         Página 1 de 4",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n      M inisteriodeT rabajo, Empleoy S eguridad S ocial\n          S uperintendencia deR iesgosdel T rabajo\n\n                                                                                                                              ANEXO II\n\n                Posiciones\n                                                                                                                              Necesarios para la\n                                                Nombre del\nOrden                               Tipo                                 Descripción               Forma de Llenado            Aceptación del\n          Desde Hasta Cantidad                    campo\n                                                                                                                                  Registro",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "Código de la forma en la      Ver tabla de Código de\n                                              Forma de Ingreso\n 62       460    461         2      Texto                         que ingresó la denuncia a la   Forma de Ingreso de la          Obligatorio\n                                               de la Denuncia\n                                                                         A.R.T./E.A.                   Denuncia",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "MT = Obligatorio\n                                                                    Fecha de defunción del\n                                                 Fecha de\n 63       462    469         8     Numérico                        damnificado a causa de la         AAAAMMDD\n                                                 defunción\n                                                                    Enfermedad Profesional                                    CO, SB, CB, RE y\n                                                                                                                               JU = En blanco",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "1 - Establecimiento\n                                               Tipo Prestador\n                                                                   Según Disposición G.S.                                     CB, MT con I.L.T.\n 64       470    470         1     Numérico    Médico de la 1ª                                    2 - Hospital Público\n                                                                         N° 05/15                                               = Obligatorio\n                                                 Atención\n                                                                                                     3 - Exceptuado",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "Código de prestador\n                                              Prestador Médico                                   Sin guiones ni signos de     CB, MT con I.L.T.\n 65       471    478         8     Numérico                          provisto por la S.R.T.\n                                              de la 1ª Atención                                        puntuación               = Obligatorio\n                                                                  (Disposición G.S. N° 05/15)\n\n\n\n\n                                              Descripción del      Descripción del siniestro     Texto libre sin caracteres\n 66       479    978         500    Texto                                                                                        Obligatorio\n                                                 Siniestro          según lo denunciado                 especiales\n\n\n\n\n3. ACLARACIONES",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "3. ACLARACIONES\n\n\n      •     En los casos en donde la información tenga una longitud menor de caracteres a la que\n\n            especifica el campo y no se indique lo contrario, la misma deberá ser alineada a la\n\n            derecha y completando con espacios en blanco los caracteres faltantes.\n                                                                              DI-2022-10319057-APN-GCP#SRT\n\n\n                                                                              Página 2 de 4",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n  M inisteriodeT rabajo, Empleoy S eguridad S ocial\n      S uperintendencia deR iesgosdel T rabajo\n\n                                                                                       ANEXO II\n\n   • Los casos SB deben tener declarada la fecha de alta médica, la cual debe coincidir\n\n       con la fecha de primera atención conforme a establecido en la Resolución S.R.T.\n\n       N° 525 de fecha 24 de febrero de 2015.\n\n\n\n3.1. Tratamiento de las Enfermedades Profesionales con categoría MT:\n\n\n   •   La categoría MT y la fecha de defunción deben declararse en el último reingreso si lo\n\n       tuviera.\n\n\n   •   La categoría MT y la fecha de defunción sólo corresponden cuando el fallecimiento\n\n       del trabajador sea a causa de la Enfermedad Profesional y, por lo tanto, no deben\n\n       declarase en caso de que la muerte sea de carácter inculpable.\n\n\nUna Enfermedad Profesional alcanza la categoría MT:",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "declarase en caso de que la muerte sea de carácter inculpable.\n\n\nUna Enfermedad Profesional alcanza la categoría MT:\n\n\n   a) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia de la\n\n       Enfermedad Profesional durante el período de Incapacidad Laboral Temporaria\n\n       (I.L.T.) y se haya declarado primariamente a la S.R.T. como una Enfermedad\n\n       Profesional con categoría SB o CB o RE. En este caso, el motivo de cese de la I.L.T.\n\n       debe ser “D” y la fecha de defunción debe coincidir con la fecha de cese de I.L.T..\n\n\n   b) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia de la\n\n       Enfermedad Profesional en los reingresos donde el trabajador hubiera percibido\n\n       solamente prestaciones en especie en el marco del artículo 20, apartado 1 de la\n\n                                                      DI-2022-10319057-APN-GCP#SRT\n\n\n                                                      Página 3 de 4",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n  M inisteriodeT rabajo, Empleoy S eguridad S ocial\n      S uperintendencia deR iesgosdel T rabajo\n\n                                                                                       ANEXO II\n\n      Ley N° 24.557 y no le hubiera correspondido ningún tipo de prestación dineraria\n\n      durante dicho reingreso. En este caso, el motivo y fecha de cese de I.L.T. se deben\n\n      declarar en blanco y el período de prestaciones en especie se especifica entre la fecha\n\n      de ocurrencia del reingreso y la fecha de defunción.\n\n\n   c) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia de la\n\n      Enfermedad Profesional por fuera del período de I.L.T., habiendo recibido el\n\n      trabajador previamente el alta médica y no encontrándose en un reingreso al momento\n\n      de la muerte. En este caso, el motivo de cese de I.L.T. debe ser distinto de “D”, la",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "trabajador previamente el alta médica y no encontrándose en un reingreso al momento\n\n      de la muerte. En este caso, el motivo de cese de I.L.T. debe ser distinto de “D”, la\n\n      fecha de cese de I.L.T. se corresponderá con el fin de las prestaciones dinerarias por la\n\n      incapacidad temporaria y la fecha de defunción será posterior a esta última.\n\n\n\n                                                                                           TABLA I\n\nTabla de Código de Forma de Ingreso de la Denuncia\n\n\n                            CÓDIGO           DESCRIPCIÓN\n                                TL            TELEFÓNICA\n                                CD       CARTA DOCUMENTO\n                               EM             EMPLEADOR\n                                PR             PRESTADOR\n                               ME         MESA DE ENTRADA\n                                ST       SUPERINTENDENCIA",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "DI-2022-10319057-APN-GCP#SRT\n\n\n                                                      Página 4 de 4",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "República Argentina - Poder Ejecutivo Nacional\n                                                              Las Malvinas son argentinas\n\n                                                              Hoja Adicional de Firmas\n                                                                 Anexo Disposición\n\nNúmero: DI-2022-10319057-APN-GCP#SRT\n\n                                                                                                      CIUDAD DE BUENOS AIRES\n                                                                                                      Miércoles 2 de Febrero de 2022\n\nReferencia: Anexo II del EX-2020-49296060-APN-GCP#SRT\n\n\nEl documento fue importado por el sistema GEDO con un total de 4 pagina/s.\n\n\n\n\nDigitally signed by Gestion Documental Electronica\nDate: 2022.02.02 15:49:40 -03:00\n\n\nMarcelo Angel Cainzos\nGerente\nGerencia de Control Prestacional\nSuperintendencia de Riesgos del Trabajo",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 5
+  },
+  {
+    "texto": "Digitally signed by Gestion Documental Electronica\nDate: 2022.02.02 15:49:40 -03:00\n\n\nMarcelo Angel Cainzos\nGerente\nGerencia de Control Prestacional\nSuperintendencia de Riesgos del Trabajo\n\n\n\n\n                                                                                                       Digitally signed by Gestion Documental\n                                                                                                       Electronica\n                                                                                                       Date: 2022.02.02 15:49:40 -03:00",
+    "fuente": "Disposición 1-2022 - Anexo II.pdf",
+    "pagina": 5
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n     M inisteriodeT rabajo, Empleoy S eguridad S ocial\n         S uperintendencia deR iesgosdel T rabajo\n\n                                                                                              ANEXO I\n\n1.    PROCEDIMIENTO             COMPLEMENTARIO                PARA       LA      DENUNCIA         DE\n\nACCIDENTES DE TRABAJO\n\n\n\nPor medio del presente, se establece la forma y el procedimiento que deben seguir las\n\nAseguradoras de Riesgos del Trabajo (A.R.T.) y los Empleadores Autoasegurados (E.A.) para\n\nremitir la información complementaria que se detalla a continuación correspondiente a los\n\nAccidentes de Trabajo al Registro Nacional de Accidentes Laborales (R.E.N.A.L.) creado por\n\nla Resolución de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.)\n\nN° 3.326 de fecha 09 de diciembre de 2014.\n\n\n\nLa información de los Accidentes de Trabajo a ser remitida mantiene la forma y el",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "la Resolución de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.)\n\nN° 3.326 de fecha 09 de diciembre de 2014.\n\n\n\nLa información de los Accidentes de Trabajo a ser remitida mantiene la forma y el\n\nprocedimiento detallado en el Anexo I de la resolución citada, incluido lo establecido en la\n\nDisposición de esta Gerencia de Control Prestacional (G.C.P) N° 2 de fecha 20 de abril de\n\n2020. Asimismo, se le adiciona a dicho Anexo I de la Resolución S.R.T. N° 3.326/14 las\n\nespecificaciones de la estructura de datos complementaria determinadas en el punto 2 y las\n\naclaraciones derivadas de ésta y de la aplicación de la Ley N° 27.348 determinadas en el\n\npunto 3, ambas del presente Anexo.\n\n\n\n\n2. ESTRUCTURA DE DATOS COMPLEMENTARIA A ENVIAR POR LAS A.R.T. Y\n\nLOS E.A.\n\n\n                                                         DI-2022-10318895-APN-GCP#SRT\n\n\n                                                         Página 1 de 5",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n      M inisteriodeT rabajo, Empleoy S eguridad S ocial\n          S uperintendencia deR iesgosdel T rabajo\n\n                                                                                                                                ANEXO I\n\n                Posiciones\n                                                                                                                              Necesarios para la\n                                                Nombre del\nOrden                               Tipo                                  Descripción              Forma de Llenado            Aceptación del\n          Desde Hasta Cantidad                    campo\n                                                                                                                                  Registro",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "Código de la forma en la que   Ver tabla de Código de\n                                              Forma de Ingreso\n 66       469    470         2      Texto                           ingresó la denuncia a la     Forma de Ingreso de la          Obligatorio\n                                               de la Denuncia\n                                                                          A.R.T./E.A.                  Denuncia",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "MT = Obligatorio\n                                                                    Fecha de defunción del\n                                                 Fecha de\n 67       471    478         8     Numérico                         damnificado a causa del          AAAAMMDD\n                                                 defunción\n                                                                       accidente laboral                                      CO, SB, CB, RE y\n                                                                                                                               JU = En blanco",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "1 - Establecimiento\n                                               Tipo Prestador\n                                                                   Según Disposición G.S.                                     CB, MT con I.L.T.\n 68       479    479         1     Numérico    Médico de la 1ª\n                                                                         N° 05/15                 2 - Hospital Público          = Obligatorio\n                                                 Atención\n                                                                                                     3 - Exceptuado",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "Código de prestador provisto\n                                              Prestador Médico                                   Sin guiones ni signos de     CB, MT con I.L.T.\n 69       480    487         8     Numérico                              por la S.R.T.\n                                              de la 1ª Atención                                        puntuación               = Obligatorio\n                                                                  (Disposición G.S. N° 05/15)\n\n\n\n\n                                              Descripción del       Descripción del siniestro    Texto libre sin caracteres\n 70       488    987         500    Texto                                                                                        Obligatorio\n                                                Siniestro            según lo denunciado                especiales\n\n\n\n\n3. ACLARACIONES",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "3. ACLARACIONES\n\n\n      •     En los casos en donde la información tenga una longitud menor de caracteres a la que\n\n            especifica el campo y no se indique lo contrario, la misma deberá ser alineada a la\n\n\n                                                                              DI-2022-10318895-APN-GCP#SRT\n\n\n                                                                              Página 2 de 5",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n  M inisteriodeT rabajo, Empleoy S eguridad S ocial\n      S uperintendencia deR iesgosdel T rabajo\n\n                                                                                           ANEXO I\n\n       derecha y completando con espacios en blanco los caracteres faltantes.\n\n\n   •   Los casos SB deben tener declarada la fecha de alta médica, la cual debe coincidir\n\n       con la fecha de primera atención conforme a establecido en la Resolución S.R.T.\n\n       N° 525 de fecha 24 de febrero de 2015.\n\n\n\n3.1. Tratamiento de los Accidentes de Trabajo con categoría MT:\n\n\n   •   La categoría MT y la fecha de defunción deben declararse en el último reingreso si lo\n\n       tuviera.\n\n\n   •   La categoría MT y la fecha de defunción sólo corresponden cuando el fallecimiento\n\n       del trabajador sea a causa del accidente laboral y, por lo tanto, no deben declarase en\n\n       caso de que la muerte sea de carácter inculpable.",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "del trabajador sea a causa del accidente laboral y, por lo tanto, no deben declarase en\n\n       caso de que la muerte sea de carácter inculpable.\n\n\n   •   En caso de que el fallecimiento sea a causa de lo acontecido en una intercurrencia, la\n\n       categoría MT y la fecha de defunción deben declarase en el último evento de dicha\n\n       intercurrencia.\n\n\nUn Accidente de Trabajo alcanza la categoría MT:\n\n\n   a) A través de un alta (A), cuando el fallecimiento del trabajador se produce en forma\n\n       inmediata. En este caso, se debe declarar como fecha de cese de la Incapacidad\n\n       Laboral Temporaria (I.L.T.) y de defunción la misma fecha de ocurrencia del\n\n       Accidente de Trabajo; el motivo de cese de la I.L.T. debe ser “D”.\n                                                      DI-2022-10318895-APN-GCP#SRT\n\n\n                                                      Página 3 de 5",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\n  M inisteriodeT rabajo, Empleoy S eguridad S ocial\n      S uperintendencia deR iesgosdel T rabajo\n\n                                                                                           ANEXO I\n\n   b) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia del\n\n      Accidente de Trabajo durante el período de I.L.T.. En este caso, el motivo de cese de\n\n      la I.L.T. debe ser “D” y la fecha de defunción debe coincidir con la fecha de cese de\n\n      I.L.T..\n\n\n   c) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia del\n\n      Accidente de Trabajo en los reingresos donde el trabajador hubiera percibido\n\n      solamente prestaciones en especie en el marco del artículo 20, apartado 1 de la\n\n      Ley N° 24.557 y no le hubiera correspondido ningún tipo de prestación dineraria\n\n      durante dicho reingreso. En este caso, el motivo y fecha de cese de I.L.T. se deben",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "Ley N° 24.557 y no le hubiera correspondido ningún tipo de prestación dineraria\n\n      durante dicho reingreso. En este caso, el motivo y fecha de cese de I.L.T. se deben\n\n      declarar en blanco y el período de prestación en especie se especifica entre la fecha de\n\n      ocurrencia del reingreso y la fecha de defunción.\n\n\n   d) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia del\n\n      Accidente de Trabajo por fuera del período de I.L.T., habiendo recibido el trabajador\n\n      previamente el alta médica y no encontrándose en un reingreso al momento de la\n\n      muerte. En este caso, el motivo de cese de I.L.T. debe ser distinto de “D”, la fecha de\n\n      cese de I.L.T. se corresponderá con el fin de las prestaciones dinerarias por la\n\n      incapacidad temporaria y la fecha de defunción será posterior a esta última.\n\n\n\n                                                                                           TABLA I",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "incapacidad temporaria y la fecha de defunción será posterior a esta última.\n\n\n\n                                                                                           TABLA I\n\nTabla de Código de Forma de Ingreso de la Denuncia\n\n\n                                                      DI-2022-10318895-APN-GCP#SRT\n\n\n                                                      Página 4 de 5",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "“Las Malvinas son argentinas”\n\n\n\n\nM inisteriodeT rabajo, Empleoy S eguridad S ocial\n    S uperintendencia deR iesgosdel T rabajo\n\n                                                                                         ANEXO I\n\n                          CÓDIGO           DESCRIPCIÓN\n                              TL            TELEFÓNICA\n                              CD       CARTA DOCUMENTO\n                             EM             EMPLEADOR\n                              PR             PRESTADOR\n                             ME         MESA DE ENTRADA\n                              ST       SUPERINTENDENCIA\n\n\n\n\n                                                    DI-2022-10318895-APN-GCP#SRT\n\n\n                                                    Página 5 de 5",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 5
+  },
+  {
+    "texto": "República Argentina - Poder Ejecutivo Nacional\n                                                              Las Malvinas son argentinas\n\n                                                              Hoja Adicional de Firmas\n                                                                 Anexo Disposición\n\nNúmero: DI-2022-10318895-APN-GCP#SRT\n\n                                                                                                      CIUDAD DE BUENOS AIRES\n                                                                                                      Miércoles 2 de Febrero de 2022\n\nReferencia: Anexo I del EX-2020-49296060-APN-GCP#SRT\n\n\nEl documento fue importado por el sistema GEDO con un total de 5 pagina/s.\n\n\n\n\nDigitally signed by Gestion Documental Electronica\nDate: 2022.02.02 15:49:19 -03:00\n\n\nMarcelo Angel Cainzos\nGerente\nGerencia de Control Prestacional\nSuperintendencia de Riesgos del Trabajo",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 6
+  },
+  {
+    "texto": "Digitally signed by Gestion Documental Electronica\nDate: 2022.02.02 15:49:19 -03:00\n\n\nMarcelo Angel Cainzos\nGerente\nGerencia de Control Prestacional\nSuperintendencia de Riesgos del Trabajo\n\n\n\n\n                                                                                                       Digitally signed by Gestion Documental\n                                                                                                       Electronica\n                                                                                                       Date: 2022.02.02 15:49:20 -03:00",
+    "fuente": "Disposición SRT 1-2022 - Anexo I.pdf",
+    "pagina": 6
+  },
+  {
+    "texto": "Documento de Especificaciones: Módulo\nde Siniestralidad (Res. SRT 3326/14 y\n3327/14)\n1. Objetivo y Contexto de Negocio\nLa Superintendencia de Riesgos del Trabajo (SRT) exige a los Empleadores\nAutoasegurados (EA) la notificación sistemática de los siniestros y enfermedades\ndetectadas. El incumplimiento o la carga errónea en la Ventanilla Electrónica impacta\ndirectamente en la calificación del Autoseguro y puede derivar en sanciones.\n\nEste módulo tiene como objetivo automatizar la extracción de datos del SAS para generar\nlos archivos técnicos requeridos, minimizando el error humano y asegurando que la\ninformación técnica (Accidentes) y médica (Enfermedades) guarde coherencia sistémica.\n\nEs importante diferenciar la figura del Empleador Autoasegurado (EA) de la de una\nAseguradora de Riesgos del Trabajo (ART) para el diseño del sistema:",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "●​ ART (Aseguradora): Es una entidad privada contratada por un empleador para\n      cubrir los riesgos laborales de sus empleados a cambio del pago de una cuota\n      mensual. La ART gestiona las prestaciones y reporta a la SRT.\n   ●​ Autoasegurado (EA): Es un empleador (como el caso de Chubut o GCBA) que, por\n      su solvencia financiera y capacidad operativa, asume directamente la gestión de los\n      accidentes y enfermedades de sus trabajadores. No paga una póliza externa, sino\n      que utiliza sus propios recursos y estructura médica/administrativa. Ante la SRT, el\n      EA tiene las mismas obligaciones de reporte que una ART.\n   ●​ Diferenciación de Siniestros: En el SAS convivirán siniestros de distinta\n      naturaleza:\n          1.​ Siniestros Autoseguro: Aquellos donde el organismo es el responsable\n              directo. Estos son los que el módulo debe exportar en los archivos .txt para\n              la Ventanilla Electrónica propia.",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "directo. Estos son los que el módulo debe exportar en los archivos .txt para\n              la Ventanilla Electrónica propia.\n          2.​ Siniestros Derivados (ej. Provincia ART): Si el organismo tiene convenios\n              o empleados bajo una ART externa para ciertos sectores, esos siniestros son\n              reportados a la SRT por dicha aseguradora. El SAS debe identificar y \"filtrar\"\n              estos casos para que el módulo de siniestralidad no los incluya en la\n              exportación del Autoseguro, evitando duplicidad de información en la SRT.",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "2. Flujo de Trabajo y Responsabilidades (Estrategia\nMVP)\n2.1. El Rol de la Mesa de Carga\nLa presentación de los archivos ante la Ventanilla Electrónica de la SRT será\nresponsabilidad del personal del Módulo de Mesa de Carga. Este usuario será el",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "encargado de ejecutar el proceso de generación de los archivos .txt, revisar los logs de\nvalidación y realizar la subida manual o automática.​\nLa carga suele realizarse a diario, con una hora de corte general para que el operador\npueda generar los archivos correspondientes, validarlos en la SRT y subirlos. A lo largo del\ndía puede subir hasta 9 versiones del mismo archivo, siendo el versionado parte del nombre\ndel mismo.",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "2.2. Responsabilidad de Datos en el MVP\nSi bien el diseño ideal del sistema contempla que cada área (Auditoria Médica,\nTramitadores, CEM, Incapacidades) complete sus campos en sus respectivos módulos,\npara el Producto Mínimo Viable (MVP) se establece lo siguiente:\n   ●​ Carga Centralizada: El operador responsable de generar y presentar los archivos\n      tendrá la potestad y responsabilidad de completar los campos obligatorios (u\n      opcionales críticos) que falten en el SAS.\n   ●​ Interfaz de Ajuste: El módulo debe proveer una interfaz donde se visualicen los\n      \"gaps\" de información antes de la exportación, permitiendo al usuario de Mesa de\n      Carga completar datos como códigos de establecimiento, agentes materiales o\n      diagnósticos CIE-10 para asegurar que el archivo no sea rechazado por el validador\n      de la SRT.\n\n\n\n\n3. Marco Normativo y Diferenciación de Procesos\nEl sistema SAS debe segmentar la generación de archivos según la naturaleza del evento:",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "3. Marco Normativo y Diferenciación de Procesos\nEl sistema SAS debe segmentar la generación de archivos según la naturaleza del evento:\n\n3.1. Resolución SRT 3326/2014: Registro Nacional de Accidentes\nLaborales\nAplica exclusivamente a Accidentes de Trabajo (AT) y Accidentes In Itinere (IT). Se\nagrupan en los mismos 3 archivos.\n   ●​ Archivos: .AL (Alta), .MO (Modificación), .BA (Baja).\n   ●​ Frecuencia: Diaria (máximo 9 versiones por día).\n\n3.2. Resolución SRT 3327/2014: Registro de Enfermedades\nProfesionales\nAplica exclusivamente a las Enfermedades Profesionales (EP).\n   ●​ Archivos: .AL (Alta), .MO (Modificación), .BA (Baja).\n   ●​ Dato Crítico: Es obligatorio informar el Agente Causante según el listado de\n      enfermedades vigentes.\n\n4. Estructura y Nomenclatura de Archivos\nFormato: ART[Cart][Extensión][Versión]\n   ●​ Ejemplo Accidente (3326): ART00027.AL1\n   ●​ Ejemplo Enfermedad (3327): ART00027.AL1",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "●​ Versiones: Numeración del 1 al 9 según el envío del día.\n\n5. Gaps de Información y Reglas de Negocio (SAS)\nA. Identificación y Control\n   ●​ Nro. de Siniestro (20 posiciones): 8 ceros iniciales + Año + Contador + Sufijo (00\n      original).\n   ●​ Categoría del Registro: Dropdown obligatorio: SB (Sin Baja), CB (Con Baja), MT\n      (Mortal), RE (Rechazo), JU (Judicial).\n\nB. Datos Técnicos\n   ●​ Código Establecimiento (Campo 9): Código de 10 dígitos (Tabla SRT). Si falta en\n      la sede, el operador de Mesa de Carga debe poder ingresarlo.\n   ●​ CIE-10 (Campo 22): Validación estricta con punto decimal (Ej: M54.5).\n   ●​ Agente Material (Campo 20): Obligatorio para la Res. 3327 (EP).\n\nC. Datos del Trabajador\n   ●​ Antigüedad: Cálculo automático del sistema ($\\ge 15$ días = 1 mes más).\n   ●​ Puesto de Trabajo: Mapeo según Res. 244/06.",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "C. Datos del Trabajador\n   ●​ Antigüedad: Cálculo automático del sistema ($\\ge 15$ días = 1 mes más).\n   ●​ Puesto de Trabajo: Mapeo según Res. 244/06.\n\n6. Lógica de Modificación (.MO) y Bajas (.BA)\n   ●​ Modificaciones: Se informan datos actualizados. La fecha de fin de inasistencia\n      (Cese) se informa dentro de este archivo, no en uno independiente.\n   ●​ Bajas: Exclusivas para errores de carga. El operador tiene un plazo de 30 días para\n      reclamos tras la presentación.\n\n7. Especificaciones Técnicas para Sistemas\n   1.​ Formato de Texto: Ancho fijo, ASCII.\n   2.​ Manejo de Vacíos: Reemplazar NULL por espacio en blanco (ASCII 32).\n   3.​ Validación de Nombres: \"APELLIDO NOMBRE\" (Sin comas, un espacio).\n   4.​ Logs de Control: El sistema debe registrar qué usuario generó cada versión y el\n       resultado de la presentación.",
+    "fuente": "Documento de Especificaciones- Módulo de Siniestralidad (Res.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                          InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      SUPERINTENDENCIA DE RIESGOS DEL TRABAJO\n\n      Resolución 3326/2014\n\n      Registro Nacional de Accidentes Laborales. Creación.\n\n      Bs. As., 9/12/2014\n\n      VISTO el Expediente Nº 128.080/14 del Registro de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.), las Leyes Nº 24.557, Nº 26.773, las\n      Resoluciones S.R.T. Nº 1.604 de fecha 16 de octubre de 2007, Nº 1.838 de fecha 1 de agosto de 2014, Nº 3.117 de fecha 21 de noviembre de 2014, la\n      Instrucción S.R.T. Nº 1 de fecha 2 de marzo de 2010, y\n\n      CONSIDERANDO:\n\n      Que el artículo 31, apartado 1, inciso d) de la Ley Nº 24.557 establece que las Aseguradoras de Riesgos del Trabajo (A.R.T.) tienen el deber de registrar,\n      archivar e informar lo relativo a los accidentes y enfermedades laborales.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que el artículo 30 de la Ley Nº 24.557 extiende el mismo deber a los Empleadores Autoasegurados (E.A.).\n\n      Que el artículo 31, apartado 2, inciso c) de la Ley Nº 24.557 establece la obligación de los empleadores de denunciar a las Aseguradoras de Riesgos del\n      Trabajo (A.R.T.) y a la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.) los accidentes y enfermedades profesionales que se produzcan en sus\n      establecimientos.\n\n      Que la información requerida en la denuncia de accidentes de trabajo es un elemento sustantivo para programar las acciones preventivas y de control\n      que la Ley de Riesgos del Trabajo le asigna a esta S.R.T.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que mediante la Resolución S.R.T. Nº 1.604 de fecha 16 de octubre de 2007 se creó el Registro de Accidentes de Trabajo, con el fin de mejorar el\n      mecanismo y contenido del procedimiento para registrar los datos pertinentes, detallándose los campos que deben completar las ASEGURADORAS DE\n      RIESGOS DEL TRABAJO (A.R.T.) y los EMPLEADORES AUTOASEGURADOS (E.A.) en el momento de declarar un accidente de trabajo ante el aludido\n      registro.\n\n      Que a través de la Instrucción S.R.T. Nº 1 de fecha 2 de marzo de 2010 se efectuaron modificaciones a la referida Resolución S.R.T. Nº 1.604/07, a los\n      fines de garantizar un mayor nivel de calidad de la información contenida en el mencionado Registro.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que, a su vez, la Resolución S.R.T. Nº 1.838 de fecha 1 de agosto de 2014 dejó sin efecto, respecto de su aplicación como “Constancia de fin de\n      Tratamiento”, el Formulario A del Anexo II de la Resolución S.R.T. Nº 1.604/07, a la vez que estableció excepciones en las condiciones de Alta Médica\n      para las especialidades de odontología, psicoterapia, dermatología y/o aquellas que oportunamente determine la Gerencia Médica de la S.R.T.\n\n      Que a partir de la experiencia recogida en el tiempo transcurrido desde la entrada en vigor de la Resolución S.R.T. Nº 1.604/07, se ha podido observar\n      que mediante el reemplazo de ciertos datos y el requerimiento de algunos nuevos, podrá obtenerse información más precisa y homogénea.\n\n      Que por dichos motivos, se considera necesario impulsar una medida conducente a evitar la dispersión normativa y facilitar su aplicación, unificando en\n      un solo texto lo normado en la materia.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que mediante la Resolución S.R.T. Nº 3.117 de fecha 21 de noviembre de 2014, se reformó la estructura orgánico funcional de la S.R.T., asignando a la\n      Gerencia de Planificación, Información Estratégica y Calidad de Gestión la función de fiscalizar la información que las A.R.T./E.A. declaran a los Registros\n      de Accidentes de Trabajo y de Enfermedades Profesionales como así también la de intervenir en el diseño de las estructuras de datos de los Registros del\n      Organismo, en los cuales se requiera información a las A.R.T./E.A., pudiendo dicha gerencia proponer mejoras y correcciones a los sistemas de\n      información sobre accidentes de trabajo y enfermedades profesionales.\n\n      Que por dichos motivos, resulta procedente facultar a la mentada Gerencia para requerir datos e introducir cambios en el formato, medio y plazos de\n      envío de la información correspondiente al Registro de Accidentes de Trabajo.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que la Gerencia de Sistemas y la Subgerencia de Control de Prestaciones Médicas han tomado intervención prestando su conformidad.\n\n      Que en virtud de los argumentos expuestos resulta procedente la derogación de la Resolución S.R.T. Nº 1.604/07 y de la Instrucción S.R.T. Nº 1/10\n      antes mencionadas.\n\n      Que la Gerencia de Asuntos Legales ha tomado la intervención que le corresponde.\n\n      Que la presente se dicta de acuerdo a las facultades establecidas en los artículos 36 y 38 de la Ley Nº 24.557.\n\n      Por ello,\n\n      EL SUPERINTENDENTE DE RIESGOS DEL TRABAJO\n\n      RESUELVE:\n\n      Artículo 1° — Créase el “Registro Nacional de Accidentes Laborales” (R.E.N.A.L.) al que las ASEGURADORAS DE RIESGOS DEL TRABAJO (A.R.T.) y los\n      EMPLEADORES AUTOASEGURADOS (E.A.) deberán denunciar los accidentes de trabajo.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Art. 2° — Apruébese el Procedimiento para la denuncia de Accidentes de Trabajo al RE.N.A.L. que como Anexo I forma parte integrante de la presente\n      resolución.\n\n      Art. 3° — Apruébase el Procedimiento para la Solicitud de Baja de Accidentes de Trabajo denunciados al R.E.N.A.L. que como Anexo II forma parte\n      integrante de la presente resolución.\n\n      Art. 4° — Establécese que la Gerencia de Planificación, Información Estratégica y Calidad de Gestión de esta SUPERINTENDENCIA DE RIESGOS DEL\n      TRABAJO (S.R.T.) será la responsable de administrar el R.E.N.A.L.\n\n      Art. 5° — Facúltase a la Gerencia de Planificación, Información Estratégica y Calidad de Gestión para requerir datos e introducir cambios en el formato,\n      medio y plazos de envío, como así también a modificar los procedimientos contenidos en los Anexos que integran la presente resolución.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Art. 6° — Deróganse la Resolución S.R.T. Nº 1.604 de fecha 16 de octubre de 2007 y la Instrucción S.R.T. Nº 1 de fecha 2 de marzo de 2010, a partir de\n      la entrada en vigencia de la presente resolución.\n\n      Art. 7° — Establécese la entrada en vigencia de la presente resolución a partir del 1 de enero del 2015.\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                          1/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                                InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n      Art. 8° — Comuníquese, publíquese, dése a la Dirección Nacional del Registro Oficial y archívese. — Juan H. Gonzalez Gaviola.\n\n                                                                                    ANEXO I\n\n                                                    1. PROCEDIMIENTO PARA DENUNCIAS DE ACCIDENTES DE TRABAJO\n\n      Por medio del presente, se establece la forma y el procedimiento que deben seguir las Aseguradoras de Riesgos del Trabajo (A.R.T.) y los Empleadores\n      Autoasegurados (E.A.) para remitir la información correspondiente a los Accidentes de Trabajo.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "Para sistematizar la información que compone el Registro Nacional de Accidentes de Trabajo (R.E.N.A.L.), se define UN (1) archivo con la información a\n      presentar por las Aseguradoras de Riesgos del Trabajo y Empleadores Autoasegurados ante esta SUPERINTENDENCIA DE RIESGOS DEL TRABAJO\n      (S.R.T.).\n\n      1.1 Declaración de los Accidentes de Trabajo\n\n      La notificación de la información debe efectuarse mediante los archivos con extensión “AT”.\n\n      Contiene: La información mínima para identificar el Accidente de Trabajo.\n\n      Los datos deben remitirse para cada uno de los Accidentes de Trabajo de los que la A.R.T. y los E.A. hayan tomado conocimiento.\n\n      2. ESPECIFICACIONES DE LOS ARCHIVOS A ENVIAR\n\n      En cuanto a la forma y el procedimiento que deben seguir las A.R.T. y los E.A. para remitir la información, se establece lo siguiente:\n      a. Envío de información",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "En cuanto a la forma y el procedimiento que deben seguir las A.R.T. y los E.A. para remitir la información, se establece lo siguiente:\n      a. Envío de información\n\n      La información a ser remitida por las A.R.T. y E.A. se debe declarar a través del archivo de datos, conforme a las especificaciones de estructura de datos\n      establecida en el apartado 3 del presente Anexo.\n\n      Los archivos deben ser presentados a través de la Extranet de la S.R.T. (http://www.arts.gob.ar) por medio del procedimiento habitual de intercambio de\n      información.\n\n      b. Tipo de operaciones\n\n      Los tipos de operaciones disponibles para el manejo de los registros se detallan a continuación:",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "b. Tipo de operaciones\n\n      Los tipos de operaciones disponibles para el manejo de los registros se detallan a continuación:\n\n\n           Operación                                                                           Descripción\n              A          Alta, primera presentación del registro\n              M          Modificación, por corrección de errores o actualización de datos en campos no clave\n              B          Baja (Ver Anexo II)\n\n\n\n      Para los tipos de operación “A” y “M” deben completarse la totalidad de los campos, exceptuando las características particulares que se detallan en la\n      estructura del archivo.\n\n      Si el campo no forma parte de la clave del registro, se podrá modificar el mismo enviando el registro con el campo corregido y una “M” (Modificación) en\n      el tipo de operación. Los campos que no conforman la clave del registro, serán reemplazados por los campos informados en la nueva presentación.\n\n      c. Corrección de errores",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "c. Corrección de errores\n\n      En caso de detectarse un error en la información enviada, se lo deberá corregir efectuando una nueva presentación en forma inmediata, teniendo en\n      cuenta que los campos que en la estructura de datos se encuentran indicados con asterisco (*), son aquellos que conforman la clave del registro.\n\n      d. Constancia de recepción\n\n      • Cumplimentados los pasos precedentes, se procesará la información y se realizarán las rutinas de validación correspondientes.\n\n      • Se mantendrán las modalidades actuales de generación de “Constancia de Recepción” y detalle de respuesta, donde se restituirá la información\n      presentada, acompañada de los Códigos de Motivo de Rechazo cuando el registro no haya sido aceptado.\n\n      e. Causales de rechazo de registros\n\n      • Ausencia de datos para los campos de presentación obligatoria.\n\n      • Inconsistencias en la información presentada.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "e. Causales de rechazo de registros\n\n      • Ausencia de datos para los campos de presentación obligatoria.\n\n      • Inconsistencias en la información presentada.\n\n      • Cualquier otro motivo que impida el procesamiento de los datos.\n\n      • Si existieran, se especificarán para cada archivo las causales de rechazo particulares que surjan en la presentación de los registros, mediante los\n      códigos correspondientes.\n\n      f. Forma de completar los registros\n\n      • Todos los datos son de presentación obligatoria. Todos los campos deben completarse en formato ASCII.\n\n      • Cuando algún campo no corresponda, podrá ser enviado en blanco (carácter ASCII 32).\n\n      • Los campos numéricos deben estar alineados a la derecha.\n\n      3. ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS DE RIESGOS DE TRABAJO Y LOS EMPLEADORES AUTOASEGURADOS\n\n      A. DECLARACION DE LOS ACCIDENTES DE TRABAJO",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "3. ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS DE RIESGOS DE TRABAJO Y LOS EMPLEADORES AUTOASEGURADOS\n\n      A. DECLARACION DE LOS ACCIDENTES DE TRABAJO\n\n      El Registro Nacional de Accidentes Laborales (R.E.N.A.L.) es una base de datos general donde se encuentran los registros correspondientes a los\n      Accidentes de Trabajo reportados por las A.R.T. y los E.A. a esta S.R.T.\n\n      Para la conformación del registro antes mencionado, las A.R.T. y los E.A. deberán remitir la información contenida en el presente Anexo, dentro del plazo\n      de CINCO (5) días contados desde la toma de conocimiento de la ocurrencia del accidente.\n\n      Los campos obligatorios diferibles deberán ser completados dentro del plazo de CINCO (5) días contados de producida la novedad o en la fecha de cese\n      de la Incapacidad Laboral Temporaria (I.L.T.), lo que primero ocurra.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                        2/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                          InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n      Para cada Accidente de Trabajo las A.R.T. o los E.A. deben generar un Número Unico de Registro de accidente de trabajo, sin importar la categoría a la\n      cual pertenezca y dicha numeración deberá corresponder con la codificación estipulada en el punto 3.3. del presente Anexo.\n\n      La declaración de los Accidentes de Trabajo y los datos informados por las A.R.T. y los E.A., tienen carácter de declaración jurada.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "La declaración de los Accidentes de Trabajo y los datos informados por las A.R.T. y los E.A., tienen carácter de declaración jurada.\n\n      Ante la ausencia en el citado Registro de un Accidente de Trabajo por el cual se haya iniciado un trámite en las Comisiones Médicas, y dicha situación\n      ocasione un perjuicio al trabajador, las A.R.T. o los E.A. deberán remitir el caso al R.E.N.A.L. dentro de las CUARENTA Y OCHO (48) horas de realizado el\n      reclamo por parte de esta S.R.T. Cumplido dicho plazo, la Gerencia de Planificación, Información Estratégica y Calidad de Gestión de la S.R.T., se\n      reservará las facultades de ingresar el caso al Registro, previa presentación del damnificado de la documentación respaldatoria correspondiente, sin\n      perjuicio de las sanciones que correspondan.\n\n      i. Descripción del archivo\n\n      Se define UN (1) archivo de Accidentes de Trabajo.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "i. Descripción del archivo\n\n      Se define UN (1) archivo de Accidentes de Trabajo.\n\n      (Nota Infoleg: por art. 1º de la Disposición Nº 2/2020 de la Gerencia de Control Prestacional B.O. 21/42020 se incorpora a la Forma de Llenado del\n      campo del Anexo I, punto 3, A.i. Estructura de Datos, orden 6, “Ocurrencia en Vía pública” de la presente Resolución, el carácter “T= Teletrabajo”\n      Ver art. 2º de la misma Disposición. Vigencia: , el cual deberá ser utilizado por las Aseguradoras de Riesgos del Trabajo (A.R.T.) y Empleadores\n      Autoasegurados (E.A.) para informar al Registro Nacional de Accidentes Laborales (R.E.N.A.L.) los Accidentes Laborales acaecidos bajo la modalidad de\n      trabajo remoto o teletrabajo.a partir de su publicación en el Boletín Oficial.)\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                        3/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     4/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     5/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 5
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     6/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 6
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     7/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 7
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     8/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 8
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     9/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 9
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     10/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 10
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                                 InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      ii. Aclaraciones\n\n      • Para los campos que deben ser expresados en meses, el mismo se redondea de la siguiente manera:\n\n      Si, por ejemplo el tiempo de exposición del trabajador al agente causante es de TRES (3) meses y QUINCE (15) días, se debe informar como CUATRO\n      (4) meses.\n\n      En cambio, si el tiempo de exposición del trabajador al agente causante es de TRES (3) meses y CATORCE (14) días, se debe informar como TRES (3)\n      meses.\n\n      • En los casos en donde la información tenga una longitud menor de caracteres a la que especifica el campo y no se indique lo contrario, la misma\n      deberá ser alineada a la derecha y completando con espacios en blanco los caracteres faltantes.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "• En el caso de que se abriera un caso como Enfermedad Profesional y resultara un Accidente de Trabajo, se deberá dar el alta como Accidente de\n      Trabajo y pedir la Baja en el Registro de Enfermedades Profesionales. En el caso de que inicialmente se abriera un Accidente de Trabajo y resultara ser\n      una Enfermedad Profesional, se deberá dar de alta en el Registro de Enfermedades Profesionales y se deberá solicitar la Baja al Accidente de Trabajo al\n      Registro Nacional de Accidentes Laborales.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "• El campo Secuelas incapacitantes deberá completarse con ‘S’ cuando el cese de la I.L.T. o el cese del período de Transitoriedad se produce por\n      declaración de Incapacidad Laboral Permanente. En primer lugar, habrá de informarse al Registro la estimación de la incapacidad (según Decreto Nº\n      659/96 - Baremo) realizada por el cuerpo médico de la A.R.T. o el E.A. y en segundo lugar, deberá actualizarse con un archivo con tipo de operación M\n      (modificación), informando el resultado del trámite ante las Comisiones Médicas jurisdiccionales.\n\n      • En los reingresos donde el trabajador percibiera solamente prestaciones en especie en el marco del apartado 1 del artículo 20 de la Ley Nº 24.557 y no\n      correspondiera ningún tipo de prestación dineraria, deberán registrarse con Categoría SB, especificando el período de atención médica entre el campo\n      fecha de Siniestro y fecha de Alta Médica.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "• Los casos se consideran cerrados cuando sucedan algunas de las siguientes circunstancias:\n\n\n          SB     En el mismo momento en que son reportados.\n          CB     Cuando cesa la I.L.T. o el período de transitoriedad.\n          MT     En la fecha de fallecimiento del trabajador.\n          RE     Cuando la aseguradora notifica al trabajador y al empleador.\n          JU     En el mismo momento en que son reportados.\n\n\n\n      Los casos cerrados deberán ser declarados, para ser aceptados por el sistema de validación de la S.R.T., con todos los campos obligatorios completos.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "Los casos cerrados deberán ser declarados, para ser aceptados por el sistema de validación de la S.R.T., con todos los campos obligatorios completos.\n\n      • Casos notificados durante la vigencia de la Resolución S.R.T. Nº 1.604/07 y la Instrucción S.R.T. Nº 1/10: Cuando se requieran modificaciones de casos\n      cargados al Registro con anterioridad a la puesta en vigencia de la presente resolución, los mismos deberán informarse según la nueva estructura de\n      datos. De no contar con información, las A.R.T. y los E.A. podrán declarar en blanco los campos nuevos que incorpore el citado Registro. Asimismo, se\n      respetará la numeración original.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "• La fecha de Alta Médica debe coincidir con la fecha de Cese de I.L.T. hasta que se cumplan los TRESCIENTOS SESENTA Y CINCO (365) días de la fecha\n      de Siniestro, salvo para las patologías contempladas en la Resolución S.R.T. Nº 1.838/14. En los casos con período de transitoriedad, la fecha deberá\n      coincidir con el campo fecha de fin de transitoriedad, excepto para las patologías mencionadas.\n\n      • El campo Intercurrencia deberá ser informado como ‘S’ cuando el Accidente de Trabajo haya sucedido dentro de un período de I.L.T. o de\n      Transitoriedad y por causas propias del tratamiento médico asistencial o en el traslado hacia/desde el prestador médico.\n\n      • El Campo Número de Siniestro de la Intercurrencia debe completarse con el Número de Siniestro previamente registrado, con el cual existe una\n      superposición de períodos de I.L.T. o Transitoriedad (ver punto anterior).",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "• Los campos relacionados con el Período de Transitoriedad deberán ser informados según corresponda en el marco del Decreto Nº 472/14.\n\n      • La información correspondiente al ROAM deberá registrarse solamente en el Accidente original.\n\n      • Para los casos crónicos, en la fecha de alta médica deberá consignarse el último día del período de I.L.T. o del período de transitoriedad, según\n      corresponda.\n\n      • La fecha de inicio de inasistencia deberá consignarse como mínimo al día siguiente de la fecha del siniestro.\n\n      • En caso que un trabajador inicie un trámite ante las Comisiones Médicas para que se le determine el daño relacionado al accidente de trabajo, las\n      A.R.T. y los E.A. deberán informar el monto del Ingreso Base en un plazo máximo de SETENTA Y DOS (72) horas de haber tomado conocimiento.\n\n      iii. Tratamiento de los Accidentes de Trabajo con categoría MT\n\n      Un Accidente de trabajo alcanza esta categoría:",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "iii. Tratamiento de los Accidentes de Trabajo con categoría MT\n\n      Un Accidente de trabajo alcanza esta categoría:\n\n      a) A través de un alta (A), cuando el fallecimiento del trabajador se produce en forma inmediata, en este caso se debe declarar como fecha de cese de la\n      I.L.T. la misma fecha de ocurrencia del Accidente de Trabajo.\n\n      b) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia del Accidente de Trabajo durante el período de I.L.T. o el período de\n      transitoriedad.\n\n      iv. Tratamiento de los siniestros con categoría RE\n\n      Un Accidente de Trabajo alcanza esta categoría:\n\n      a) A través de un alta (A), cuando el rechazo se produzca antes de declarar el Accidente de Trabajo a la S.R.T. pero haya sido informado al Registro de\n      Auditoría Médica o se le haya adjudicado un número de Accidente de Trabajo.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "b) A través de una modificación (M), cuando el rechazo se produzca con posterioridad a la declaración del caso ante el R.E.N.A.L.\n\n      v. Tratamiento de los siniestros con categoría JU\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                        11/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                          InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n      • La categoría JU (Caso Judicializado) deberá ser utilizada solamente si existiera una demanda para un caso en donde se corrobore la relación\n      contractual histórica entre la A.R.T. y el empleador, no pueda a vincularse a ningún Accidente de Trabajo declarado y la toma de conocimiento del mismo\n      sea exclusivamente por la vía judicial.\n\n      • Cuando un caso alcance la categoría JU deberá informarse en el Registro de Actuaciones Judiciales con un plazo máximo de CINCO (5) días, de\n      conformidad con lo dispuesto en la Instrucción S.R.T. Nº 4/10 y sus modificatorias.\n\n      B. OBLIGATORIEDAD DE LOS CAMPOS\n\n      Campos Obligatorios para la Aceptación del Registro:",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "B. OBLIGATORIEDAD DE LOS CAMPOS\n\n      Campos Obligatorios para la Aceptación del Registro:\n\n      Dentro de este concepto se incluyen aquellos campos en que, para la categoría correspondiente, la ausencia de la información o contenido No Válido\n      genera el rechazo del registro. En el cuadro con la estructura del archivo son indicados con la leyenda Obligatorio. Se incluyen dentro de esta definición\n      los campos claves.\n\n      Campos de Obligatoriedad Diferida:\n\n      Son los campos donde la ausencia de información no genera el rechazo del registro, sin embargo, deberán ser completados con envíos posteriores\n      haciendo uso del mecanismo de modificación establecido con ese propósito. Estos campos se señalan con la leyenda Diferible. Cabe señalar que en cada\n      actualización se deberán enviar todos los datos conocidos para ese registro.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "Los campos diferible L.R.T. son aquellos cuyos datos se obtendrán a partir de los procedimientos establecidos en la Ley Nº 24.557.\n\n      C. NUMERACION DE LOS ACCIDENTES DE TRABAJO\n\n      El número de accidente de trabajo se compone de VEINTE (20) posiciones que se distribuyen de la siguiente manera:",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "C. NUMERACION DE LOS ACCIDENTES DE TRABAJO\n\n      El número de accidente de trabajo se compone de VEINTE (20) posiciones que se distribuyen de la siguiente manera:\n\n\n                                                    Estructura del Número                                                               Lectura\n                  Para uso de la ART                      Año de Denuncia                 Contador          Sufijo\n                      00000000                                  2014                       001589             00                  Accidente de Trabajo\n                      00000000                                  2014                       001589             01                      1° reingreso\n                      00000000                                  2014                       001589             02                      2° reingreso",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "• Segmento 1 - Para uso de la A.R.T. o el E.A.: son OCHO (8) posiciones disponibles para libre uso de la Aseguradora/Empleador Autoasegurado, para\n      codificar lo que considere necesario.\n\n      • Segmento 2 - Año de denuncia: año en que la aseguradora o autoasegurado recibe la denuncia del Accidente de Trabajo.\n\n      • Segmento 3 - Contador: contador progresivo por unidades que se retorna a UN (1) por cada cambio en “Año de denuncia”.\n\n      • Segmento 4 - Sufijo: identifica a los reingresos. Tal como se puede apreciar en los ejemplos que se exponen en el cuadro, los reingresos no generan\n      modificación en los primeros tres segmentos, y sí del segmento del sufijo.\n\n      4. Fiscalización del Registro de Accidentes de Trabajo. Veracidad de los datos declarados",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "4. Fiscalización del Registro de Accidentes de Trabajo. Veracidad de los datos declarados\n\n      • Los datos declarados por las A.R.T. y los E.A. serán fiscalizados por la Unidad de Estudios Estadísticos, dependiente de la Gerencia de Planificación,\n      Información Estratégica y Calidad de Gestión de esta S.R.T.\n\n      • Se considerará falta cuando la información declarada al Registro Nacional de Accidentes Laborales difiera con el respaldo documental del mismo. De\n      igual forma se considerará para el caso en que lo informado al R.E.N.A.L. carezca de respaldo documental o este sea insuficiente.\n\n      • Se considerará falta cuando una A.R.T. o un E.A. omita declarar un Accidente de Trabajo o lo haga por fuera de los procedimientos o plazos\n      establecidos por la normativa vigente.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "• Se considerará falta cuando una A.R.T. o un E.A. omita declarar un Accidente de Trabajo o lo haga por fuera de los procedimientos o plazos\n      establecidos por la normativa vigente.\n\n      • Los registros rechazados por no cumplir con las especificaciones técnicas o reglas de validación ejecutadas por el sistema de la S.R.T. se considerarán\n      no informados hasta su efectivo ingreso a las bases de la S.R.T.\n\n                                                                               TABLA I\n\n\n\n\n                                                                               TABLA II\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                       12/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n                                                                        TABLA III\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     13/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                                   InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n      Aclaraciones\n\n\n      • Los códigos 100, 200, 300, 400, 500, 600, 700, 800 y 900 no podrán ser utilizados para la declaración de la Forma de Accidente.\n\n                                                                                           TABLA IV\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                    14/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 14
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     15/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 15
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     16/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 16
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     17/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 17
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     18/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 18
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     19/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 19
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      Aclaraciones\n\n      • Los códigos de los títulos, así como también los de los subtítulos, no son válidos para la declaración de los agentes materiales asociados.\n\n\n                                                                                              TABLA V\n\n\n\n\n      • Los Códigos de Lesión 06 y 13 no serán utilizados para facilitar el proceso de migración de los mismos.\n\n                                                                                              TABLA VI\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                20/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 20
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     21/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 21
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                     InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                     22/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 22
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                          InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n                                                                              ANEXO II\n\n      1 PROCEDIMIENTO PARA LA SOLICITUD DE BAJA DEL ACCIDENTE DE TRABAJO DENUNCIADO AL R.E.N.A.L.\n\n      Se establece la forma y el procedimiento que debe seguir la Aseguradora de Riesgos del Trabajo (A.R.T.) y el Empleador Autoasegurado (E.A.) para\n      solicitar la baja de un Accidente de Trabajo denunciado al Registro Nacional de Accidentes Laborales.\n\n      Para sistematizar las solicitudes, se define UN (1) archivo con la información a presentar por las A.R.T. y los EA. ante esta SUPERINTENDENCIA DE\n      RIESGOS DEL TRABAJO (S.R.T.).\n\n      2 ESPECIFICACIONES DE LOS ARCHIVOS A ENVIAR\n\n      En cuanto a la forma y el procedimiento que debe seguir la A.R.T./E.A. para remitir la información, se establece lo siguiente:\n\n      2.1 Envío de información",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 23
+  },
+  {
+    "texto": "En cuanto a la forma y el procedimiento que debe seguir la A.R.T./E.A. para remitir la información, se establece lo siguiente:\n\n      2.1 Envío de información\n\n      La información a ser remitida por las A.R.T./E.A. se debe declarar a través del archivo de datos, conforme a la especificaciones de estructura establecida\n      en punto 3 del presente Anexo.\n\n      Los archivos deben ser presentados a través de la Extranet de la S.R.T. (http://www.arts.gob.ar) por medio del procedimiento habitual de intercambio de\n      información.\n\n      2.2 Constancia de recepción\n\n      • Cumplimentados los pasos precedentes, se procesará la información y se realizarán las rutinas de validación correspondientes.\n\n      • Se mantendrán las modalidades actuales de generación de “Constancia de Recepción” y detalle de respuesta, donde se devolverá la información\n      presentada, acompañada de los Códigos de Motivo de Rechazo, cuando el registro no haya sido aceptado.",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 23
+  },
+  {
+    "texto": "2.3 Causales de rechazo de registros\n\n      • Ausencia de datos para los campos de presentación obligatoria.\n\n      • Inconsistencias en la información presentada.\n\n      • Cualquier otro motivo que impida el procesamiento de los datos.\n\n      • Si existieran, se especificarán para cada archivo las causales de rechazo particulares que surjan en la presentación de los registros, mediante los\n      códigos correspondientes.\n\n      2.4 Forma de completar los registros\n\n      • Todos los datos son de presentación obligatoria. Todos los campos deben completarse en formato ASCII.\n\n      • Cuando algún campo no corresponda, podrá ser enviado en blanco (caracter ASCII 32)\n\n      • Los campos numéricos deben estar alineados a la derecha.\n\n      3 ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS DE RIESGOS DE TRABAJO Y LOS EMPLEADORES AUTOASEGURADOS.\n\n      3.1 Descripción del archivo\n\n      Se define UN (1) archivo de baja",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 23
+  },
+  {
+    "texto": "3 ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS DE RIESGOS DE TRABAJO Y LOS EMPLEADORES AUTOASEGURADOS.\n\n      3.1 Descripción del archivo\n\n      Se define UN (1) archivo de baja\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                       23/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 23
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                         InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      4 PLAZOS\n\n      En caso de considerar necesario realizar observaciones o reclamos, éstos deberán hacerse efectivos dentro de los TREINTA (30) días corridos de\n      presentada la Solicitud de Baja. Vencido el plazo indicado y de no mediar comunicación alguna, se interpretará que la operación y su resultado cuentan\n      con el acuerdo del solicitante.\n\n      5 ESTRUCTURA DE DATOS DE RESPUESTA A RECIBIR POR LAS ASEGURADORAS DE RIESGOS DEL TRABAJO Y LOS EMPLEADORES AUTOASEGURADOS.\n\n      5.1 Archivo de respuesta extensión BA, con el siguiente formato, es el archivo de Bajas Accidentes\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                   24/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 24
+  },
+  {
+    "texto": "20/1/26, 10:21 a.m.                                       InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      5.2 Un segundo archivo de respuesta con extensión BD, que será remitido cuando se gestione y se procese el pedido de baja del registro, generando la\n      aceptación o el rechazo del mismo.\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm                                                                 25/25",
+    "fuente": "Registros 3326-2014.pdf",
+    "pagina": 25
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                           InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL\n\n      SUPERINTENDENCIA DE RIESGOS DEL TRABAJO\n\n      Resolución 3327/2014\n\n      Bs. As., 9/12/2014\n\n      VISTO, el Expediente N° 128.083/14 del Registro de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.), las Leyes N° 24.557, N° 26.773 los\n      Decretos N° 1.694 de fecha 5 de noviembre de 2009, N° 472 de fecha 1 de abril de 2014, las Resoluciones S.R.T. N° 840 de fecha 22 de abril del 2005, N°\n      1.601 de fecha 12 de octubre de 2007, N° 1.838 de fecha 1 de agosto de 2014, N° 3.117 de fecha 21 de noviembre de 2014, y la Instrucción S.R.T. N° 2 de\n      fecha 2 de marzo de 2010, y\n\n      CONSIDERANDO:\n\n      Que mediante Resolución de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.) N° 840 de fecha 22 de abril de 2005 se dispuso la creación del\n      “Registro de Enfermedades Profesionales”.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que mediante Resolución de la SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.) N° 840 de fecha 22 de abril de 2005 se dispuso la creación del\n      “Registro de Enfermedades Profesionales”.\n\n      Que por Resolución S.R.T. N° 1.601 de fecha 12 de octubre de 2007 se modificó el Anexo I —Procedimiento Administrativo para la denuncia de\n      Enfermedades Profesionales—, el Anexo II —Modelo de Formularios— y el Anexo III —Procedimiento de Notificación de Enfermedades Profesionales— de la\n      Resolución S.R.T. N° 840/05.\n\n      Que asimismo mediante la Instrucción S.R.T. N° 2 de fecha 2 de marzo de 2010 se establecieron modificaciones a los Anexos II y III de la Resolución S.R.T.\n      N° 840/05 —texto según Resolución S.R.T. N° 1.601/07—.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que la experiencia recogida a través de la aplicación de la normativa citada en los considerandos precedentes, ha permitido concluir que la sustitución de\n      datos requeridos y la demanda de nueva información, repercutirá en un Registro de Enfermedades Profesionales más preciso y homogéneo, satisfaciendo de\n      ese modo las necesidades de información del Organismo.\n\n      Que asimismo, y como medida conducente a evitar la dispersión normativa y facilitar su aplicación, se considera oportuno unificar en un solo texto lo\n      normado en la materia.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que asimismo, y como medida conducente a evitar la dispersión normativa y facilitar su aplicación, se considera oportuno unificar en un solo texto lo\n      normado en la materia.\n\n      Que mediante la Resolución S.R.T. N° 3.117 de fecha 21 de noviembre de 2014, se reformó la estructura orgánico funcional de la S.R.T., y se asignó a la\n      Gerencia de Planificación, Información Estratégica y Calidad de Gestión las funciones de fiscalización de la información que las A.R.T./E.A. declaran a los\n      Registros de Accidentes de Trabajo y de Enfermedades Profesionales, de intervenir en el diseño de las estructuras de datos de los Registros del Organismo en\n      los cuales se requiera información a las A.R.T./E.A., y de proponer mejoras y correcciones a los sistemas de información sobre accidentes de trabajo y\n      enfermedades profesionales.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Que en tal sentido, resulta oportuno facultar a la Gerencia de Planificación, Información Estratégica y Calidad de Gestión para requerir datos e introducir\n      cambios en el formato, medio y plazos de envío de la información correspondiente al Registro de Enfermedades Profesionales.\n\n      Que la Gerencia de Sistemas y la Subgerencia de Control de Prestaciones Médicas ha tomado intervención prestando su conformidad.\n\n      Que en atención a los argumentos expuestos es procedente la derogación de la Resolución S.R.T. N° 1.601/07 y la Instrucción S.R.T. N° 2/10.\n\n      Que la Gerencia de Asuntos Legales de esta S.R.T. ha tomado la intervención que le corresponde.\n\n      Que la presente se dicta de acuerdo a las facultades establecidas en los artículos 36 y 38 de la Ley N° 24.557.\n\n      Por ello,\n\n      EL SUPERINTENDENTE DE RIESGOS DEL TRABAJO\n\n      RESUELVE:",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "Por ello,\n\n      EL SUPERINTENDENTE DE RIESGOS DEL TRABAJO\n\n      RESUELVE:\n\n      ARTICULO 1° — Apruébase el Procedimiento para la denuncia de Enfermedades Profesionales que como Anexo I forma parte integrante de la presente\n      resolución.\n\n      ARTICULO 2° — Apruébase el Procedimiento para la Solicitud de Baja de Enfermedades Profesionales denunciadas al “Registro de Enfermedades\n      Profesionales” que como Anexo II forma parte integrante de la presente resolución.\n\n      ARTICULO 3° — Establécese que la Gerencia de Planificación, Información Estratégica y Calidad de Gestión de esta SUPERINTENDENCIA DE RIESGOS DEL\n      TRABAJO (S.R.T.) será la responsable de administrar el “Registro de Enfermedades Profesionales”.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "ARTICULO 4° — Facúltase a la Gerencia de Planificación, Información Estratégica y Calidad de Gestión para requerir datos e introducir cambios en el formato,\n      medio y plazos de envío, como así también a modificar los procedimientos contenidos en los Anexos que integran la presente resolución.\n\n      ARTICULO 5° — Deróganse la Resolución S.R.T. N° 1.601 de fecha 12 de octubre de 2007 y la Instrucción S.R.T. N° 2 de fecha 2 de marzo de 2010, a partir\n      de la entrada en vigencia de la presente resolución.\n\n      ARTICULO 6° — Establécese la entrada en vigencia de la presente resolución a partir del 1 de enero de 2015.\n\n      ARTICULO 7° — Comuníquese, publíquese, dése a la Dirección Nacional del Registro Oficial y archívese. — Dr. JUAN H. GONZALEZ GAVIOLA,\n      Superintendente de Riesgos del Trabajo.\n\n                                                                                 ANEXO I\n\n      1 PROCEDIMIENTO PARA DENUNCIA DE ENFERMEDADES PROFESIONALES",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "ANEXO I\n\n      1 PROCEDIMIENTO PARA DENUNCIA DE ENFERMEDADES PROFESIONALES\n\n      Se establece la forma y el procedimiento que deben seguir la Aseguradora de Riesgos del Trabajo (A.R.T.) y el Empleador Autoasegurado (E.A.) para remitir\n      la información correspondiente a las Enfermedades Profesionales (E.P.), según la obligación establecida en la Resolución S.R.T. N° 840 de fecha 22 de abril\n      de 2005.\n\n      Para sistematizar la información que compone el Registro de Enfermedades Profesionales, se define UN (1) archivo con la información a presentar por las\n      A.R.T. y E.A. ante esta SUPERINTENDENCIA DE RIESGOS DEL TRABAJO (S.R.T.).\n\n      1.1 Declaración de las Enfermedades Profesionales",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "1.1 Declaración de las Enfermedades Profesionales\n\n      La notificación de los datos determinados en el Formulario de Denuncia del Anexo II de la Resolución S.R.T. N° 840/05, sustituidos por la Estructura de Datos\n      del punto 3.1.1 del presente Anexo I, debe efectuarse mediante los archivos con extensión “EF”.\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                          1/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 1
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                                  InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n      Contiene: La información mínima para identificar la Enfermedad Profesional. Los datos que deben remitir para cada una de las Enfermedades Profesionales\n      respecto de las que la A.R.T./E.A. hayan tomado conocimiento.\n\n      2 ESPECIFICACIONES DEL ARCHIVO A ENVIAR\n\n      En cuanto a la forma y el procedimiento que deben seguir la A.R.T. y E.A. para remitir la información, se establece lo siguiente:\n\n      2.1 Envío de información\n\n      La información a ser remitida por las A.R.T. y E.A. se debe declarar a través del archivo de datos, conforme a las especificaciones de estructura de datos\n      establecida en el punto 3 del presente Anexo.\n\n      Los archivos deben ser presentados a través de la Extranet de la S.R.T. (http://www.arts.gob.ar) por medio del procedimiento habitual de intercambio de\n      información.\n\n      2.2 Tipo de operaciones",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "2.2 Tipo de operaciones\n\n      Los tipos de operaciones disponibles para el manejo de los registros se detallan a continuación:\n\n\n           Operación                                                                              Descripción\n               A          Alta, primera presentación del registro\n               M          Modificación, por corrección de errores o actualización de datos en campos no clave.\n               B          Baja (Ver Anexo II)\n\n\n\n      Para los tipos de operación “A” y “M” deben completarse la totalidad de los campos, exceptuando las características particulares que se detallan en la\n      estructura del archivo.\n\n      • Si el campo no forma parte de la clave del registro, se podrá modificar el mismo enviando el registro con el campo corregido y una “M” (Modificación) en el\n      tipo de operación. Los campos que no conforman la clave del registro, serán reemplazados por los campos informados en la nueva presentación.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "2.3 Corrección de errores\n\n      En caso de detectarse un error en la información enviada, se lo deberá corregir efectuando una nueva presentación en forma inmediata, teniendo en cuenta\n      que los campos que en la estructura de datos se encuentran indicados con asterisco (*), son aquellos que conforman la clave del registro.\n\n      2.4 Constancia de recepción\n\n      • Cumplimentados los pasos precedentes, se procesará la información y se realizarán las rutinas de validación correspondientes.\n\n      • Se mantendrán las modalidades actuales de generación de “Constancia de Recepción” y detalle de respuesta, donde se devolverá la información\n      presentada, acompañada de los Códigos de Motivo de Rechazo cuando el registro no haya sido aceptado.\n\n      2.5 Causales de rechazo de registros\n\n      • Ausencia de datos para los campos de presentación obligatoria.\n\n      • Inconsistencias en la información presentada.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "2.5 Causales de rechazo de registros\n\n      • Ausencia de datos para los campos de presentación obligatoria.\n\n      • Inconsistencias en la información presentada.\n\n      • Cualquier otro motivo que impida el procesamiento de los datos.\n\n      • Si existieran, se especificarán para cada archivo las causales de rechazo particulares que surjan en la presentación de los registros, mediante los códigos\n      correspondientes.\n\n      2.6 Forma de completar los registros\n\n      • Todos los Datos son de presentación obligatoria. Todos los campos deben completarse en formato ASCII.\n\n      • Cuando algún campo no corresponda, podrá ser enviado en blanco (carácter ASCII 32)\n\n      • Los campos numéricos deben estar alineados a la derecha.\n\n      3 ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS Y AUTOASEGURADOS\n\n      3.1 DECLARACION DE LAS ENFERMEDADES PROFESIONALES",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "• Los campos numéricos deben estar alineados a la derecha.\n\n      3 ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS Y AUTOASEGURADOS\n\n      3.1 DECLARACION DE LAS ENFERMEDADES PROFESIONALES\n\n      El Registro de Enfermedades Profesionales es una base de datos general donde se encuentran los registros correspondientes a las Enfermedades\n      Profesionales reportadas por las A.R.T./E.A. a esta S.R.T.\n\n      Para la conformación del registro antes mencionado, las A.R.T. y los E.A. deberán remitir la información contenida en el presente Anexo, dentro del plazo de\n      CINCO (5) días contados desde la toma de conocimiento de la Primera Manifestación Invalidante.\n\n      Los campos obligatorios diferibles deberán ser completados dentro del plazo de CINCO (5) días contados de producida la novedad o en la fecha de cese de la\n      Incapacidad Laboral Temporaria (I.L.T.), lo que ocurra primero.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "Para cada Enfermedad Profesional la A.R.T. o los E.A deben generar un número único de Registro, sin importar la categoría a la cual pertenezcan y dicha\n      numeración deberá corresponder con la codificación estipulada en el punto 3.3. del presente Anexo.\n\n      La declaración de las Enfermedades Profesionales y datos informados por las A.R.T. y E.A. tienen carácter de declaración jurada.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "La declaración de las Enfermedades Profesionales y datos informados por las A.R.T. y E.A. tienen carácter de declaración jurada.\n\n      Ante la ausencia en el Registro de una Enfermedad Profesional por la cual se haya iniciado un trámite en las Comisiones Médicas, y dicha situación ocasione\n      un perjuicio al trabajador, la A.R.T. o el E.A. deberán remitir el caso al Registro dentro de las CUARENTA Y OCHO (48) horas de realizado el reclamo por parte\n      de la S.R.T. Cumplido este plazo, la Gerencia de Planificación, Información Estratégica y Calidad de Gestión se reservará las facultades de ingresar el caso al\n      Registro, previa presentación del damnificado de la documentación respaldatoria correspondiente, sin perjuicio de las sanciones que correspondan.\n\n      3.1.1 Descripción del archivo\n\n      Se define UN (1) archivo de Enfermedades Profesionales.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "3.1.1 Descripción del archivo\n\n      Se define UN (1) archivo de Enfermedades Profesionales.\n\n\n       El archivo se denominará ARTcartv.EFn donde:\n             ART        Valor constante “ART”\n            Cartv       Código de ART/EA incluido el dígito verificador\n             EF         Constante “EF” que identifica el contenido del archivo.\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                            2/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 2
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                             InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n             N        Número de archivo con valores de 1 a 9.\n\n\n\n      Estructura de Datos:\n\n      (Nota Infoleg: por art. 3º de la Disposición Nº 5/2020 de la Gerencia de Control Prestacional B.O. 19/8/2020 se incorpora al campo Categoría de registro\n      consignado en el orden 7 de la estructura de datos del punto 3.3.1, el código CO – Caso pendiente de admisibilidad de la denuncia (Res. SRT Nº 38/20). Ver\n      artículos sucesivos de la norma de referencia. Vigencia: a partir de su publicación en el Boletín Oficial.)\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                       3/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 3
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     4/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 4
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     5/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 5
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     6/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 6
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     7/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 7
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     8/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 8
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     9/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 9
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     10/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 10
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     11/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 11
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                           InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      3.1.2 Aclaraciones\n\n      • Para los campos que deben ser expresados en meses, el mismo se redondea de la siguiente manera:\n\n      - Si, por ejemplo, el tiempo de exposición del trabajador al agente causante es de TRES (3) meses y QUINCE (15) días, se debe informar como CUATRO (4)\n      meses.\n\n      - En cambio, si el tiempo de exposición del trabajador al agente causante es de TRES (3) meses y CATORCE (14) días, se debe informar como TRES (3)\n      meses.\n\n      • En los casos en donde la información tenga una longitud menor de caracteres a la que especifica el campo y no se indique lo contrario, la misma deberá ser\n      alineada a la derecha y completando con espacios en blanco los caracteres faltantes.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "• En el caso de que se abriera un caso como Enfermedad Profesional y resultara un Accidente de Trabajo, se deberá dar el alta como Accidente de Trabajo y\n      pedir la Baja en el Registro de Enfermedades Profesionales. En el caso de que inicialmente se abriera un Accidente de Trabajo y resultara ser una\n      Enfermedad Profesional, se deberá dar de alta en el Registro de Enfermedades Profesionales y se deberá solicitar la Baja del Accidente de Trabajo al Registro\n      de Accidentes de Trabajo.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "• El campo Secuelas incapacitantes deberá completarse con ‘S’ cuando el cese de la I.L.T. o cese del período de Transitoriedad se produce por declaración de\n      Incapacidad Laboral Permanente. En un primer momento habrá de informarse al Registro la estimación de incapacidad (según Decreto N° 659/96 - Baremo)\n      realizada por el cuerpo médico de la A.R.T. o el E.A. y en segundo término, actualizarse con un archivo con tipo de operación M (modificación), informando el\n      resultado del trámite ante las Oficinas de Homologación y Visado y/o, Comisiones Médicas jurisdiccionales.\n\n      • En los reingresos donde el trabajador percibiera solamente prestaciones en especie en el marco del apartado 1 del artículo 20 de la Ley N° 24.557 y no\n      correspondiera ningún tipo de prestación dineraria, deberán registrarse con Categoría SB, especificando el período de atención médica entre el campo Fecha\n      de Siniestro y fecha de Alta Médica.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                         12/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 12
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                            InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n      • Los casos se consideran cerrados cuando:\n\n\n                                                         SB En el mismo momento en que son reportados.\n                                                         CB Cuando cesa la I.L.T. o el período de transitoriedad.\n                                                         MT En la fecha de fallecimiento del trabajador.\n                                                         RE Cuando la aseguradora notifica al trabajador y al empleador.\n                                                         JU En el mismo momento en que son reportados.\n\n\n\n      Los casos cerrados deberán ser declarados, para ser aceptados por el sistema de validación de la S.R.T., con todos los campos obligatorios completos.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "Los casos cerrados deberán ser declarados, para ser aceptados por el sistema de validación de la S.R.T., con todos los campos obligatorios completos.\n\n      • Casos notificados durante la vigencia de la Resolución S.R.T. N° 1.601/07 y la Instrucción S.R.T. N° 2/10: Cuando se requieran modificaciones de casos\n      cargados al Registro con anterioridad a la puesta en vigencia de la presente resolución, los mismos deberán informarse según la nueva estructura de datos.\n      De no contar con información, las Aseguradoras y Empleadores Autoasegurados podrán declarar en blanco los campos nuevos que incorpore el citado\n      Registro. Asimismo, se respetará la numeración original.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "• La fecha de Alta Médica debe coincidir con la Fecha de Cese de I.L.T. hasta que se cumplan los TRESCIENTOS SESENTA Y CINCO (365) días de la Fecha de\n      Siniestro, salvo para las patologías contempladas en la Resolución S.R.T. N° 1.838/14. En los casos en período de transitoriedad, la misma deberá coincidir\n      con el campo Fecha de fin de transitoriedad excepto para las patologías mencionadas.\n\n      • Los campos relacionados con el Período de Transitoriedad deberán ser informados según corresponda en el marco del Decreto N° 472/14.\n\n      • Para los casos crónicos la fecha de alta médica deberá consignarse el último día del período de I.L.T. o del período de transitoriedad, según corresponda.\n\n      • La fecha de inicio de inasistencia deberá consignarse como mínimo al día siguiente de la fecha de siniestro.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "• La fecha de inicio de inasistencia deberá consignarse como mínimo al día siguiente de la fecha de siniestro.\n\n      • En caso que un trabajador inicie un trámite ante las Comisiones Médicas para que se le determine el daño relacionado a la Enfermedad Profesional, las\n      Aseguradoras y Empleadores Autoasegurados deberán informar el monto del Ingreso Base en un plazo máximo de SETENTA Y DOS (72) hs posteriores a la\n      toma de conocimiento.\n\n      3.1.3 Tratamiento de los registros con categoría MT\n\n      Una Enfermedad Profesional alcanza esta categoría:\n\n      a) A través de un alta (A), cuando el fallecimiento del trabajador se produce en forma inmediata, en este caso se debe declarar como fecha de cese de la\n      I.L.T. la misma fecha de ocurrencia de la Enfermedad Profesional.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "b) A través de una modificación (M), cuando el fallecimiento ocurre a consecuencia de la Enfermedad Profesional durante el período de I.L.T. o de\n      transitoriedad y se haya declarado primariamente a la S.R.T. como una enfermedad profesional con categoría SB o CB o RE.\n\n      3.1.4 Tratamiento de los registros con categoría RE\n\n      Una Enfermedad Profesional alcanza esta categoría:\n\n      a) A través de un alta (A), cuando el rechazo se produzca antes de declarar la Enfermedad Profesional a la S.R.T. pero haya sido informado al Registro de\n      Auditoria Médica o se le haya adjudicado un número de Enfermedad Profesional.\n\n      b) A través de una modificación (M), cuando el rechazo se produzca con posterioridad a la declaración del caso ante el Registro de Enfermedades\n      Profesionales.\n\n      3.1.5 Tratamiento de los siniestros con categoría JU",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "3.1.5 Tratamiento de los siniestros con categoría JU\n\n      • La categoría JU (Caso Judicializado) deberá ser utilizada solamente si existiera una demanda para un caso en donde se corrobore la relación contractual\n      histórica entre la A.R.T. y el empleador, que no pueda vincularse a ninguna Enfermedad Profesional declarada y la toma de conocimiento de la misma sea\n      exclusivamente por la vía judicial.\n\n      • Cuando un caso alcance la categoría JU, deberá informarse en el Registro de Actuaciones Judiciales con un plazo máximo de CINCO (5) días, conforme lo\n      dispuesto en la Instrucción S.R.T. N° 4/10 y sus modificatorias.\n\n      3.2 OBLIGATORIEDAD DE LOS CAMPOS\n\n      Campos Obligatorios para la Aceptación del Registro:",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "3.2 OBLIGATORIEDAD DE LOS CAMPOS\n\n      Campos Obligatorios para la Aceptación del Registro:\n\n      Dentro de este concepto se incluyen aquellos campos en que, para la categoría correspondiente, la ausencia de la información o contenido No Válido genera\n      el rechazo del registro. En el cuadro con la estructura del archivo son indicados con la leyenda Obligatorio. Se incluyen dentro de esta definición los campos\n      claves.\n\n      Campos de Obligatoriedad Diferida:\n\n      Son los campos donde la ausencia de información no genera el rechazo del registro, sin embargo, deberán ser completados con envíos posteriores haciendo\n      uso del mecanismo de modificación establecido con ese propósito. Estos campos se señalan con la leyenda Obligatorio Diferible. Cabe señalar que en cada\n      actualización se deberán enviar todos los datos conocidos para ese registro.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "Los campos diferible L.R.T. son aquellos cuyos datos se obtendrán a partir de los procedimientos establecidos en la Ley N° 24.557.\n\n      3.3 NUMERACION DE LAS ENFERMEDADES PROFESIONALES\n\n      El número de enfermedad profesional se compone de VEINTE (20) posiciones que se distribuyen de la siguiente manera:",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "3.3 NUMERACION DE LAS ENFERMEDADES PROFESIONALES\n\n      El número de enfermedad profesional se compone de VEINTE (20) posiciones que se distribuyen de la siguiente manera:\n\n\n                                                     Estructura del Número                                                                   Lectura\n                   Para uso de la ART/EA                       Año de Denuncia                    Contador          Sufijo\n                         00000000                                    2014                          001589            00              Enfermedad profesional\n                         00000000                                    2014                          001589            01                    1° reingreso\n                         00000000                                    2014                          001589            02                    2° reingreso",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "• Segmento 1 - Para uso de la A.R.T./E.A.: son OCHO (8) posiciones disponibles para libre uso de la A.R.T./Empleador Autoasegurado, para codificar lo que\n      considere necesario.\n\n      • Segmento 2 - Año de denuncia: año en que la A.R.T./E.A. recibe la denuncia de la enfermedad profesional.\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                              13/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 13
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                            InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n      • Segmento 3 - Contador: contador progresivo por unidades que se retorna a UNO (1) por cada cambio en “Año de denuncia”.\n\n      • Segmento 4 - Sufijo: identifica a los reingresos. Tal como se puede apreciar en los ejemplos que se exponen en el cuadro, los reingresos no generan\n      modificación en los primeros TRES (3) segmentos, y sí del segmento del sufijo.\n\n      4 Fiscalización del Registro de Enfermedades Profesionales. Veracidad de los datos declarados\n\n      • Los datos declarados por las A.R.T. y los E.A. serán fiscalizados por la Unidad de Estudios Estadísticos.\n\n      • Se considerará falta cuando la información declarada al Registro de Enfermedades Profesionales difiera con el respaldo documental del mismo.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 14
+  },
+  {
+    "texto": "• Se considerará falta cuando la información declarada al Registro de Enfermedades Profesionales difiera con el respaldo documental del mismo.\n\n      • Se considerará falta cuando una A.R.T. o E.A. omita declarar una Enfermedad Profesional o lo haga fuera de los procedimientos o plazos establecidos en la\n      normativa vigente.\n\n      • Los registros rechazados por no cumplir con las especificaciones técnicas o reglas de validación ejecutadas por el sistema de la S.R.T. se considerarán no\n      informados hasta su efectivo ingreso a las bases de la S.R.T.\n\n                                                                                   TABLA I\n\n\n\n\n                                                                                  TABLA II\n\n\n\n\n                                                                                  TABLA III",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 14
+  },
+  {
+    "texto": "TABLA II\n\n\n\n\n                                                                                  TABLA III\n\n       (Tabla sustituida por art. 14 de la Resolución N° 81/2019 de la Superintendencia de Seguros de Trabajo B.O. 10/10/2019. Vigencia: el primer día hábil del\n                                                                               año 2020)\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                        14/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 14
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     15/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 15
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     16/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 16
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     17/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 17
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     18/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 18
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     19/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 19
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     20/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 20
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n                                                                         TABLA IV\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     21/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 21
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     22/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 22
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     23/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 23
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     24/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 24
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                            InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      Aclaraciones\n\n      • Los códigos de los títulos, así como también los de los subtítulos, no son válidos para la declaración de los agentes materiales asociados.\n\n                                                                                  TABLA V\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                               25/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 25
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     26/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 26
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                     27/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 27
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                           InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n                                                                                ANEXO II\n\n      1 PROCEDIMIENTO PARA LA SOLICITUD DE BAJA DE ENFERMEDAD PROFESIONAL DENUNCIADA AL REGISTRO\n\n      Se establece la forma y el procedimiento que deben seguir las Aseguradoras de Riesgos del Trabajo (A.R.T.) y los Empleadores Autoasegurados (E.A.) para\n      solicitar la baja de una Enfermedad Profesional al Registro de Enfermedades Laborales.\n\n      Para sistematizar las solicitudes, se define UN (1) archivo con la información a presentar por las A.R.T. y E.A. ante esta SUPERINTENDENCIA DE RIESGOS\n      DEL TRABAJO (S.R.T.).\n\n      2 ESPECIFICACIONES DE LOS ARCHIVOS A ENVIAR\n\n      En cuanto a la forma y el procedimiento que deben seguir las A.R.T./E.A. para remitir la información, se establece lo siguiente:\n\n      2.1 Envío de información",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 28
+  },
+  {
+    "texto": "En cuanto a la forma y el procedimiento que deben seguir las A.R.T./E.A. para remitir la información, se establece lo siguiente:\n\n      2.1 Envío de información\n\n      La información a ser remitida por las A.R.T./E.A. se debe declarar a través del archivo de datos, conforme a la especificaciones de estructura establecida en\n      el punto 3 del presente Anexo.\n\n      Los archivos deben ser presentados a través de la Extranet de la S.R.T. (http://www.arts.gob.ar) por medio del procedimiento habitual de intercambio de\n      información.\n\n      2.2 Constancia de recepción\n\n      • Cumplimentados los pasos precedentes, se procesará la información y se realizarán las rutinas de validación correspondientes.\n\n      • Se mantendrán las modalidades actuales de generación de “Constancia de Recepción” y detalle de respuesta, donde se devolverá la información\n      presentada, acompañada de los Códigos de Motivo de Rechazo, cuando el registro no haya sido aceptado.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 28
+  },
+  {
+    "texto": "2.3 Causales de rechazo de registros\n\n      • Ausencia de datos para los campos de presentación obligatoria.\n\n      • Inconsistencias en la información presentada.\n\n      • Cualquier otro motivo que impida el procesamiento de los datos.\n\n      • Si existieran, se especificarán para cada archivo las causales de rechazo particulares que surjan en la presentación de los registros, mediante los códigos\n      correspondientes.\n\n      2.4 Forma de completar los registros\n\n      • Todos los datos son de presentación obligatoria. Todos los campos deben completarse en formato ASCII.\n\n      • Cuando algún campo no corresponda, podrá ser enviado en blanco (carácter ASCII 32)\n\n      • Los campos numéricos deben estar alineados a la derecha.\n\n      3 ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS DE RIESGOS DE TRABAJO Y EMPLEADORES AUTOASEGURADOS.",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 28
+  },
+  {
+    "texto": "• Los campos numéricos deben estar alineados a la derecha.\n\n      3 ESTRUCTURA DE DATOS A ENVIAR POR LAS ASEGURADORAS DE RIESGOS DE TRABAJO Y EMPLEADORES AUTOASEGURADOS.\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                         28/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 28
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                             InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n      3.1 Descripción del archivo\n\n      Se define UN (1) archivo de baja\n\n\n                                                                 El archivo se denominará ARTcartv.BAn donde:\n                                                          ART Valor constante “ART”\n                                                         Cartv Código de ART incluido el dígito verificador\n                                                           BA    Constante “BA” que identifica el contenido del archivo\n                                                           n     Número de archivo con valores de 1 a 9.\n\n\n\n      Estructura de Datos:\n\n\n\n\n      4 PLAZOS",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 29
+  },
+  {
+    "texto": "Estructura de Datos:\n\n\n\n\n      4 PLAZOS\n\n      En caso de considerar necesario realizar observaciones o reclamos, éstos deberán hacerse efectivos dentro de los TREINTA (30) días corridos de presentada\n      la Solicitud de Baja. Vencido el plazo indicado y de no mediar comunicación alguna, se interpretará que la operación y su resultado cuentan con el acuerdo\n      del solicitante.\n\n      5 ESTRUCTURA DE DATOS RESPUESTA A RECIBIR POR LAS ASEGURADORAS DE RIESGOS DEL TRABAJO Y EMPLEADORES AUTOASEGURADOS.\n\n      5.1 Archivo de respuesta extensión BA, con el siguiente formato, es el archivo de BajasAccidentes\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                                      29/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 29
+  },
+  {
+    "texto": "20/1/26, 10:29 a.m.                                      InfoLEG - Ministerio de Economía y Finanzas Públicas - Argentina\n\n\n\n\n      5.2 Un segundo archivo de respuesta con extensión BD, que será remitido cuando se gestione y procese el pedido de baja del registro, generando la\n      aceptación o rechazo del mismo.\n\n\n\n\n                                                                                                               e. 11/12/2014 N° 97561/14 v. 11/12/2014\n\n\n\n\nhttps://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm                                                             30/30",
+    "fuente": "Registros 3327-2014.pdf",
+    "pagina": 30
+  },
+  {
+    "texto": "RESOLUCIÓN SRT N° 3326/2014 — REGISTRO NACIONAL DE ACCIDENTES LABORALES (R.E.N.A.L.)\nMODIFICADA POR DISPOSICIÓN SRT N° 1/2022 (campos 66-70)\nESTRUCTURA DE DATOS — FORMATO POSICIONAL PARA ACCIDENTES DE TRABAJO (AT)\n\n================================================================================\nDESCRIPCIÓN DEL ARCHIVO\n================================================================================\nTipo de archivo: Accidentes de Trabajo\nExtensión: .AL (Alta), .MO (Modificación), .BA (Baja)\nNomenclatura: ART[Cart][Extensión][Versión]\nEjemplo: ART00027.AL1\nVersiones: 1 a 9 por día\nFrecuencia: Diaria (máximo 9 versiones/día)\nCodificación: ASCII (latin-1)\nSeparador de registros: CR+LF (\\r\\n)\nLongitud total del registro: 987 caracteres\n\nTIPOS DE OPERACIÓN:\n  A = Alta (primera presentación del registro)\n  M = Modificación (corrección de errores o actualización de datos no clave)\n  B = Baja (exclusiva para errores de carga, plazo 30 días)",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "REGLAS GENERALES:\n  - Todos los campos deben completarse en formato ASCII\n  - Campos numéricos: alineados a la derecha, completar con ceros a la izquierda\n  - Campos texto: alineados a la izquierda, completar con espacios en blanco (ASCII 32)\n  - NULL → espacio en blanco (ASCII 32)\n  - Los campos con asterisco (*) forman la CLAVE del registro\n\nNUMERACIÓN DEL SINIESTRO (20 posiciones):\n  Segmento 1 (8 pos): Para uso libre de la ART/EA\n  Segmento 2 (4 pos): Año de denuncia\n  Segmento 3 (6 pos): Contador progresivo (se reinicia cada año)\n  Segmento 4 (2 pos): Sufijo (00=original, 01=1er reingreso, 02=2do reingreso, ...)\n\n================================================================================\nCAMPOS OBLIGATORIOS PARA ACEPTACIÓN DEL REGISTRO\n================================================================================\n(Indicados como \"Obligatorio\" en la estructura. Incluyen los campos clave)\nSon los campos cuya ausencia o contenido inválido genera RECHAZO del registro.",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nCAMPOS DE OBLIGATORIEDAD DIFERIDA\n================================================================================\n(Indicados como \"Obligatorio Diferible\" en la estructura)\nSu ausencia NO genera rechazo, pero deben completarse con envíos posteriores\nusando el mecanismo de Modificación (tipo operación M).",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nESTRUCTURA DE CAMPOS — AT (Resolución 3326/2014 + Disposición 1/2022)\n================================================================================\nOrden | Nombre del Campo                          | Desde | Hasta | Long | Tipo    | Obligatorio\n------|-------------------------------------------|-------|-------|------|---------|------------------\n    1 | Código ART (Cart)                         |     1 |     5 |    5 | Numérico | Obligatorio\n    2 | Número de siniestro *                     |     6 |    25 |   20 | Numérico | Obligatorio\n    3 | Tipo de operación                         |    26 |    26 |    1 | Texto    | Obligatorio\n    4 | CUIT empleador *                          |    27 |    37 |   11 | Numérico | Obligatorio\n    5 | Tipo de siniestro (T=Accidente Trabajo, R=In Itinere) | 38 |    38 |    1 | Texto    | Obligatorio",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "5 | Tipo de siniestro (T=Accidente Trabajo, R=In Itinere) | 38 |    38 |    1 | Texto    | Obligatorio\n    6 | Ocurrencia en vía pública (S/N/-)         |    39 |    39 |    1 | Texto    | Obligatorio (con obs)\n    7 | CUIT lugar de ocurrencia *                |    40 |    50 |   11 | Numérico | Obligatorio (con obs)\n    8 | Categoría del registro (SB/CB/MT/RE/JU/CO) |   51 |    52 |    2 | Texto    | Obligatorio\n    9 | Código establecimiento *                  |    53 |    62 |   10 | Numérico | Obligatorio Diferible\n   10 | CUIL Trabajador *                         |    63 |    73 |   11 | Numérico | Obligatorio (con obs)\n   11 | Tipo Documento del Trabajador             |    74 |    75 |    2 | Numérico | Obligatorio (con obs)\n   12 | Número Documento del Trabajador           |    76 |    83 |    8 | Numérico | Obligatorio (con obs)\n   13 | Apellido y Nombre del Trabajador          |    84 |   123 |   40 | Texto    | Obligatorio (con obs)",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "13 | Apellido y Nombre del Trabajador          |    84 |   123 |   40 | Texto    | Obligatorio (con obs)\n   14 | Puesto de Trabajo (Res. 244/06)           |   124 |   127 |    4 | Texto    | Obligatorio Diferible\n   15 | Antigüedad en el puesto (en meses)        |   128 |   130 |    3 | Numérico | Obligatorio Diferible\n   16 | Sexo del trabajador (M/F)                 |   131 |   131 |    1 | Texto    | Obligatorio (con obs)\n   17 | Fecha de Nacimiento del trabajador        |   132 |   139 |    8 | Fecha    | Obligatorio (con obs)\n   18 | Fecha de Ocurrencia del accidente *       |   140 |   147 |    8 | Fecha    | Obligatorio\n   19 | Fecha Inicio Inasistencia                 |   148 |   155 |    8 | Fecha    | Obligatorio (con obs)\n   20 | Agente Material asociado                  |   156 |   160 |    5 | Numérico | Obligatorio\n   21 | Forma del Accidente                       |   161 |   163 |    3 | Numérico | Obligatorio",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "20 | Agente Material asociado                  |   156 |   160 |    5 | Numérico | Obligatorio\n   21 | Forma del Accidente                       |   161 |   163 |    3 | Numérico | Obligatorio\n   22 | Diagnóstico 1 (CIE-10) *                 |   164 |   167 |    4 | Texto    | Obligatorio\n   23 | Naturaleza de la Lesión 1                 |   168 |   169 |    2 | Numérico | Obligatorio\n   24 | Zona del Cuerpo 1                         |   170 |   172 |    3 | Numérico | Obligatorio\n   25 | Diagnóstico 2 (CIE-10)                    |   173 |   176 |    4 | Texto    | No obligatorio\n   26 | Naturaleza de la Lesión 2                 |   177 |   178 |    2 | Numérico | Obligatorio si hay Diagnóstico 2\n   27 | Zona del Cuerpo 2                         |   179 |   181 |    3 | Numérico | Obligatorio si hay Diagnóstico 2\n   28 | Diagnóstico 3 (CIE-10)                    |   182 |   185 |    4 | Texto    | No obligatorio",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "28 | Diagnóstico 3 (CIE-10)                    |   182 |   185 |    4 | Texto    | No obligatorio\n   29 | Naturaleza de la Lesión 3                 |   186 |   187 |    2 | Numérico | Obligatorio si hay Diagnóstico 3\n   30 | Zona del Cuerpo 3                         |   188 |   190 |    3 | Numérico | Obligatorio si hay Diagnóstico 3\n   31 | Fecha Cese ILT (Incapacidad Lab. Temp.)   |   191 |   198 |    8 | Fecha    | Obligatorio (con obs)\n   32 | Secuelas Incapacitantes (S/N)             |   199 |   199 |    1 | Texto    | No obligatorio\n   33 | Motivo Cese ILT (L/P/D/I/A/B)            |   200 |   200 |    1 | Texto    | Obligatorio (con obs)\n   34 | Fecha Declaración ILP                     |   201 |   208 |    8 | Fecha    | Obligatorio si Secuelas Incapacitantes\n   35 | Tipo Incapacidad                          |   209 |   212 |    4 | Numérico | Obligatorio si Secuelas Incapacitantes",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "35 | Tipo Incapacidad                          |   209 |   212 |    4 | Numérico | Obligatorio si Secuelas Incapacitantes\n   36 | Porcentaje Incapacidad (ej: 002840 = 28,40%) | 213 |   218 |    6 | Numérico | Obligatorio si Secuelas Incapacitantes\n   37 | Gran Invalidez (S/N)                      |   219 |   219 |    1 | Texto    | Obligatorio si Secuelas Incapacitantes\n   38 | Fecha Dictamen                            |   220 |   227 |    8 | Fecha    | Obligatorio si Secuelas Incapacitantes\n   39 | Expediente Comisión Médica                |   228 |   247 |   20 | Numérico | No obligatorio\n   40 | Patología Trazadora (S/N)                 |   248 |   248 |    1 | Texto    | Obligatorio si categoría CB o MT\n   41 | Fecha Alta Médica                         |   249 |   256 |    8 | Fecha    | No obligatorio (Diferible LRT)\n   42 | Nº Denuncia ROAM                          |   257 |   262 |    6 | Numérico | No obligatorio (Diferible LRT)",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "42 | Nº Denuncia ROAM                          |   257 |   262 |    6 | Numérico | No obligatorio (Diferible LRT)\n   43 | Año Denuncia ROAM                         |   263 |   266 |    4 | Numérico | No obligatorio (Diferible LRT)\n   44 | Fecha Toma Conocimiento *                 |   267 |   274 |    8 | Fecha    | Obligatorio\n   45 | Código provincia del establecimiento      |   275 |   276 |    2 | Numérico | Obligatorio (con obs)\n   46 | Código localidad del establecimiento      |   277 |   280 |    4 | Numérico | Obligatorio (con obs)\n   47 | Calle del establecimiento                 |   281 |   380 |  100 | Texto    | Obligatorio (con obs)\n   48 | Número de calle del establecimiento       |   381 |   385 |    5 | Numérico | Obligatorio (con obs)\n   49 | Código postal del establecimiento         |   386 |   393 |    8 | Numérico | Obligatorio (con obs)\n   50 | Estrés postraumático (S/N)                |   394 |   394 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "50 | Estrés postraumático (S/N)                |   394 |   394 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE\n   51 | Fecha rechazo                             |   395 |   402 |    8 | Fecha    | Obligatorio si categoría RE\n   52 | Motivo rechazo                            |   403 |   403 |    1 | Texto    | Obligatorio si categoría RE\n   53 | Fecha inicio período de transitoriedad    |   404 |   411 |    8 | Fecha    | No obligatorio\n   54 | Fecha fin período de transitoriedad       |   412 |   419 |    8 | Fecha    | No obligatorio\n   55 | Fecha estimada de alta médica             |   420 |   427 |    8 | Fecha    | Obligatorio si categoría CB\n   56 | Motivo cese transitoriedad                |   428 |   428 |    1 | Texto    | Obligatorio (con obs)\n   57 | Caso crónico (S/N)                        |   429 |   429 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "57 | Caso crónico (S/N)                        |   429 |   429 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE\n   58 | Recalificación                            |   430 |   430 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE\n   59 | Intercurrencia (S/N)                      |   431 |   431 |    1 | Texto    | Obligatorio\n   60 | Nro. registro AT origen intercurrencia    |   432 |   451 |   20 | Numérico | Obligatorio si Intercurrencia=S\n   61 | Ingreso base (entero + 2 dec, sin punto)  |   452 |   461 |   10 | Numérico | Obligatorio si Secuelas Incapacitantes\n   62 | Tratamiento médico asistencial pendiente  |   462 |   462 |    1 | Texto    | No obligatorio (Diferible)\n   63 | Especialidad médica 1 pendiente           |   463 |   464 |    2 | Numérico | No obligatorio\n   64 | Especialidad médica 2 pendiente           |   465 |   466 |    2 | Numérico | No obligatorio\n   65 | Especialidad médica 3 pendiente           |   467 |   468 |    2 | Numérico | No obligatorio",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "65 | Especialidad médica 3 pendiente           |   467 |   468 |    2 | Numérico | No obligatorio\n   66 | Forma de ingreso de la denuncia           |   469 |   470 |    2 | Texto    | Obligatorio       [Disposición 1/2022]\n   67 | Fecha de defunción del trabajador         |   471 |   478 |    8 | Fecha    | Obligatorio si cat MT [Disposición 1/2022]\n   68 | Tipo prestador médico 1ª atención         |   479 |   479 |    1 | Numérico | Obligatorio       [Disposición 1/2022]\n   69 | Prestador médico 1ª atención              |   480 |   487 |    8 | Numérico | Obligatorio       [Disposición 1/2022]\n   70 | Descripción del siniestro (relato)        |   488 |   987 |  500 | Texto    | Obligatorio       [Disposición 1/2022]",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "LONGITUD TOTAL DEL REGISTRO AT: 987 caracteres\n\n================================================================================\nVALORES VÁLIDOS PARA CAMPOS CODIFICADOS\n================================================================================\n\nCATEGORÍA DEL REGISTRO (Campo 8, 2 caracteres):\n  SB = Sin Baja Laboral\n  CB = Con Baja Laboral\n  MT = Mortal\n  RE = Rechazo\n  JU = Caso Judicializado (sin contrato laboral)\n  CO = Caso pendiente de admisibilidad (incorporado por Disposición 5/2020)\n\nTIPO DE SINIESTRO (Campo 5, 1 carácter):\n  T = Accidente en ocasión de Trabajo\n  R = Accidente In Itinere (en trayecto)\n  (El campo \"Tipo de Operación\" tiene prioridad sobre este campo)\n\nTIPO DE OPERACIÓN (Campo 3, 1 carácter):\n  A = Alta (primera presentación)\n  M = Modificación\n  B = Baja (solo para corrección de errores, plazo 30 días)\n\nSEXO (Campo 16, 1 carácter):\n  M = Masculino\n  F = Femenino",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "SEXO (Campo 16, 1 carácter):\n  M = Masculino\n  F = Femenino\n\nOCURRENCIA EN VÍA PÚBLICA (Campo 6, 1 carácter):\n  S = Sí\n  N = No\n  - = No aplica (categorías JU)\n  Obligatorio para categorías: CO, SB, CB, RE\n\nSECUELAS INCAPACITANTES (Campo 32, 1 carácter):\n  S = Sí (completar con 'S' cuando cese de ILT es por declaración de ILP)\n\nMOTIVO CESE ILT (Campo 33, 1 carácter):\n  L = (ver tabla normativa)\n  P = (ver tabla normativa)\n  D = (ver tabla normativa)\n  I = (ver tabla normativa)\n  A = (ver tabla normativa)\n  B = (ver tabla normativa)\n\nTIPO DE PRESTADOR MÉDICO 1ª ATENCIÓN (Campo 68, 1 carácter):\n  1 = Establecimiento de la ART/EA\n  2 = Hospital Público\n  3 = Exceptuado\n\nTRATAMIENTO MÉDICO PENDIENTE (Campo 62, 1 carácter):\n  S = Sí\n  N = No\n  - = No aplica\n\n================================================================================\nREGLAS DE NEGOCIO CRÍTICAS — AT\n================================================================================",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nREGLAS DE NEGOCIO CRÍTICAS — AT\n================================================================================\n\n1. FECHA ALTA MÉDICA debe coincidir con Fecha Cese ILT hasta los 365 días de la fecha\n   de siniestro, salvo para patologías contempladas en Res. SRT 1838/14.\n\n2. INTERCURRENCIA: Si un AT genera un reingreso, los reingresos se codifican con el\n   mismo nro. de siniestro cambiando el sufijo (00→01→02...).\n\n3. EXPEDIENTE COMISIÓN MÉDICA (Campo 39): Las 3 primeras posiciones = código de la\n   Comisión Médica u OHV. La 5ª posición = letra que identifica el origen del expediente.\n\n4. INGRESO BASE (Campo 61): Formato entero con 2 decimales implícitos (sin punto decimal).\n   Ej: \"0000001234\" = $12,34. Obligatorio en plazo de 72hs cuando el trabajador\n   inicia trámite ante Comisiones Médicas.",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "5. ANTIGÜEDAD (Campo 15): Se redondea al mes siguiente si hay 15 o más días.\n   Ej: 3 meses y 15 días → informar 4. Ej: 3 meses y 14 días → informar 3.\n\n6. APELLIDO Y NOMBRE (Campo 13): Formato \"APELLIDO NOMBRE\" (sin comas, un espacio,\n   letras mayúsculas). Sin punto ni coma.\n\n7. PORCENTAJE INCAPACIDAD (Campo 36): Formato: NNNNDD (4 enteros + 2 decimales).\n   Ej: \"002840\" = 28,40%. Máximo: 4 números enteros y 2 decimales.\n\n8. CÓDIGO DE DIAGNÓSTICO CIE-10 (Campo 22): Validación estricta con punto decimal\n   implícito. Ej: \"M545\" = M54.5.\n\n9. FECHA DE INICIO DE INASISTENCIA (Campo 19): Debe consignarse como mínimo al día\n   siguiente de la Fecha de Ocurrencia (Campo 18).",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "9. FECHA DE INICIO DE INASISTENCIA (Campo 19): Debe consignarse como mínimo al día\n   siguiente de la Fecha de Ocurrencia (Campo 18).\n\n10. CASOS CERRADOS: Deben declararse con TODOS los campos obligatorios completos.\n    - SB: cerrado en el mismo momento que se reporta\n    - CB: cerrado cuando cesa la ILT o el período de transitoriedad\n    - MT: cerrado en la fecha de fallecimiento del trabajador\n    - RE: cerrado cuando la aseguradora notifica al trabajador y al empleador\n    - JU: cerrado en el mismo momento que se reporta\n\n================================================================================\nFORMATO DE FECHAS\n================================================================================\nTodas las fechas en formato: AAAAMMDD (8 caracteres numéricos)\nEjemplo: 20240315 = 15 de marzo de 2024\nCampos en blanco si no corresponden: 8 espacios",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nFUENTE NORMATIVA\n================================================================================\n- Resolución SRT N° 3326/2014 (B.O. 11/12/2014): Crea el R.E.N.A.L.\n  Vigencia: 01/01/2015\n  URL: https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm\n\n- Disposición SRT N° 1/2022 (B.O. 07/02/2022): Agrega campos 66-70 (forma ingreso,\n  fecha defunción, tipo/prestador médico, descripción del siniestro)\n  URL: https://www.boletinoficial.gob.ar/detalleAviso/primera/257177/20220207\n\n- Resolución SRT N° 3117/2014: Reforma estructura orgánico-funcional SRT\n- Ley N° 24.557: Ley de Riesgos del Trabajo\n- Decreto N° 472/2014: Período de Transitoriedad",
+    "fuente": "res_3326_2014_AT_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "RESOLUCIÓN SRT N° 3327/2014 — REGISTRO DE ENFERMEDADES PROFESIONALES (R.E.P.)\nMODIFICADA POR DISPOSICIÓN SRT N° 1/2022 (campos 62-66)\nESTRUCTURA DE DATOS — FORMATO POSICIONAL PARA ENFERMEDADES PROFESIONALES (EP)\n\n================================================================================\nDESCRIPCIÓN DEL ARCHIVO\n================================================================================\nTipo de archivo: Enfermedades Profesionales\nExtensión: .EF (Alta y Modificación), .BA (Baja)\nNomenclatura: ART[Cart][Extensión][Versión]\nEjemplo: ART00027.EF1\nVersiones: 1 a 9 por día\nFrecuencia: Dentro de los 5 días de toma de conocimiento de la Primera Manifestación Invalidante\nCodificación: ASCII (latin-1)\nSeparador de registros: CR+LF (\\r\\n)\nLongitud total del registro: 978 caracteres\n\nTIPOS DE OPERACIÓN:\n  A = Alta (primera presentación del registro)\n  M = Modificación (corrección de errores o actualización de datos no clave)\n  B = Baja (exclusiva para errores de carga, plazo 30 días)",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "REGLAS GENERALES:\n  - Todos los campos deben completarse en formato ASCII\n  - Campos numéricos: alineados a la derecha, completar con ceros a la izquierda\n  - Campos texto: alineados a la izquierda, completar con espacios en blanco (ASCII 32)\n  - NULL → espacio en blanco (ASCII 32)\n  - Los campos con asterisco (*) forman la CLAVE del registro\n\nPLAZOS OBLIGATORIOS:\n  - Notificación al registro: dentro de 5 días de toma de conocimiento de la PMI\n  - Campos diferibles: dentro de 5 días de producida la novedad, o en la fecha de\n    cese de la ILT, lo que ocurra primero\n  - Ingreso Base: plazo máximo 72hs desde que el trabajador inicia trámite ante Comisiones Médicas",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "NUMERACIÓN DEL SINIESTRO (20 posiciones):\n  Segmento 1 (8 pos): Para uso libre de la ART/EA\n  Segmento 2 (4 pos): Año de denuncia de la EP\n  Segmento 3 (6 pos): Contador progresivo (se reinicia cada año)\n  Segmento 4 (2 pos): Sufijo (00=original, 01=1er reingreso, 02=2do reingreso, ...)\n  Ejemplo: 00000000 2014 001589 00 = Enfermedad profesional original\n           00000000 2014 001589 01 = 1er reingreso de la misma EP",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nESTRUCTURA DE CAMPOS — EP (Resolución 3327/2014 + Disposición 1/2022)\n================================================================================\nOrden | Nombre del Campo                          | Desde | Hasta | Long | Tipo    | Obligatorio\n------|-------------------------------------------|-------|-------|------|---------|------------------\n    1 | Código ART (Cart)                         |     1 |     5 |    5 | Numérico | Obligatorio\n    2 | Número de siniestro *                     |     6 |    25 |   20 | Numérico | Obligatorio\n    3 | Tipo de operación (A/M/B)                 |    26 |    26 |    1 | Texto    | Obligatorio\n    4 | CUIT empleador *                          |    27 |    37 |   11 | Numérico | Obligatorio\n    5 | Tipo de registro (P=EP, R=Reingreso)      |    38 |    38 |    1 | Texto    | Obligatorio",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "4 | CUIT empleador *                          |    27 |    37 |   11 | Numérico | Obligatorio\n    5 | Tipo de registro (P=EP, R=Reingreso)      |    38 |    38 |    1 | Texto    | Obligatorio\n    6 | CUIT lugar de ocurrencia *                |    39 |    49 |   11 | Numérico | Obligatorio (con obs)\n    7 | Categoría del registro (SB/CB/MT/RE/JU/CO) |   50 |    51 |    2 | Texto    | Obligatorio\n    8 | Código establecimiento *                  |    52 |    61 |   10 | Numérico | Obligatorio Diferible\n    9 | CUIL Trabajador *                         |    62 |    72 |   11 | Numérico | Obligatorio (con obs)\n   10 | Tipo Documento del Trabajador             |    73 |    74 |    2 | Numérico | Obligatorio (con obs)\n   11 | Número Documento del Trabajador           |    75 |    82 |    8 | Numérico | Obligatorio (con obs)\n   12 | Apellido y Nombre del Trabajador          |    83 |   122 |   40 | Texto    | Obligatorio (con obs)",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "12 | Apellido y Nombre del Trabajador          |    83 |   122 |   40 | Texto    | Obligatorio (con obs)\n   13 | Puesto de Trabajo (Res. 244/06)           |   123 |   126 |    4 | Texto    | Obligatorio Diferible\n   14 | Antigüedad en el puesto (en meses)        |   127 |   129 |    3 | Numérico | Obligatorio Diferible\n   15 | Sexo del trabajador (M/F)                 |   130 |   130 |    1 | Texto    | Obligatorio (con obs)\n   16 | Fecha de Nacimiento del trabajador        |   131 |   138 |    8 | Fecha    | Obligatorio (con obs)\n   17 | Fecha Inicio Inasistencia                 |   139 |   146 |    8 | Fecha    | Obligatorio (con obs)\n   18 | Agente Material asociado                  |   147 |   151 |    5 | Numérico | Obligatorio\n   19 | Agente causante de la EP                  |   152 |   156 |    5 | Numérico | No obligatorio (visible UI)\n   20 | Tiempo de exposición al agente (meses)    |   157 |   159 |    3 | Numérico | Obligatorio Diferible",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "20 | Tiempo de exposición al agente (meses)    |   157 |   159 |    3 | Numérico | Obligatorio Diferible\n   21 | Examen periódico previo (S/N)             |   160 |   160 |    1 | Texto    | Obligatorio\n   22 | Fecha último examen periódico             |   161 |   168 |    8 | Fecha    | Obligatorio si examen=S\n   23 | Diagnóstico 1 CIE-10 *                   |   169 |   172 |    4 | Texto    | Obligatorio\n   24 | Fecha diagnóstico EP 1                    |   173 |   180 |    8 | Fecha    | Obligatorio\n   25 | Código examen detección 1er diagnóstico   |   181 |   181 |    1 | Numérico | Obligatorio (con obs)\n   26 | Zona del Cuerpo 1                         |   182 |   184 |    3 | Numérico | Obligatorio\n   27 | Diagnóstico 2 CIE-10                      |   185 |   188 |    4 | Texto    | No obligatorio\n   28 | Fecha diagnóstico EP 2                    |   189 |   196 |    8 | Fecha    | Obligatorio si hay Diag 2",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "28 | Fecha diagnóstico EP 2                    |   189 |   196 |    8 | Fecha    | Obligatorio si hay Diag 2\n   29 | Zona del Cuerpo 2                         |   197 |   199 |    3 | Numérico | Obligatorio si hay Diag 2\n   30 | Diagnóstico 3 CIE-10                      |   200 |   203 |    4 | Texto    | No obligatorio\n   31 | Fecha diagnóstico EP 3                    |   204 |   211 |    8 | Fecha    | Obligatorio si hay Diag 3\n   32 | Zona del Cuerpo 3                         |   212 |   214 |    3 | Numérico | Obligatorio si hay Diag 3\n   33 | Fecha Cese ILT                            |   215 |   222 |    8 | Fecha    | Obligatorio (con obs)\n   34 | Secuelas Incapacitantes (S/N)             |   223 |   223 |    1 | Texto    | No obligatorio\n   35 | Motivo Cese ILT (L/P/D/I/A/B)            |   224 |   224 |    1 | Texto    | Obligatorio (con obs)\n   36 | Fecha Declaración ILP                     |   225 |   232 |    8 | Fecha    | Obligatorio si Secuelas",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "36 | Fecha Declaración ILP                     |   225 |   232 |    8 | Fecha    | Obligatorio si Secuelas\n   37 | Tipo Incapacidad                          |   233 |   236 |    4 | Numérico | Obligatorio si Secuelas\n   38 | Porcentaje Incapacidad                    |   237 |   242 |    6 | Numérico | Obligatorio si Secuelas\n   39 | Gran Invalidez (S/N)                      |   243 |   243 |    1 | Texto    | Obligatorio si Secuelas\n   40 | Fecha Dictamen                            |   244 |   251 |    8 | Fecha    | Obligatorio si Secuelas\n   41 | Expediente Comisión Médica                |   252 |   271 |   20 | Numérico | No obligatorio\n   42 | Fecha Alta Médica                         |   272 |   279 |    8 | Fecha    | No obligatorio (Diferible LRT)\n   43 | Fecha Toma Conocimiento *                 |   280 |   287 |    8 | Fecha    | Obligatorio\n   44 | Código provincia del establecimiento      |   288 |   289 |    2 | Numérico | Obligatorio (siempre en EP)",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "44 | Código provincia del establecimiento      |   288 |   289 |    2 | Numérico | Obligatorio (siempre en EP)\n   45 | Código localidad del establecimiento      |   290 |   293 |    4 | Numérico | Obligatorio (siempre en EP)\n   46 | Calle del establecimiento                 |   294 |   393 |  100 | Texto    | Obligatorio (siempre en EP)\n   47 | Número de calle del establecimiento       |   394 |   398 |    5 | Numérico | Obligatorio (siempre en EP)\n   48 | Código postal del establecimiento         |   399 |   406 |    8 | Numérico | Obligatorio (siempre en EP)\n   49 | Fecha rechazo                             |   407 |   414 |    8 | Fecha    | Obligatorio si categoría RE\n   50 | Motivo rechazo                            |   415 |   415 |    1 | Texto    | Obligatorio si categoría RE\n   51 | Fecha inicio período de transitoriedad    |   416 |   423 |    8 | Fecha    | No obligatorio\n   52 | Fecha fin período de transitoriedad       |   424 |   431 |    8 | Fecha    | No obligatorio",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "52 | Fecha fin período de transitoriedad       |   424 |   431 |    8 | Fecha    | No obligatorio\n   53 | Fecha estimada de alta médica             |   432 |   439 |    8 | Fecha    | Obligatorio si categoría CB\n   54 | Motivo cese transitoriedad                |   440 |   440 |    1 | Texto    | Obligatorio (con obs)\n   55 | Caso crónico (S/N)                        |   441 |   441 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE\n   56 | Recalificación                            |   442 |   442 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE\n   57 | Ingreso base (entero + 2 dec, sin punto)  |   443 |   452 |   10 | Numérico | Obligatorio si Secuelas\n   58 | Tratamiento médico asistencial pendiente  |   453 |   453 |    1 | Texto    | No obligatorio (Diferible)\n   59 | Especialidad médica 1 pendiente           |   454 |   455 |    2 | Numérico | No obligatorio\n   60 | Especialidad médica 2 pendiente           |   456 |   457 |    2 | Numérico | No obligatorio",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "60 | Especialidad médica 2 pendiente           |   456 |   457 |    2 | Numérico | No obligatorio\n   61 | Especialidad médica 3 pendiente           |   458 |   459 |    2 | Numérico | No obligatorio\n   62 | Forma de ingreso de la denuncia           |   460 |   461 |    2 | Texto    | Obligatorio       [Disposición 1/2022]\n   63 | Fecha de defunción del trabajador         |   462 |   469 |    8 | Fecha    | Obligatorio si cat MT [Disposición 1/2022]\n   64 | Tipo prestador médico 1ª atención         |   470 |   470 |    1 | Numérico | Obligatorio       [Disposición 1/2022]\n   65 | Prestador médico 1ª atención              |   471 |   478 |    8 | Numérico | Obligatorio       [Disposición 1/2022]\n   66 | Descripción de la enfermedad (relato)     |   479 |   978 |  500 | Texto    | Obligatorio       [Disposición 1/2022]",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "LONGITUD TOTAL DEL REGISTRO EP: 978 caracteres\n\n================================================================================\nVALORES VÁLIDOS PARA CAMPOS CODIFICADOS — EP\n================================================================================\n\nCATEGORÍA DEL REGISTRO (Campo 7, 2 caracteres):\n  SB = Sin Baja Laboral\n  CB = Con Baja Laboral\n  MT = Mortal\n  RE = Rechazo\n  JU = Caso Judicializado\n  CO = Caso pendiente de admisibilidad (incorporado por Disposición 5/2020)\n\nTIPO DE REGISTRO (Campo 5, 1 carácter):\n  P = Enfermedad Profesional (primera notificación)\n  R = Reingreso (R tiene prioridad sobre P en el TXT generado)\n\nTIPO DE OPERACIÓN (Campo 3, 1 carácter):\n  A = Alta (primera presentación)\n  M = Modificación\n  B = Baja (solo para corrección de errores, plazo 30 días)\n\nSEXO (Campo 15, 1 carácter):\n  M = Masculino\n  F = Femenino\n\nEXAMEN PERIÓDICO (Campo 21, 1 carácter):\n  S = Sí (el trabajador tenía examen periódico previo)\n  N = No\n  - = No aplica",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "SEXO (Campo 15, 1 carácter):\n  M = Masculino\n  F = Femenino\n\nEXAMEN PERIÓDICO (Campo 21, 1 carácter):\n  S = Sí (el trabajador tenía examen periódico previo)\n  N = No\n  - = No aplica\n\nTIPO DE PRESTADOR MÉDICO 1ª ATENCIÓN (Campo 64, 1 carácter):\n  1 = Establecimiento de la ART/EA\n  2 = Hospital Público\n  3 = Exceptuado\n\n================================================================================\nDIFERENCIAS CLAVE ENTRE AT (Res. 3326) Y EP (Res. 3327)\n================================================================================",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "| Aspecto | AT (3326) | EP (3327) |\n|---|---|---|\n| Longitud del registro | 987 chars | 978 chars |\n| Extensión de archivo | .AL / .MO / .BA | .EF / .BA |\n| Tipo de siniestro (campo 5) | T=Trabajo, R=In Itinere | P=EP, R=Reingreso |\n| Campo exclusivo AT | Fecha de Ocurrencia (140-147, campo 18) | (no aplica) |\n| Campo exclusivo EP | Tiempo de Exposición al Agente (157-159) | (no aplica) |\n| Campo exclusivo EP | Examen Periódico (160) | (no aplica) |\n| Campo exclusivo EP | Fecha Último Examen Periódico (161-168) | (no aplica) |\n| Campo exclusivo EP | Fecha Diagnóstico EP 1/2/3 (173-180, etc.) | (no aplica) |\n| Campo exclusivo EP | Código Examen Detección 1er Diag. (181) | (no aplica) |\n| Agente Material (campo 18/20) | Agente Material del accidente | Agente Material de la EP |\n| Agente Causante (campo 19) | No aplica | Obligatorio para listado EP |\n| Ocurrencia en Vía Pública | Campo 6 (pos 39) | No aplica |\n| Estrés Postraumático | Campo 50 (pos 394) | No aplica |",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "| Agente Causante (campo 19) | No aplica | Obligatorio para listado EP |\n| Ocurrencia en Vía Pública | Campo 6 (pos 39) | No aplica |\n| Estrés Postraumático | Campo 50 (pos 394) | No aplica |\n| Intercurrencia | Campo 59-60 (pos 431-451) | No aplica |\n| ROAM | Campos 42-43 (pos 257-266) | No aplica |\n| Patología Trazadora | Campo 40 (pos 248) | No aplica |\n| Provincia/Localidad/Dirección | Obligatorio si cat. SB/CB/MT/RE | Siempre obligatorio |",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nREGLAS DE NEGOCIO ESPECÍFICAS — EP\n================================================================================\n\n1. AGENTE CAUSANTE (Campo 19): Dato crítico. Se debe informar según el listado de\n   enfermedades profesionales vigentes (Decreto N° 658/96 y modificaciones).\n   El agente causante identifica la causa laboral de la enfermedad.\n\n2. EXAMEN PERIÓDICO (Campo 21): Si el trabajador tenía examen periódico obligatorio,\n   indicar 'S' y completar la Fecha del Último Examen Periódico (campo 22).\n\n3. TIEMPO DE EXPOSICIÓN (Campo 20): Expresado en MESES. Redondeo:\n   - 3 meses y 15 días → informar 4 meses\n   - 3 meses y 14 días → informar 3 meses\n\n4. CASO AT vs EP: Si se abre como EP y resulta ser un AT → dar de alta como AT y\n   pedir Baja del EP. Si se abre como AT y resulta ser EP → dar de alta en EP y\n   pedir Baja del AT.",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "4. CASO AT vs EP: Si se abre como EP y resulta ser un AT → dar de alta como AT y\n   pedir Baja del EP. Si se abre como AT y resulta ser EP → dar de alta en EP y\n   pedir Baja del AT.\n\n5. CATEGORÍAS CERRADAS (deben declararse con TODOS los campos obligatorios completos):\n   - SB: cerrado en el mismo momento que se reporta\n   - CB: cuando cesa la ILT o el período de transitoriedad\n   - MT: en la fecha de fallecimiento del trabajador\n   - RE: cuando la aseguradora notifica al trabajador y al empleador\n   - JU: en el mismo momento que se reporta\n\n6. DIAGNÓSTICO CIE-10 (Campo 23): Validación estricta con punto decimal.\n   Ej: \"M545\" = M54.5. Se admiten hasta 3 diagnósticos simultáneos.\n\n7. FECHA ALTA MÉDICA (Campo 42): Debe coincidir con Fecha Cese ILT hasta los\n   365 días de la Fecha de Siniestro, salvo patologías de Res. SRT 1838/14.\n   En período de transitoriedad: coincidir con Fecha Fin de Transitoriedad,\n   excepto las patologías mencionadas.",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "8. CASOS CRÓNICOS (Campo 55): La fecha de alta médica debe consignarse como el\n   último día del período de ILT o del período de transitoriedad, según corresponda.\n\n9. INGRESO BASE (Campo 57): Formato entero con 2 decimales implícitos (sin punto decimal).\n   Obligatorio en plazo de 72hs cuando el trabajador inicia trámite ante Comisiones Médicas.\n\n10. FISCALIZACIÓN: Los datos declarados serán fiscalizados por la Unidad de Estudios\n    Estadísticos. Se considera falta: datos que difieren del respaldo documental,\n    omisión de declaración, o declaración fuera de los procedimientos establecidos.\n\n================================================================================\nFORMATO DE FECHAS\n================================================================================\nTodas las fechas en formato: AAAAMMDD (8 caracteres numéricos)\nEjemplo: 20240315 = 15 de marzo de 2024\nCampos en blanco si no corresponden: 8 espacios",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  },
+  {
+    "texto": "================================================================================\nFUENTE NORMATIVA\n================================================================================\n- Resolución SRT N° 3327/2014 (B.O. 11/12/2014): Crea el Registro de EP\n  Vigencia: 01/01/2015\n  URL: https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm\n\n- Disposición SRT N° 1/2022 (B.O. 07/02/2022): Agrega campos 62-66 (forma ingreso,\n  fecha defunción, tipo/prestador médico, descripción de la enfermedad)\n  URL: https://www.boletinoficial.gob.ar/detalleAviso/primera/257177/20220207\n\n- Resolución SRT N° 840/2005: Creación del Registro de EP (derogada por 3327/2014)\n- Disposición SRT N° 5/2020: Incorpora código CO en Categoría del Registro\n- Ley N° 24.557: Ley de Riesgos del Trabajo\n- Decreto N° 658/96 y modificaciones: Listado de Enfermedades Profesionales\n- Decreto N° 472/2014: Período de Transitoriedad",
+    "fuente": "res_3327_2014_EP_estructura_campos.txt",
+    "pagina": 1
+  }
+]
