@@ -1,0 +1,41 @@
+{
+  "resultado": [
+    {
+      "cuil_trabajador": "20345678901",
+      "apellido": "GONZALEZ",
+      "nombres": "JUAN CARLOS",
+      "fecha_nacimiento": "19850315",
+      "sexo": "M",
+      "codigo_provincia": "01",
+      "fecha_siniestro": "20240115",
+      "hora_siniestro": "0930",
+      "codigo_diagnostico_cie10": "S62.0",
+      "dias_baja": "15",
+      "tipo_accidente": "01",
+      "fecha_baja": "20240130",
+      "motivo_baja": "01"
+    },
+    {
+      "cuil_trabajador": "27298765432",
+      "apellido": "MARTINEZ",
+      "nombres": "MARIA LAURA",
+      "fecha_nacimiento": "19900722",
+      "sexo": "F",
+      "codigo_provincia": "06",
+      "fecha_siniestro": "20240118",
+      "hora_siniestro": "1430",
+      "codigo_diagnostico_cie10": "M54.5",
+      "dias_baja": "30",
+      "tipo_accidente": "02",
+      "fecha_baja": "20240217",
+      "motivo_baja": "02"
+    }
+  ],
+  "total": 2,
+  "filtros_aplicados": {
+    "tipo": "AT",
+    "operacion": "B",
+    "fecha_desde": "2024-01-01",
+    "fecha_hasta": "2024-01-31"
+  }
+}

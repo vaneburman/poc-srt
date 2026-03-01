@@ -1,0 +1,45 @@
+{
+  "resultado": [
+    {
+      "cuil_trabajador": "20412345678",
+      "apellido": "RODRIGUEZ",
+      "nombres": "PEDRO ANTONIO",
+      "fecha_nacimiento": "19780503",
+      "sexo": "M",
+      "codigo_provincia": "13",
+      "fecha_siniestro": "20240110",
+      "hora_siniestro": "0900",
+      "codigo_diagnostico_cie10": "H83.3",
+      "dias_baja": "60",
+      "tipo_accidente": "01",
+      "codigo_enfermedad": "EP001",
+      "agente_causante": "1201",
+      "fecha_baja": "20240311",
+      "motivo_baja": "02"
+    },
+    {
+      "cuil_trabajador": "27654321098",
+      "apellido": "FERNANDEZ",
+      "nombres": "ANA BEATRIZ",
+      "fecha_nacimiento": "19820914",
+      "sexo": "F",
+      "codigo_provincia": "06",
+      "fecha_siniestro": "20240205",
+      "hora_siniestro": "1100",
+      "codigo_diagnostico_cie10": "M54.4",
+      "dias_baja": "45",
+      "tipo_accidente": "04",
+      "codigo_enfermedad": "EP032",
+      "agente_causante": "3001",
+      "fecha_baja": "20240321",
+      "motivo_baja": "01"
+    }
+  ],
+  "total": 2,
+  "filtros_aplicados": {
+    "tipo": "EP",
+    "operacion": "B",
+    "fecha_desde": "2024-01-01",
+    "fecha_hasta": "2024-03-31"
+  }
+}

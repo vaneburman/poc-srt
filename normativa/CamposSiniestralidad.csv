@@ -1,0 +1,88 @@
+Orden AT,Orden EP,Titulo,Atributo,DB,Input,Cant. Char,Editable,Visible,Obligatorio,Obligatorio obs,Valores posibles,Observaciones
+1,1,Código ART (Cart),cart,datos > denuncia > clientes > cart,-,5,NO,NO,SI,,,Falta codigo de chubut.
+2,2,Número de siniestro,nroSiniestroArt,datos,LabelValue,20,NO,SI,SI,,,
+3,3,Tipo de operación,tipoOperacionDescripcion,datos > operaciones,LabelValue,1,NO,SI,SI,,,Solo en header. Sacarlo del form.
+4,4,CUIT empleador,empleadorCuit,datos > denuncias > cleintes ,LabelValue,11,NO,SI,SI,,,
+—,5,Tipo de registro,tipoSiniestroDescripcion,datos > denuncias (esReingreso y tipoSiniestro),LabelValue,1,NO,SI,SI,,P o R,"UI: Sin Input, solo cabecera. Agregar ""Es reigreso: SI/NO"" (isReingreso). Para el TXT, R tiene prioridad a P."
+5,—,Tipo de siniestro,tipoSiniestroDescripcion,datos > denuncias (esReingreso y tipoSiniestro),LabelValue,1,NO,SI,SI,,T o R,"UI: Sin Input, solo cabecera. Agregar ""Es reigreso: SI/NO"" (isReingreso). Para el TXT, R tiene prioridad a T."
+6,—,Ocurrencia en vía pública,isViaPublica,datos (via_publica),LabelValue,1,NO,SI,SI (con obs),"Si  categoria de registro =  CO, SB, CB, RE => obligatorio ",true/false/null,"Mapear ""SI"", ""NO"", ""-""."
+7,6,CUIT lugar de ocurrencia,empleadorCuit,datos > denuncias > clientes ,-,11,NO,NO,SI (con obs),"Si  categoria de registro =  CO, SB, CB, RE => obligatorio ",,"El mismo cuit del punto 4. Obligatorio CO, SB, CB, RE"
+8,7,Categoría del registro,categoriaRegistroId,datos (id_tipo_baja),Select,2,SI,SI,SI,,,
+9,8,Código establecimiento,establecimientoDesc,datos > denuncia > sedes (id_establecimiento),LabelValue,10,NO,SI,SI (con obs),,,TXT: solo enviar establecimientoCodigo. Obligatorio diferible.
+10,9,CUIL Trabajador,trabajadorCuil,datos > denuncias > afiliados,LabelValue,11,NO,SI,SI (con obs),,,
+11,10,Tipo Documento,tipoDocumentoId,datos > denuncias > afiliados > tipo_doc_srt,Select,2,SI,SI,SI (con obs),Si afiliado no tiene cuit,,
+12,11,Número Documento,afiliadoNroDoc,datos > denuncias > afiliados > nroDoc,LabelValue,8,NO,SI,SI (con obs),Si afiliado no tiene cuit,,
+13,12,Apellido y Nombre,afiliadoNombreCompleto,datos > denuncias > afiliados > nombre + apellido,LabelValue,40,NO,SI,SI (con obs),,,NO SUS: obligatorio
+14,13,Puesto de Trabajo,afiliadoOcupacionDesc,datos > denuncias (id_ocupacion),LabelValue,4,NO,SI,SI (con obs),Obligatorio diferible.,,
+15,14,Antigüedad,afiliadoAntiguedad,datos (antiguedad),LabelValue,3,NO,SI,SI (con obs),Obligatorio diferible.,,
+16,15,Sexo,afiliadoSexo,datos > denuncias > afiliado (sexo),LabelValue,1,NO,SI,SI (con obs),,M o F,NO SUS: obligatorio
+17,16,Fecha Nacimiento,afiliadoFechaNac,datos > denuncias > afiliado (fechaNac),LabelValue,8,NO,SI,SI (con obs),,,Formato: AAAAMMDD. NO SUS: obligatorio
+18,—,Fecha de Ocurrencia,fechaOcurrencia,datos > denuncias (fecha_ocurrencia),LabelValue,8,NO,SI,SI,,,Formato: AAAAMMDD
+19,17,Fecha Inicio Inasistencia,fechaInicioInasistencia,datos > denuncias (fecha_baja),LabelValue,8,NO,SI,SI (con obs),"Si  categoria de registro = CB => OBLIGATORIO. 
+si cat de registro es MT = obligatorio si hubo ILT/transitoriedad",,Formato: AAAAMMDD - Sacar de tabla datos fecha_baja_medica.
+20,18,Agente,agenteMatDesc,datos > denuncias (id_agente_material_asociado),LabelValue,5,NO,SI,SI,,,
+21,—,Forma del Accidente,formaAccidenteDesc,datos > denuncia (id_forma_accidente),LabelValue,3,NO,SI,SI,,,
+—,19,Agente causante,agenteCausanteDesc,datos > denuncia (id_agente_causante),LabelValue,5,NO,SI,NO,,,
+—,20,Tiempo de exp al agente,tiempoExposicion,datos (tiempo_exposicion),Text (num),3,SI,SI,SI (con obs),,,expresado en meses (agregar helper explicativo) - Obligatorio si es diferible.
+—,21,Examen periódico,isExamenPeriodico,datos (examen_periodico),Select,1,SI,SI,SI,,true/false/null,
+—,22,Fecha del último examen periodico,fechaUltimoExamenPeriodico,datos (fecha_ultimo_examen_periodico),Picker,8,SI,SI,SI (con obs),si isExamenPeriodico = true => obligatorio,,Formato: AAAAMMDD 
+22,23,Diagnóstico 1 (CIE-10),cie101Desc,datos > denuncia > (diagnostico_cie10),LabelValue,4,NO,SI,SI,,,
+23,—,Naturaleza de la Lesión 1,naturaleza1Desc,datos > denuncia (id_naturaleza_siniestro),LabelValue,2,NO,SI,SI,,,
+—,24,Fecha diagnostico EP 1,fechaDiagnosticoEP1,datos (fecha_diagnostico_enfermedad_profesional),Picker,8,SI,SI,SI,,,Formato: AAAAMMDD
+—,25,Código examen detección 1er diagnostico,tipoExamenEPId,datos (id_tipo_examen_enfermedad_profesional),Select,1,SI,SI,SI (con obs),"si es AT y si cat registro SB,CB,MT,RE => obligatorio",,"Obligatorio cuando categoriaRegistroId in (SB, CB, MT, RB)"
+24,26,Zona del Cuerpo 1,zonaCuerpo1Desc,datos > denuncia > denuncias_cie10 o denuncias_borrador_cie10,LabelValue,3,NO,SI,SI,,,
+25,27,Diagnóstico 2,cie102Desc,datos > denuncia > denuncias_cie10 o denuncias_borrador_cie10,LabelValue,4,NO,SI,NO,,,
+26,—,Naturaleza de la Lesión 2,naturaleza2Desc,idem,LabelValue,2,NO,SI,SI (con obs),Obligatorio solo si hay diagnostico cie10 2,,
+—,28,Fecha diagnostico EP 2,fechaDiagnosticoEP2,datos (fecha_diagnostico_enfermedad_profesional_2),Picker,8,SI,SI,SI (con obs),Obligatorio solo si hay diagnostico cie10 2,,
+27,29,Zona del Cuerpo 2,zonaCuerpo2Desc,idem,LabelValue,3,NO,SI,SI (con obs),Obligatorio solo si hay diagnostico cie10 2,,
+28,30,Diagnóstico 3,cie103Desc,datos > denuncia > denuncias_cie10 o denuncias_borrador_cie10,LabelValue,4,NO,SI,NO,,,
+29,—,Naturaleza de la Lesión 3,naturaleza3Desc,idem,LabelValue,2,NO,SI,SI (con obs),Obligatorio solo si hay diagnostico cie10 3,,
+—,31,Fecha diagnostico EP 3,fechaDiagnosticoEP3,datos (fecha_diagnostico_enfermedad_profesional_3),Picker,8,SI,SI,SI (con obs),Obligatorio solo si hay diagnostico cie10 3,,
+30,32,Zona del Cuerpo 3,zonaCuerpo3Desc,idem,LabelValue,3,NO,SI,SI (con obs),Obligatorio solo si hay diagnostico cie10 3,,
+31,33,Fecha Cese ILT,fechaFinIlt,datos > denuncia (fecha_fin_ilt),LabelValue,8,NO,SI,SI (con obs),"si cat de registro = MT => obligatorio
+si cat registro = CB => diferible LRT",,Formato: AAAAMMDD
+32,34,Secuelas Incapacitantes,isSecuelasIncapacitantes,datos > denuncia (id_incapacidad),LabelValue,1,NO,SI,NO,,true/false/null,"Diferible - Cuando la denuncia tiene id_icapacidad = 1, sería true."
+33,35,Motivo Cese ILT,motivoCeseILTDesc,datos > denuncias (id_estado_medico),LabelValue,1,NO,SI,SI (con obs),"si cat de registro = MT => obligatorio
+","(L,P,D,I,A,B)",si cat registro = CB => diferible
+34,36,Fecha Declaración ILP,fechaDeclaracionILP,datos (fecha_declaracion_ilp),Picker,8,SI,SI,SI (con obs), isSecuelasIncapacitantes = true => obligatorio.,,Formato: AAAAMMDD - Obligatorio cuando isSecuelasIncapacitantes = true - Diferible LRT
+35,37,Tipo Incapacidad,tipoIncapacidadId,datos (id_tipo_incapacidad_permanente),Select,4,SI,SI,SI (con obs), isSecuelasIncapacitantes = true => obligatorio.,,Obligatorio cuando isSecuelasIncapacitantes = true - Si categoriaRegistro in(MT) diferible LRT
+36,38,% Incapacidad,porcentajeIncapacidad,datos (porcentaje_incapacidad),Text (number),6,SI,SI,SI (con obs), isSecuelasIncapacitantes = true => obligatorio.,,"Formato: 0028,40 (MAX 4 numeros enteros y 2 decimales) - Obligatorio cuando isSecuelasIncapacitantes = true"
+37,39,Gran Invalidez,isGranInvalidez,datos (gran_invalidez),Select,1,SI,SI,Si (con obs), isSecuelasIncapacitantes = true => obligatorio.,true/false/null,Obligatorio cuando isSecuelasIncapacitantes = true
+38,40,Fecha Dictamen,fechaDictamen,datos (fecha_dictamen_incapacidad),Picker,8,SI,SI,Si (con obs),,,Formato: AAAAMMDD - Obligatorio cuando isSecuelasIncapacitantes = true - Diferible LRT
+39,41,Expediente Comisión Médica,expedienteId,datos (nro_expediente_cm) MODIFICAR POR id_expediente,Select,20,SI,SI,NO,,,Select de expendientes por denuncia
+40,—,Patología Trazadora,isPatologiaTrazadora,denuncias ,LabelValue,1,NO,SI,Si (con obs),si cat de registro es CB o MT => obligatorio,true/false/null,"Si cuando categoriaRegistroId in (CB, MT) - eliminar de tabla datos_denuncias_srt"
+41,42,Fecha Alta Médica,fechaAltaMedica,datos > denuncias (fecha_alta_medica),LabelValue,8,NO,SI,NO,,,Formato: AAAAMMDD - Obligatorio si es diferible LRT
+42,—,Nº Denuncia ROAM,denunciaRoamNro,datos > denuncias (nro_roam),LabelValue,6,NO,SI,NO,,,Obligatorio si es diferible LRT
+43,—,Año Denuncia ROAM,denunciaRoamfecha,datos (fecha_roam),Picker,4,SI,SI,NO,,,Obligatorio si es diferible LRT
+44,43,Fecha Toma Conocimiento,fechaTomaConocimiento,datos (fecha_toma_conocimiento),Picker,8,SI,SI,SI,,,Formato: AAAAMMDD
+45,44,Código provincia,provinciaNombre,datos > denuncia > sedes > localidades > provincias (codigo_srt),LabelValue,2,NO,SI,Si (con obs),"si es AT y si cat registro SB,CB,MT,RE => obligatorio
+si es EP => obligatorio",,"Depende de establecimiento - Obligatorio si categoriaRegistro in(SB,CB,MT,RE) o siempre que sea EP"
+46,45,Código localidad,localidadNombre,datos > denuncia > sedes > codigos_postales(codigo_postal),LabelValue,4,NO,SI,Si (con obs),"si es AT y si cat registro SB,CB,MT,RE => obligatorio
+si es EP => obligatorio",,"Depende de establecimiento - Obligatorio si categoriaRegistro in(SB,CB,MT,RE) o siempre que sea EP"
+47,46,Calle,calleNombre,datos > denuncia > sedes (calle),LabelValue,100,NO,SI,Si (con obs),"si es AT y si cat registro SB,CB,MT,RE => obligatorio
+si es EP => obligatorio",,"Depende de establecimiento - Obligatorio si categoriaRegistro in(SB,CB,MT,RE) o siempre que sea EP"
+48,47,Número calle,calleNro,datos > denuncia > sedes (nro),LabelValue,5,NO,SI,Si (con obs),"si es AT y si cat registro SB,CB,MT,RE => obligatorio
+si es EP => obligatorio",,"Depende de establecimiento - Obligatorio si categoriaRegistro in(SB,CB,MT,RE) o siempre que sea EP"
+49,48,Código postal,codigoPostal,datos > denuncia > sedes > codigos_postales(codigo),LabelValue,8,NO,SI,Si (con obs),"si es AT y si cat registro SB,CB,MT,RE => obligatorio
+si es EP => obligatorio",,"Depende de establecimiento - Obligatorio si categoriaRegistro in(SB,CB,MT,RE) o siempre que sea EP"
+50,—,Estrés postraumático,isEstresPostraumatico,datos (estres_post_traumatico),Select,1,SI,SI,Si (con obs),"si cat registro SB,CB,MT,RE => obligatorio",true/false/null,"Obligatorio si categoriaRegistro in(SB,CB,MT,RE)"
+51,49,Fecha rechazo,fechaRechazo,datos (fecha_rechazo),Picker,8,SI,SI,Si (con obs),si cat registro es RE => obligatorio,,Obligatorio si categoriaRegistro in(RE)
+52,50,Motivo rechazo,motivoRechazo,datos > denuncias (es_rechazado + id_estado_medico),Select,1,NO,SI,Si (con obs),si cat registro es RE => obligatorio,,"Obligatorio si categoriaRegistro in(RE) - Si ""es_rechazado"" === true, mostrar ""Rechazado"". Si ""id_estado_medico"" === 13 mostrar ""Reingreso denegado"". "
+53,51,Inicio transitoriedad,fechaInicioTransitoriedad,datos (fecha_inicio_transitoriedad),Picker,8,SI,SI,NO,,,Formato: AAAAMMDD
+54,52,Fin transitoriedad,fechaFinTransitoriedad,datos (fecha_cese_transitoriedad),Picker,8,SI,SI,NO,,,Formato: AAAAMMDD
+55,53,Fecha estimada de alta médica,fechaEstimadaAltaMedica,datos > denuncia (fecha_probable_fin_ilt),LabelValue,8,NO,SI,Si (con obs),si cat registro es CB => obligatorio,,Formato: AAAAMMDD - Obligatorio si categoriaRegistro in(CB)
+56,54,Motivo cese transitoriedad,motivoTransitoriedadId,datos (id_motivo_transitoriedad),Select,1,SI,SI,Si (con obs),si cat registro es MT y tiene fechaInicioTransitoriedad pero no tiene fechaFinTransitoriedad => obligatorio,,Obligatorio si categoriaRegistro in(MT) + en periodo de transitoriedad. Si es CB en periodo: diferible LRT. 
+57,55,Caso crónico,isCasoCronico,datos > denuncia (es_cronico),LabelValue,1,NO,SI,SI (con obs),"si cat registro SB,CB,MT,RE => obligatorio",true/false/null,"Obligatorio si categoriaRegistro in(SB,CB,MT,RE)"
+58,56,Recalificación,tipoRecalificacionDesc,datos > denuncias (id_tipo_recalificacion),LabelValue,1,NO,SI,SI (con obs),"si cat registro SB,CB,MT,RE => obligatorio",,"Obligatorio si categoriaRegistro in(SB,CB,MT,RE)"
+59,—,Intercurrencia,isIntercurrencia,datos > denuncias (interocurrencia),LabelValue,1,NO,SI,SI,,,
+60,—,N° de reg del AT con el que se produce la Intercu,nroRegistroAccidenteOrigen,datos (nro_registro_accidente_origen),Text (num),20,SI,SI,Si (con obs),si intercurrencia = true => obligatorio,,Obligatorio si intercurrencia es TRUE
+61,57,Ingreso base,ingresoBase,datos (ingreso_base),Text (num),10,SI,SI,Si (con obs), isSecuelasIncapacitantes = true => obligatorio.,,Formato: entero + 2 dec - Obligatorio si isSecuelasIncapacitantes = true.
+62,58,Tratamiento medico asistencial pendiente,tratamientoMedicoPendiente,datos > denuncias (id_opcion_....),LabelValue,1,NO,SI,NO,,true/false/null,UI: String[] con los pendientes. Obligatorio diferible. SACAR DE TALBLA DATOS.
+63,59,Especialidad 1,,datos > denuncias (id_opcion_dermatologia),LabelValue,2,NO,SI,NO,si isTratamientoMedicoPendiente = true => obligatorio,,UI: String[] con los pendientes. TXT: Obligatorio si isTratamientoMedicoPendiente = true. SACAR DE TALBLA DATOS.
+64,60,Especialidad 2,,datos > denuncias (id_opcion_odontologia),LabelValue,2,NO,SI,NO,,,UI: String[] con los pendientes. TXT: Obligatorio si isTratamientoMedicoPendiente = true. SACAR DE TALBLA DATOS.
+65,61,Especialidad 3,,datos > denuncias (id_opcion_psicoterapia),LabelValue,2,NO,SI,NO,,,UI: String[] con los pendientes. TXT: Obligatorio si isTratamientoMedicoPendiente = true. SACAR DE TALBLA DATOS.
+66,62,Forma de ingreso de la denuncia,formaIngresoId,datos (id_forma_ingreso),Select,2,SI,SI,SI,,,
+67,63,Fecha de Defuncion,fechaDefuncion,datos (fecha_defuncion),Picker,8,SI,SI,NO,si cat registro es MT => obligatorio,,"MT = Obligatorio CO, SB, CB, RE y JU = En blanco"
+68,64,Tipo prestador medico de la 1ra atencion,tipoPresMedPMId,datos (id_tipo_prestador_medico),Select,1,SI,SI,SI,,,"CB, MT con I.L.T. = Obligatorio"
+69,65,Prestador medico de la 1ra atencion,presMedPMnombre,proveedores,LabelValue,8,NO,NO,SI,,,"CB, MT con I.L.T. = Obligatorio"
+70,66,Descripcion del siniestro,relatoSiniestro,datos > denuncia (relato),LabelValue,500,NO,SI,SI,,,

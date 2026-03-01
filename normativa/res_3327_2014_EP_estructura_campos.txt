@@ -1,0 +1,243 @@
+RESOLUCIÓN SRT N° 3327/2014 — REGISTRO DE ENFERMEDADES PROFESIONALES (R.E.P.)
+MODIFICADA POR DISPOSICIÓN SRT N° 1/2022 (campos 62-66)
+ESTRUCTURA DE DATOS — FORMATO POSICIONAL PARA ENFERMEDADES PROFESIONALES (EP)
+
+================================================================================
+DESCRIPCIÓN DEL ARCHIVO
+================================================================================
+Tipo de archivo: Enfermedades Profesionales
+Extensión: .EF (Alta y Modificación), .BA (Baja)
+Nomenclatura: ART[Cart][Extensión][Versión]
+Ejemplo: ART00027.EF1
+Versiones: 1 a 9 por día
+Frecuencia: Dentro de los 5 días de toma de conocimiento de la Primera Manifestación Invalidante
+Codificación: ASCII (latin-1)
+Separador de registros: CR+LF (\r\n)
+Longitud total del registro: 978 caracteres
+
+TIPOS DE OPERACIÓN:
+  A = Alta (primera presentación del registro)
+  M = Modificación (corrección de errores o actualización de datos no clave)
+  B = Baja (exclusiva para errores de carga, plazo 30 días)
+
+REGLAS GENERALES:
+  - Todos los campos deben completarse en formato ASCII
+  - Campos numéricos: alineados a la derecha, completar con ceros a la izquierda
+  - Campos texto: alineados a la izquierda, completar con espacios en blanco (ASCII 32)
+  - NULL → espacio en blanco (ASCII 32)
+  - Los campos con asterisco (*) forman la CLAVE del registro
+
+PLAZOS OBLIGATORIOS:
+  - Notificación al registro: dentro de 5 días de toma de conocimiento de la PMI
+  - Campos diferibles: dentro de 5 días de producida la novedad, o en la fecha de
+    cese de la ILT, lo que ocurra primero
+  - Ingreso Base: plazo máximo 72hs desde que el trabajador inicia trámite ante Comisiones Médicas
+
+NUMERACIÓN DEL SINIESTRO (20 posiciones):
+  Segmento 1 (8 pos): Para uso libre de la ART/EA
+  Segmento 2 (4 pos): Año de denuncia de la EP
+  Segmento 3 (6 pos): Contador progresivo (se reinicia cada año)
+  Segmento 4 (2 pos): Sufijo (00=original, 01=1er reingreso, 02=2do reingreso, ...)
+  Ejemplo: 00000000 2014 001589 00 = Enfermedad profesional original
+           00000000 2014 001589 01 = 1er reingreso de la misma EP
+
+================================================================================
+ESTRUCTURA DE CAMPOS — EP (Resolución 3327/2014 + Disposición 1/2022)
+================================================================================
+Orden | Nombre del Campo                          | Desde | Hasta | Long | Tipo    | Obligatorio
+------|-------------------------------------------|-------|-------|------|---------|------------------
+    1 | Código ART (Cart)                         |     1 |     5 |    5 | Numérico | Obligatorio
+    2 | Número de siniestro *                     |     6 |    25 |   20 | Numérico | Obligatorio
+    3 | Tipo de operación (A/M/B)                 |    26 |    26 |    1 | Texto    | Obligatorio
+    4 | CUIT empleador *                          |    27 |    37 |   11 | Numérico | Obligatorio
+    5 | Tipo de registro (P=EP, R=Reingreso)      |    38 |    38 |    1 | Texto    | Obligatorio
+    6 | CUIT lugar de ocurrencia *                |    39 |    49 |   11 | Numérico | Obligatorio (con obs)
+    7 | Categoría del registro (SB/CB/MT/RE/JU/CO) |   50 |    51 |    2 | Texto    | Obligatorio
+    8 | Código establecimiento *                  |    52 |    61 |   10 | Numérico | Obligatorio Diferible
+    9 | CUIL Trabajador *                         |    62 |    72 |   11 | Numérico | Obligatorio (con obs)
+   10 | Tipo Documento del Trabajador             |    73 |    74 |    2 | Numérico | Obligatorio (con obs)
+   11 | Número Documento del Trabajador           |    75 |    82 |    8 | Numérico | Obligatorio (con obs)
+   12 | Apellido y Nombre del Trabajador          |    83 |   122 |   40 | Texto    | Obligatorio (con obs)
+   13 | Puesto de Trabajo (Res. 244/06)           |   123 |   126 |    4 | Texto    | Obligatorio Diferible
+   14 | Antigüedad en el puesto (en meses)        |   127 |   129 |    3 | Numérico | Obligatorio Diferible
+   15 | Sexo del trabajador (M/F)                 |   130 |   130 |    1 | Texto    | Obligatorio (con obs)
+   16 | Fecha de Nacimiento del trabajador        |   131 |   138 |    8 | Fecha    | Obligatorio (con obs)
+   17 | Fecha Inicio Inasistencia                 |   139 |   146 |    8 | Fecha    | Obligatorio (con obs)
+   18 | Agente Material asociado                  |   147 |   151 |    5 | Numérico | Obligatorio
+   19 | Agente causante de la EP                  |   152 |   156 |    5 | Numérico | No obligatorio (visible UI)
+   20 | Tiempo de exposición al agente (meses)    |   157 |   159 |    3 | Numérico | Obligatorio Diferible
+   21 | Examen periódico previo (S/N)             |   160 |   160 |    1 | Texto    | Obligatorio
+   22 | Fecha último examen periódico             |   161 |   168 |    8 | Fecha    | Obligatorio si examen=S
+   23 | Diagnóstico 1 CIE-10 *                   |   169 |   172 |    4 | Texto    | Obligatorio
+   24 | Fecha diagnóstico EP 1                    |   173 |   180 |    8 | Fecha    | Obligatorio
+   25 | Código examen detección 1er diagnóstico   |   181 |   181 |    1 | Numérico | Obligatorio (con obs)
+   26 | Zona del Cuerpo 1                         |   182 |   184 |    3 | Numérico | Obligatorio
+   27 | Diagnóstico 2 CIE-10                      |   185 |   188 |    4 | Texto    | No obligatorio
+   28 | Fecha diagnóstico EP 2                    |   189 |   196 |    8 | Fecha    | Obligatorio si hay Diag 2
+   29 | Zona del Cuerpo 2                         |   197 |   199 |    3 | Numérico | Obligatorio si hay Diag 2
+   30 | Diagnóstico 3 CIE-10                      |   200 |   203 |    4 | Texto    | No obligatorio
+   31 | Fecha diagnóstico EP 3                    |   204 |   211 |    8 | Fecha    | Obligatorio si hay Diag 3
+   32 | Zona del Cuerpo 3                         |   212 |   214 |    3 | Numérico | Obligatorio si hay Diag 3
+   33 | Fecha Cese ILT                            |   215 |   222 |    8 | Fecha    | Obligatorio (con obs)
+   34 | Secuelas Incapacitantes (S/N)             |   223 |   223 |    1 | Texto    | No obligatorio
+   35 | Motivo Cese ILT (L/P/D/I/A/B)            |   224 |   224 |    1 | Texto    | Obligatorio (con obs)
+   36 | Fecha Declaración ILP                     |   225 |   232 |    8 | Fecha    | Obligatorio si Secuelas
+   37 | Tipo Incapacidad                          |   233 |   236 |    4 | Numérico | Obligatorio si Secuelas
+   38 | Porcentaje Incapacidad                    |   237 |   242 |    6 | Numérico | Obligatorio si Secuelas
+   39 | Gran Invalidez (S/N)                      |   243 |   243 |    1 | Texto    | Obligatorio si Secuelas
+   40 | Fecha Dictamen                            |   244 |   251 |    8 | Fecha    | Obligatorio si Secuelas
+   41 | Expediente Comisión Médica                |   252 |   271 |   20 | Numérico | No obligatorio
+   42 | Fecha Alta Médica                         |   272 |   279 |    8 | Fecha    | No obligatorio (Diferible LRT)
+   43 | Fecha Toma Conocimiento *                 |   280 |   287 |    8 | Fecha    | Obligatorio
+   44 | Código provincia del establecimiento      |   288 |   289 |    2 | Numérico | Obligatorio (siempre en EP)
+   45 | Código localidad del establecimiento      |   290 |   293 |    4 | Numérico | Obligatorio (siempre en EP)
+   46 | Calle del establecimiento                 |   294 |   393 |  100 | Texto    | Obligatorio (siempre en EP)
+   47 | Número de calle del establecimiento       |   394 |   398 |    5 | Numérico | Obligatorio (siempre en EP)
+   48 | Código postal del establecimiento         |   399 |   406 |    8 | Numérico | Obligatorio (siempre en EP)
+   49 | Fecha rechazo                             |   407 |   414 |    8 | Fecha    | Obligatorio si categoría RE
+   50 | Motivo rechazo                            |   415 |   415 |    1 | Texto    | Obligatorio si categoría RE
+   51 | Fecha inicio período de transitoriedad    |   416 |   423 |    8 | Fecha    | No obligatorio
+   52 | Fecha fin período de transitoriedad       |   424 |   431 |    8 | Fecha    | No obligatorio
+   53 | Fecha estimada de alta médica             |   432 |   439 |    8 | Fecha    | Obligatorio si categoría CB
+   54 | Motivo cese transitoriedad                |   440 |   440 |    1 | Texto    | Obligatorio (con obs)
+   55 | Caso crónico (S/N)                        |   441 |   441 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE
+   56 | Recalificación                            |   442 |   442 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE
+   57 | Ingreso base (entero + 2 dec, sin punto)  |   443 |   452 |   10 | Numérico | Obligatorio si Secuelas
+   58 | Tratamiento médico asistencial pendiente  |   453 |   453 |    1 | Texto    | No obligatorio (Diferible)
+   59 | Especialidad médica 1 pendiente           |   454 |   455 |    2 | Numérico | No obligatorio
+   60 | Especialidad médica 2 pendiente           |   456 |   457 |    2 | Numérico | No obligatorio
+   61 | Especialidad médica 3 pendiente           |   458 |   459 |    2 | Numérico | No obligatorio
+   62 | Forma de ingreso de la denuncia           |   460 |   461 |    2 | Texto    | Obligatorio       [Disposición 1/2022]
+   63 | Fecha de defunción del trabajador         |   462 |   469 |    8 | Fecha    | Obligatorio si cat MT [Disposición 1/2022]
+   64 | Tipo prestador médico 1ª atención         |   470 |   470 |    1 | Numérico | Obligatorio       [Disposición 1/2022]
+   65 | Prestador médico 1ª atención              |   471 |   478 |    8 | Numérico | Obligatorio       [Disposición 1/2022]
+   66 | Descripción de la enfermedad (relato)     |   479 |   978 |  500 | Texto    | Obligatorio       [Disposición 1/2022]
+
+LONGITUD TOTAL DEL REGISTRO EP: 978 caracteres
+
+================================================================================
+VALORES VÁLIDOS PARA CAMPOS CODIFICADOS — EP
+================================================================================
+
+CATEGORÍA DEL REGISTRO (Campo 7, 2 caracteres):
+  SB = Sin Baja Laboral
+  CB = Con Baja Laboral
+  MT = Mortal
+  RE = Rechazo
+  JU = Caso Judicializado
+  CO = Caso pendiente de admisibilidad (incorporado por Disposición 5/2020)
+
+TIPO DE REGISTRO (Campo 5, 1 carácter):
+  P = Enfermedad Profesional (primera notificación)
+  R = Reingreso (R tiene prioridad sobre P en el TXT generado)
+
+TIPO DE OPERACIÓN (Campo 3, 1 carácter):
+  A = Alta (primera presentación)
+  M = Modificación
+  B = Baja (solo para corrección de errores, plazo 30 días)
+
+SEXO (Campo 15, 1 carácter):
+  M = Masculino
+  F = Femenino
+
+EXAMEN PERIÓDICO (Campo 21, 1 carácter):
+  S = Sí (el trabajador tenía examen periódico previo)
+  N = No
+  - = No aplica
+
+TIPO DE PRESTADOR MÉDICO 1ª ATENCIÓN (Campo 64, 1 carácter):
+  1 = Establecimiento de la ART/EA
+  2 = Hospital Público
+  3 = Exceptuado
+
+================================================================================
+DIFERENCIAS CLAVE ENTRE AT (Res. 3326) Y EP (Res. 3327)
+================================================================================
+
+| Aspecto | AT (3326) | EP (3327) |
+|---|---|---|
+| Longitud del registro | 987 chars | 978 chars |
+| Extensión de archivo | .AL / .MO / .BA | .EF / .BA |
+| Tipo de siniestro (campo 5) | T=Trabajo, R=In Itinere | P=EP, R=Reingreso |
+| Campo exclusivo AT | Fecha de Ocurrencia (140-147, campo 18) | (no aplica) |
+| Campo exclusivo EP | Tiempo de Exposición al Agente (157-159) | (no aplica) |
+| Campo exclusivo EP | Examen Periódico (160) | (no aplica) |
+| Campo exclusivo EP | Fecha Último Examen Periódico (161-168) | (no aplica) |
+| Campo exclusivo EP | Fecha Diagnóstico EP 1/2/3 (173-180, etc.) | (no aplica) |
+| Campo exclusivo EP | Código Examen Detección 1er Diag. (181) | (no aplica) |
+| Agente Material (campo 18/20) | Agente Material del accidente | Agente Material de la EP |
+| Agente Causante (campo 19) | No aplica | Obligatorio para listado EP |
+| Ocurrencia en Vía Pública | Campo 6 (pos 39) | No aplica |
+| Estrés Postraumático | Campo 50 (pos 394) | No aplica |
+| Intercurrencia | Campo 59-60 (pos 431-451) | No aplica |
+| ROAM | Campos 42-43 (pos 257-266) | No aplica |
+| Patología Trazadora | Campo 40 (pos 248) | No aplica |
+| Provincia/Localidad/Dirección | Obligatorio si cat. SB/CB/MT/RE | Siempre obligatorio |
+
+================================================================================
+REGLAS DE NEGOCIO ESPECÍFICAS — EP
+================================================================================
+
+1. AGENTE CAUSANTE (Campo 19): Dato crítico. Se debe informar según el listado de
+   enfermedades profesionales vigentes (Decreto N° 658/96 y modificaciones).
+   El agente causante identifica la causa laboral de la enfermedad.
+
+2. EXAMEN PERIÓDICO (Campo 21): Si el trabajador tenía examen periódico obligatorio,
+   indicar 'S' y completar la Fecha del Último Examen Periódico (campo 22).
+
+3. TIEMPO DE EXPOSICIÓN (Campo 20): Expresado en MESES. Redondeo:
+   - 3 meses y 15 días → informar 4 meses
+   - 3 meses y 14 días → informar 3 meses
+
+4. CASO AT vs EP: Si se abre como EP y resulta ser un AT → dar de alta como AT y
+   pedir Baja del EP. Si se abre como AT y resulta ser EP → dar de alta en EP y
+   pedir Baja del AT.
+
+5. CATEGORÍAS CERRADAS (deben declararse con TODOS los campos obligatorios completos):
+   - SB: cerrado en el mismo momento que se reporta
+   - CB: cuando cesa la ILT o el período de transitoriedad
+   - MT: en la fecha de fallecimiento del trabajador
+   - RE: cuando la aseguradora notifica al trabajador y al empleador
+   - JU: en el mismo momento que se reporta
+
+6. DIAGNÓSTICO CIE-10 (Campo 23): Validación estricta con punto decimal.
+   Ej: "M545" = M54.5. Se admiten hasta 3 diagnósticos simultáneos.
+
+7. FECHA ALTA MÉDICA (Campo 42): Debe coincidir con Fecha Cese ILT hasta los
+   365 días de la Fecha de Siniestro, salvo patologías de Res. SRT 1838/14.
+   En período de transitoriedad: coincidir con Fecha Fin de Transitoriedad,
+   excepto las patologías mencionadas.
+
+8. CASOS CRÓNICOS (Campo 55): La fecha de alta médica debe consignarse como el
+   último día del período de ILT o del período de transitoriedad, según corresponda.
+
+9. INGRESO BASE (Campo 57): Formato entero con 2 decimales implícitos (sin punto decimal).
+   Obligatorio en plazo de 72hs cuando el trabajador inicia trámite ante Comisiones Médicas.
+
+10. FISCALIZACIÓN: Los datos declarados serán fiscalizados por la Unidad de Estudios
+    Estadísticos. Se considera falta: datos que difieren del respaldo documental,
+    omisión de declaración, o declaración fuera de los procedimientos establecidos.
+
+================================================================================
+FORMATO DE FECHAS
+================================================================================
+Todas las fechas en formato: AAAAMMDD (8 caracteres numéricos)
+Ejemplo: 20240315 = 15 de marzo de 2024
+Campos en blanco si no corresponden: 8 espacios
+
+================================================================================
+FUENTE NORMATIVA
+================================================================================
+- Resolución SRT N° 3327/2014 (B.O. 11/12/2014): Crea el Registro de EP
+  Vigencia: 01/01/2015
+  URL: https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239430/texact.htm
+
+- Disposición SRT N° 1/2022 (B.O. 07/02/2022): Agrega campos 62-66 (forma ingreso,
+  fecha defunción, tipo/prestador médico, descripción de la enfermedad)
+  URL: https://www.boletinoficial.gob.ar/detalleAviso/primera/257177/20220207
+
+- Resolución SRT N° 840/2005: Creación del Registro de EP (derogada por 3327/2014)
+- Disposición SRT N° 5/2020: Incorpora código CO en Categoría del Registro
+- Ley N° 24.557: Ley de Riesgos del Trabajo
+- Decreto N° 658/96 y modificaciones: Listado de Enfermedades Profesionales
+- Decreto N° 472/2014: Período de Transitoriedad
