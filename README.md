@@ -1,3 +1,13 @@
+---
+title: Agente SRT
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # PoC Agente IA para Normativa SRT
 
 Agente de IA con arquitectura neuro-simbólica para la generación y validación de archivos TXT posicionales según normativa de la Superintendencia de Riesgos del Trabajo (SRT).
