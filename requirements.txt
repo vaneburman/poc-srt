@@ -10,7 +10,12 @@ langchain-text-splitters>=0.2.0
 # Motor
 # (sin dependencias externas - Python puro)
 
-# Frontend
+# Backend API
+fastapi>=0.110.0
+uvicorn>=0.29.0
+python-multipart>=0.0.9
+
+# Frontend (Streamlit - alternativa local)
 streamlit>=1.38.0
 
 # Utilidades

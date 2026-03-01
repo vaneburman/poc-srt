@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agente SRT — PoC v2.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ====== Reset + Base ====== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:               #030712;
+      --sidebar-from:     #0f172a;
+      --sidebar-to:       #020617;
+      --sidebar-border:   #1e293b;
+      --surface:          #0f172a;
+      --surface-2:        #1e293b;
+      --border:           #1e293b;
+      --border-2:         #334155;
+      --accent:           #e11d48;
+      --accent-hover:     #be123c;
+      --accent-muted:     rgba(225, 29, 72, 0.15);
+      --accent-ring:      rgba(225, 29, 72, 0.25);
+      --green:            #059669;
+      --green-hover:      #047857;
+      --text-1:           #f1f5f9;
+      --text-2:           #94a3b8;
+      --text-3:           #64748b;
+      --mono:             'JetBrains Mono', monospace;
+    }
+
+    html, body { height: 100%; font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text-1); overflow: hidden; }
+
+    /* ====== Layout ====== */
+    .app { display: flex; height: 100vh; }
+
+    /* ====== Sidebar ====== */
+    .sidebar {
+      width: 280px;
+      flex-shrink: 0;
+      background: linear-gradient(180deg, var(--sidebar-from) 0%, var(--sidebar-to) 100%);
+      border-right: 1px solid var(--sidebar-border);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+    .sidebar::-webkit-scrollbar { width: 3px; }
+    .sidebar::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 4px; }
+
+    .logo {
+      padding: 22px 20px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo h1 { font-size: 17px; font-weight: 700; letter-spacing: -0.3px; }
+    .badge-ver {
+      background: var(--accent-muted);
+      border: 1px solid rgba(225,29,72,0.3);
+      color: #fb7185;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .section {
+      padding: 16px 16px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section h3 {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 12px;
+    }
+
+    .row2 { display: flex; gap: 8px; margin-bottom: 10px; }
+    .row2 > * { flex: 1; }
+
+    label.lbl { display: block; font-size: 11px; color: var(--text-3); margin-bottom: 4px; }
+
+    select, input[type="date"] {
+      width: 100%;
+      background: var(--surface-2);
+      border: 1px solid var(--border-2);
+      border-radius: 8px;
+      color: var(--text-1);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      padding: 8px 28px 8px 10px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%2364748b' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 9px;
+      margin-bottom: 8px;
+    }
+    input[type="date"] {
+      background-image: none;
+      padding-right: 10px;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.5); cursor: pointer; }
+    select:focus, input[type="date"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-ring);
+    }
+
+    .btn {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s, opacity 0.15s;
+      margin-top: 2px;
+    }
+    .btn-red  { background: var(--accent); color: #fff; }
+    .btn-red:hover  { background: var(--accent-hover); }
+    .btn-red:active { transform: scale(0.98); }
+    .btn-red:disabled  { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+    /* Dropzone */
+    .dropzone {
+      border: 2px dashed var(--border-2);
+      border-radius: 10px;
+      padding: 16px 12px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: rgba(30,41,59,0.3);
+      margin-bottom: 10px;
+      user-select: none;
+    }
+    .dropzone:hover, .dropzone.over { border-color: var(--accent); background: var(--accent-muted); }
+    .dropzone.has-file { border-style: solid; border-color: var(--border-2); background: rgba(30,41,59,0.5); }
+    .dz-icon { font-size: 22px; margin-bottom: 5px; }
+    .dz-text { font-size: 12px; color: var(--text-3); line-height: 1.5; }
+    .dz-name { font-size: 12px; font-family: var(--mono); color: #34d399; font-weight: 500; margin-top: 3px; }
+
+    /* Sidebar footer */
+    .sidebar-footer { padding: 14px 16px; margin-top: auto; }
+    .schema-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+    .schema-chip {
+      background: rgba(30,41,59,0.8);
+      border: 1px solid var(--border-2);
+      border-radius: 6px;
+      padding: 2px 7px;
+      font-size: 10px;
+      font-family: var(--mono);
+      color: var(--text-2);
+    }
+    .rag-row { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-3); }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: #34d399; flex-shrink: 0; }
+
+    /* ====== Main ====== */
+    .main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+    /* Header */
+    .chat-header {
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .chat-header h2 { font-size: 15px; font-weight: 600; }
+
+    .conn-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    .conn-badge.ok  { background: rgba(5,150,105,0.15); border: 1px solid rgba(5,150,105,0.3); color: #34d399; }
+    .conn-badge.err { background: var(--accent-muted); border: 1px solid rgba(225,29,72,0.3); color: #fb7185; }
+    .conn-dot { width: 6px; height: 6px; border-radius: 50%; }
+    .ok  .conn-dot { background: #34d399; }
+    .err .conn-dot { background: #fb7185; }
+
+    /* Messages */
+    .messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      scroll-behavior: smooth;
+    }
+    .messages::-webkit-scrollbar { width: 4px; }
+    .messages::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 4px; }
+
+    /* Message rows */
+    .msg-row { display: flex; gap: 10px; animation: fadeInUp 0.22s ease-out; }
+    .msg-row.user { flex-direction: row-reverse; }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .avatar.bot  { background: linear-gradient(135deg, #1e293b, #0f172a); border: 1px solid var(--border-2); }
+    .avatar.user { background: linear-gradient(135deg, var(--accent), var(--accent-hover)); }
+
+    .msg-content { max-width: 72%; display: flex; flex-direction: column; gap: 6px; }
+    .msg-row.user .msg-content { align-items: flex-end; }
+
+    /* Bubbles */
+    .bubble {
+      padding: 11px 15px;
+      border-radius: 18px;
+      font-size: 14px;
+      line-height: 1.65;
+      word-break: break-word;
+    }
+    .bubble.user {
+      background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+      color: #fff;
+      border-radius: 18px 4px 18px 18px;
+    }
+    .bubble.bot {
+      background: linear-gradient(135deg, var(--surface-2), var(--surface));
+      border: 1px solid var(--border);
+      color: var(--text-1);
+      border-radius: 4px 18px 18px 18px;
+    }
+    .bubble.error {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border: 1px solid rgba(225,29,72,0.35);
+      color: #fb7185;
+      border-radius: 4px 18px 18px 18px;
+    }
+    .bubble strong { font-weight: 600; }
+    .bubble code { font-family: var(--mono); font-size: 12px; background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 4px; }
+    .bubble ul { padding-left: 18px; margin: 4px 0; }
+    .bubble li { margin: 2px 0; }
+
+    /* Tool badges */
+    .tool-badges { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tool-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(30,41,59,0.9);
+      border: 1px solid var(--border-2);
+      border-radius: 20px;
+      padding: 3px 9px;
+      font-size: 11px;
+      color: var(--text-2);
+      font-weight: 500;
+      animation: pulse 0.6s ease-out;
+    }
+
+    /* Download */
+    .btn-dl {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-dl:hover { background: var(--green-hover); }
+
+    /* Typing */
+    .typing-row { display: flex; gap: 10px; align-items: flex-start; }
+    .typing-bubble {
+      background: linear-gradient(135deg, var(--surface-2), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 4px 18px 18px 18px;
+      padding: 13px 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .dots span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-3);
+      display: inline-block;
+      animation: bounce 1.3s infinite ease-in-out;
+    }
+    .dots span:nth-child(2) { animation-delay: 0.18s; }
+    .dots span:nth-child(3) { animation-delay: 0.36s; }
+
+    /* Tool thinking indicator (inside typing bubble) */
+    .tool-thinking {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--text-2);
+      font-weight: 500;
+    }
+    .tool-thinking .t-icon { animation: pulse 1.2s infinite; }
+
+    /* Quick actions */
+    .quick-actions {
+      padding: 0 24px 10px;
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .chip {
+      background: var(--surface-2);
+      border: 1px solid var(--border-2);
+      border-radius: 20px;
+      color: var(--text-2);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .chip:hover { background: #263347; border-color: #475569; color: var(--text-1); }
+
+    /* Input */
+    .input-area { padding: 0 24px 22px; display: flex; gap: 10px; align-items: flex-end; flex-shrink: 0; }
+    .input-wrap { flex: 1; }
+
+    #chat-input {
+      width: 100%;
+      background: var(--surface-2);
+      border: 1px solid var(--border-2);
+      border-radius: 14px;
+      color: var(--text-1);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      padding: 12px 16px;
+      outline: none;
+      resize: none;
+      min-height: 48px;
+      max-height: 120px;
+      line-height: 1.5;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    #chat-input::placeholder { color: var(--text-3); }
+    #chat-input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-ring); }
+
+    #btn-send {
+      width: 48px;
+      height: 48px;
+      background: var(--accent);
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, transform 0.1s;
+      flex-shrink: 0;
+    }
+    #btn-send:hover { background: var(--accent-hover); }
+    #btn-send:active { transform: scale(0.93); }
+    #btn-send:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+    /* ====== Animations ====== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%, 60%, 100% { transform: translateY(0); }
+      30%            { transform: translateY(-7px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.45; }
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar">
+    <div class="logo">
+      <h1>Agente SRT</h1>
+      <span class="badge-ver">PoC v2.0</span>
+    </div>
+
+    <!-- Generate -->
+    <div class="section">
+      <h3>Generar Archivo</h3>
+      <div class="row2">
+        <div>
+          <label class="lbl">Tipo</label>
+          <select id="gen-tipo">
+            <option value="AT">AT</option>
+            <option value="EP">EP</option>
+          </select>
+        </div>
+        <div>
+          <label class="lbl">Operación</label>
+          <select id="gen-op">
+            <option value="A">Alta</option>
+            <option value="B">Baja</option>
+          </select>
+        </div>
+      </div>
+      <label class="lbl">Desde</label>
+      <input type="date" id="gen-desde" value="2024-01-01">
+      <label class="lbl">Hasta</label>
+      <input type="date" id="gen-hasta" value="2024-01-31">
+      <button class="btn btn-red" id="btn-generar">🔨 Generar TXT</button>
+    </div>
+
+    <!-- Validate -->
+    <div class="section">
+      <h3>Validar Archivo</h3>
+      <div class="dropzone" id="dropzone">
+        <div class="dz-icon">📂</div>
+        <div class="dz-text">Arrastrá o hacé click<br>.txt · .at · .ep</div>
+      </div>
+      <input type="file" id="file-input" accept=".txt,.at,.ep" style="display:none">
+      <div class="row2">
+        <div>
+          <label class="lbl">Tipo</label>
+          <select id="val-tipo">
+            <option value="AT">AT</option>
+            <option value="EP">EP</option>
+          </select>
+        </div>
+        <div>
+          <label class="lbl">Operación</label>
+          <select id="val-op">
+            <option value="A">Alta</option>
+            <option value="B">Baja</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-red" id="btn-validar" disabled>✅ Validar Archivo</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="sidebar-footer">
+      <div class="schema-chips" id="schema-chips">
+        <span class="schema-chip" style="color:var(--text-3)">cargando...</span>
+      </div>
+      <div class="rag-row" id="rag-row">
+        <div class="dot" style="background:var(--text-3)"></div>
+        <span>RAG: —</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========== MAIN ========== -->
+  <main class="main">
+    <!-- Header -->
+    <header class="chat-header">
+      <h2>Agente IA para Normativa SRT</h2>
+      <div class="conn-badge err" id="conn-badge">
+        <div class="conn-dot"></div>
+        <span>Conectando...</span>
+      </div>
+    </header>
+
+    <!-- Messages -->
+    <div class="messages" id="messages"></div>
+
+    <!-- Quick actions -->
+    <div class="quick-actions">
+      <button class="chip" onclick="qi('¿Cuál es el formato del campo CUIL en AT alta?')">📋 Consultar normativa</button>
+      <button class="chip" onclick="qi('Generame el archivo AT de altas de enero 2024')">📄 Generar AT Alta</button>
+      <button class="chip" onclick="qi('¿Cuáles son los códigos de provincia válidos?')">🗺️ Códigos provincia</button>
+      <button class="chip" onclick="qi('¿Qué campos son obligatorios en EP baja?')">📝 Campos EP Baja</button>
+    </div>
+
+    <!-- Input -->
+    <div class="input-area">
+      <div class="input-wrap">
+        <textarea id="chat-input" rows="1"
+          placeholder="Preguntá sobre normativa SRT, pedí generar o validar archivos..."></textarea>
+      </div>
+      <button id="btn-send" title="Enviar (Enter)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </main>
+</div>
+
+<script>
+// ============================================================
+// Config
+// ============================================================
+const TOOL_META = {
+  consultar_normativa: { icon: '🔍', label: 'Consultando normativa' },
+  generar_txt:         { icon: '🔨', label: 'Generando archivo TXT' },
+  validar_txt:         { icon: '✅', label: 'Validando archivo' },
+};
+
+// ============================================================
+// State
+// ============================================================
+const sessionId = (() => {
+  const k = 'srt_session_id';
+  let id = sessionStorage.getItem(k);
+  if (!id) { id = crypto.randomUUID(); sessionStorage.setItem(k, id); }
+  return id;
+})();
+
+let isLoading = false;
+let uploadedFile = null;
+let typingCounter = 0;
+
+// ============================================================
+// Markdown renderer (bold, code, lists, newlines)
+// ============================================================
+function renderMd(raw) {
+  const esc = raw
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+  const lines = esc.split('\n');
+  const parts = [];
+  let listBuf = [];
+
+  const flushList = () => {
+    if (listBuf.length) {
+      parts.push('<ul>' + listBuf.join('') + '</ul>');
+      listBuf = [];
+    }
+  };
+
+  const inline = t =>
+    t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+     .replace(/`([^`\n]+)`/g, '<code>$1</code>');
+
+  for (const line of lines) {
+    const m = line.match(/^[-*]\s+(.+)$/);
+    if (m) {
+      listBuf.push('<li>' + inline(m[1]) + '</li>');
+    } else {
+      flushList();
+      parts.push(inline(line));
+    }
+  }
+  flushList();
+
+  // Join: no <br> between block elements
+  let html = '';
+  for (let i = 0; i < parts.length; i++) {
+    const cur = parts[i];
+    const prev = parts[i - 1] || '';
+    const isBlock = s => s.startsWith('<ul>') || s.startsWith('</ul>');
+    if (i > 0 && !isBlock(cur) && !isBlock(prev)) html += '<br>';
+    html += cur;
+  }
+  return html;
+}
+
+// ============================================================
+// DOM helpers
+// ============================================================
+const $ = id => document.getElementById(id);
+const msgs = () => $('messages');
+
+function scrollBottom() {
+  const el = msgs();
+  el.scrollTop = el.scrollHeight;
+}
+
+function autoResize(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+}
+
+function setLoading(v) {
+  isLoading = v;
+  $('btn-send').disabled = v;
+  $('btn-generar').disabled = v;
+}
+
+// Quick input fill
+function qi(text) {
+  $('chat-input').value = text;
+  $('chat-input').focus();
+  autoResize($('chat-input'));
+}
+
+// ============================================================
+// Message rendering
+// ============================================================
+function addUserMsg(text) {
+  const row = document.createElement('div');
+  row.className = 'msg-row user';
+  row.innerHTML = `
+    <div class="avatar user">👤</div>
+    <div class="msg-content">
+      <div class="bubble user">${renderMd(text)}</div>
+    </div>`;
+  msgs().appendChild(row);
+  scrollBottom();
+}
+
+function addBotMsg(text, toolsUsed, archivoGenerado) {
+  const row = document.createElement('div');
+  row.className = 'msg-row';
+
+  const badgesHtml = (toolsUsed && toolsUsed.length)
+    ? '<div class="tool-badges">' +
+        toolsUsed.map(t => {
+          const m = TOOL_META[t.name] || { icon: '⚙️', label: t.name };
+          return `<span class="tool-badge">${m.icon} ${m.label}</span>`;
+        }).join('') +
+      '</div>'
+    : '';
+
+  const dlHtml = archivoGenerado
+    ? `<a class="btn-dl" href="${archivoGenerado.url}" download="${archivoGenerado.nombre}">
+         📥 Descargar ${archivoGenerado.nombre}
+       </a>`
+    : '';
+
+  row.innerHTML = `
+    <div class="avatar bot">🤖</div>
+    <div class="msg-content">
+      ${badgesHtml}
+      <div class="bubble bot">${renderMd(text)}</div>
+      ${dlHtml}
+    </div>`;
+  msgs().appendChild(row);
+  scrollBottom();
+}
+
+function addErrMsg(text) {
+  const row = document.createElement('div');
+  row.className = 'msg-row';
+  row.innerHTML = `
+    <div class="avatar bot">🤖</div>
+    <div class="msg-content">
+      <div class="bubble error">${text}</div>
+    </div>`;
+  msgs().appendChild(row);
+  scrollBottom();
+}
+
+function showTyping() {
+  const id = ++typingCounter;
+  const row = document.createElement('div');
+  row.className = 'typing-row';
+  row.id = `typing-${id}`;
+  row.innerHTML = `
+    <div class="avatar bot">🤖</div>
+    <div class="typing-bubble">
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>`;
+  msgs().appendChild(row);
+  scrollBottom();
+  return id;
+}
+
+function removeTyping(id) {
+  const el = $(`typing-${id}`);
+  if (el) el.remove();
+}
+
+// ============================================================
+// API calls
+// ============================================================
+async function sendChat(text) {
+  if (!text.trim() || isLoading) return;
+  addUserMsg(text);
+  setLoading(true);
+  const tid = showTyping();
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ mensaje: text, session_id: sessionId }),
+    });
+    const data = await res.json();
+    removeTyping(tid);
+    if (!res.ok) {
+      addErrMsg(`Error ${res.status}: ${data.detail || 'Error desconocido'}`);
+    } else {
+      addBotMsg(data.respuesta, data.tools_used, data.archivo_generado);
+    }
+  } catch {
+    removeTyping(tid);
+    addErrMsg('No se pudo conectar con el servidor. ¿Está corriendo <code>uvicorn backend:app</code>?');
+  } finally {
+    setLoading(false);
+  }
+}
+
+async function sendValidar(file, tipo, operacion) {
+  const opLabel = operacion === 'A' ? 'Alta' : 'Baja';
+  addUserMsg(`Validar: **${file.name}** (${tipo} ${opLabel})`);
+  setLoading(true);
+  const tid = showTyping();
+  const form = new FormData();
+  form.append('archivo', file);
+  form.append('tipo', tipo);
+  form.append('operacion', operacion);
+  form.append('session_id', sessionId);
+  try {
+    const res = await fetch('/api/validar', { method: 'POST', body: form });
+    const data = await res.json();
+    removeTyping(tid);
+    if (!res.ok) {
+      addErrMsg(`Error ${res.status}: ${data.detail || 'Error desconocido'}`);
+    } else {
+      addBotMsg(data.respuesta, data.tools_used, data.archivo_generado);
+    }
+  } catch {
+    removeTyping(tid);
+    addErrMsg('Error al enviar el archivo. Verificá la conexión con el servidor.');
+  } finally {
+    setLoading(false);
+  }
+}
+
+// ============================================================
+// Health check
+// ============================================================
+async function checkHealth() {
+  const badge = $('conn-badge');
+  try {
+    const res = await fetch('/api/health');
+    const data = await res.json();
+    badge.className = 'conn-badge ok';
+    badge.innerHTML = '<div class="conn-dot"></div><span>Conectado</span>';
+
+    // Schemas
+    $('schema-chips').innerHTML = (data.schemas || []).map(s =>
+      `<span class="schema-chip">${s}</span>`
+    ).join('');
+
+    // RAG
+    $('rag-row').innerHTML =
+      `<div class="dot"></div><span>RAG: ${(data.rag_chunks || 0).toLocaleString('es')} chunks</span>`;
+  } catch {
+    badge.className = 'conn-badge err';
+    badge.innerHTML = '<div class="conn-dot"></div><span>Desconectado</span>';
+    addErrMsg('⚠️ No se puede conectar con el servidor. Inicialo con: <code>uvicorn backend:app --reload</code>');
+  }
+}
+
+// ============================================================
+// Dropzone
+// ============================================================
+const dropzone = $('dropzone');
+const fileInput = $('file-input');
+
+dropzone.addEventListener('click', () => fileInput.click());
+dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('over'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('over'));
+dropzone.addEventListener('drop', e => {
+  e.preventDefault();
+  dropzone.classList.remove('over');
+  const f = e.dataTransfer.files[0];
+  if (f) setFile(f);
+});
+fileInput.addEventListener('change', e => {
+  if (e.target.files[0]) setFile(e.target.files[0]);
+});
+
+function setFile(file) {
+  uploadedFile = file;
+  dropzone.classList.add('has-file');
+  dropzone.innerHTML = `
+    <div class="dz-icon">📄</div>
+    <div class="dz-name">${file.name}</div>
+    <div class="dz-text" style="font-size:11px;margin-top:3px">${(file.size/1024).toFixed(1)} KB · click para cambiar</div>`;
+  $('btn-validar').disabled = false;
+}
+
+// ============================================================
+// Event listeners
+// ============================================================
+$('btn-send').addEventListener('click', () => {
+  const inp = $('chat-input');
+  const t = inp.value.trim();
+  if (t) { inp.value = ''; autoResize(inp); sendChat(t); }
+});
+
+$('chat-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    const t = e.target.value.trim();
+    if (t) { e.target.value = ''; autoResize(e.target); sendChat(t); }
+  }
+});
+
+$('chat-input').addEventListener('input', e => autoResize(e.target));
+
+$('btn-generar').addEventListener('click', () => {
+  const tipo = $('gen-tipo').value;
+  const op   = $('gen-op').value;
+  const opLabel = op === 'A' ? 'altas' : 'bajas';
+  const desde = $('gen-desde').value;
+  const hasta = $('gen-hasta').value;
+  sendChat(`Generame el archivo ${tipo} de ${opLabel} desde ${desde} hasta ${hasta}`);
+});
+
+$('btn-validar').addEventListener('click', () => {
+  if (!uploadedFile || isLoading) return;
+  sendValidar(uploadedFile, $('val-tipo').value, $('val-op').value);
+});
+
+// ============================================================
+// Init
+// ============================================================
+window.addEventListener('DOMContentLoaded', () => {
+  checkHealth();
+  addBotMsg(
+    '¡Hola! Soy el **Agente SRT**, especializado en normativa de la Superintendencia de Riesgos del Trabajo.\n\n' +
+    'Puedo ayudarte con:\n\n' +
+    '- 📖 **Consultar normativa** — campos, códigos, formatos de las Resoluciones 3326/2014 y 3327/2014\n' +
+    '- 🔨 **Generar archivos TXT** — declaraciones posicionales de AT y EP listas para presentar\n' +
+    '- ✅ **Validar archivos TXT** — detección de errores con referencia exacta a la norma\n\n' +
+    'Usá el panel izquierdo para acciones rápidas o escribime directamente. ¿En qué te ayudo?',
+    [], null
+  );
+});
+</script>
+</body>
+</html>

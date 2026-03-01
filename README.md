@@ -24,8 +24,11 @@ cp .env.example .env
 # 5. (Primera vez) Generar index RAG
 python rag/ingest.py --input-dir ./normativa --output-dir ./rag/faiss_index
 
-# 6. Ejecutar la app
-streamlit run app.py
+# 6. Iniciar el servidor
+uvicorn backend:app --reload
+
+# 7. Abrir en el navegador
+# http://localhost:8000
 ```
 
 ## Estructura del Proyecto
@@ -40,7 +43,10 @@ poc-agente-srt/
 ├── mock_data/        # Datos de prueba (simulan endpoint Java)
 ├── tests/            # Tests unitarios y E2E
 ├── docs/             # Documentación técnica
-├── app.py            # Streamlit UI
+├── frontend/         # UI (HTML/CSS/JS)
+│   └── index.html    # Single-page app
+├── backend.py        # FastAPI backend
+├── app.py            # Streamlit UI (alternativa local)
 └── config.py         # Configuración centralizada
 ```
 
@@ -48,6 +54,16 @@ poc-agente-srt/
 
 - [Plan de Implementación](docs/PLAN_IMPLEMENTACION.md)
 - [Guía de Migración a AWS](docs/GUIA_MIGRACION_AWS.md)
+
+## API Endpoints
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| `POST` | `/api/chat` | Enviar mensaje al agente |
+| `POST` | `/api/validar` | Validar archivo TXT subido |
+| `GET` | `/api/download/{filename}` | Descargar archivo generado |
+| `GET` | `/api/health` | Estado del sistema |
+| `GET` | `/` | Frontend web |
 
 ## Stack
 
@@ -57,4 +73,5 @@ poc-agente-srt/
 | Embeddings | all-MiniLM-L6-v2 (local) |
 | Vector DB | FAISS (in-process) |
 | Motor | Python puro |
-| Frontend | Streamlit |
+| Backend | FastAPI + Uvicorn |
+| Frontend | HTML / CSS / JS |
