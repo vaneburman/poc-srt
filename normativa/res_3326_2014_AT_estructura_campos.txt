@@ -1,0 +1,239 @@
+RESOLUCIÓN SRT N° 3326/2014 — REGISTRO NACIONAL DE ACCIDENTES LABORALES (R.E.N.A.L.)
+MODIFICADA POR DISPOSICIÓN SRT N° 1/2022 (campos 66-70)
+ESTRUCTURA DE DATOS — FORMATO POSICIONAL PARA ACCIDENTES DE TRABAJO (AT)
+
+================================================================================
+DESCRIPCIÓN DEL ARCHIVO
+================================================================================
+Tipo de archivo: Accidentes de Trabajo
+Extensión: .AL (Alta), .MO (Modificación), .BA (Baja)
+Nomenclatura: ART[Cart][Extensión][Versión]
+Ejemplo: ART00027.AL1
+Versiones: 1 a 9 por día
+Frecuencia: Diaria (máximo 9 versiones/día)
+Codificación: ASCII (latin-1)
+Separador de registros: CR+LF (\r\n)
+Longitud total del registro: 987 caracteres
+
+TIPOS DE OPERACIÓN:
+  A = Alta (primera presentación del registro)
+  M = Modificación (corrección de errores o actualización de datos no clave)
+  B = Baja (exclusiva para errores de carga, plazo 30 días)
+
+REGLAS GENERALES:
+  - Todos los campos deben completarse en formato ASCII
+  - Campos numéricos: alineados a la derecha, completar con ceros a la izquierda
+  - Campos texto: alineados a la izquierda, completar con espacios en blanco (ASCII 32)
+  - NULL → espacio en blanco (ASCII 32)
+  - Los campos con asterisco (*) forman la CLAVE del registro
+
+NUMERACIÓN DEL SINIESTRO (20 posiciones):
+  Segmento 1 (8 pos): Para uso libre de la ART/EA
+  Segmento 2 (4 pos): Año de denuncia
+  Segmento 3 (6 pos): Contador progresivo (se reinicia cada año)
+  Segmento 4 (2 pos): Sufijo (00=original, 01=1er reingreso, 02=2do reingreso, ...)
+
+================================================================================
+CAMPOS OBLIGATORIOS PARA ACEPTACIÓN DEL REGISTRO
+================================================================================
+(Indicados como "Obligatorio" en la estructura. Incluyen los campos clave)
+Son los campos cuya ausencia o contenido inválido genera RECHAZO del registro.
+
+================================================================================
+CAMPOS DE OBLIGATORIEDAD DIFERIDA
+================================================================================
+(Indicados como "Obligatorio Diferible" en la estructura)
+Su ausencia NO genera rechazo, pero deben completarse con envíos posteriores
+usando el mecanismo de Modificación (tipo operación M).
+
+================================================================================
+ESTRUCTURA DE CAMPOS — AT (Resolución 3326/2014 + Disposición 1/2022)
+================================================================================
+Orden | Nombre del Campo                          | Desde | Hasta | Long | Tipo    | Obligatorio
+------|-------------------------------------------|-------|-------|------|---------|------------------
+    1 | Código ART (Cart)                         |     1 |     5 |    5 | Numérico | Obligatorio
+    2 | Número de siniestro *                     |     6 |    25 |   20 | Numérico | Obligatorio
+    3 | Tipo de operación                         |    26 |    26 |    1 | Texto    | Obligatorio
+    4 | CUIT empleador *                          |    27 |    37 |   11 | Numérico | Obligatorio
+    5 | Tipo de siniestro (T=Accidente Trabajo, R=In Itinere) | 38 |    38 |    1 | Texto    | Obligatorio
+    6 | Ocurrencia en vía pública (S/N/-)         |    39 |    39 |    1 | Texto    | Obligatorio (con obs)
+    7 | CUIT lugar de ocurrencia *                |    40 |    50 |   11 | Numérico | Obligatorio (con obs)
+    8 | Categoría del registro (SB/CB/MT/RE/JU/CO) |   51 |    52 |    2 | Texto    | Obligatorio
+    9 | Código establecimiento *                  |    53 |    62 |   10 | Numérico | Obligatorio Diferible
+   10 | CUIL Trabajador *                         |    63 |    73 |   11 | Numérico | Obligatorio (con obs)
+   11 | Tipo Documento del Trabajador             |    74 |    75 |    2 | Numérico | Obligatorio (con obs)
+   12 | Número Documento del Trabajador           |    76 |    83 |    8 | Numérico | Obligatorio (con obs)
+   13 | Apellido y Nombre del Trabajador          |    84 |   123 |   40 | Texto    | Obligatorio (con obs)
+   14 | Puesto de Trabajo (Res. 244/06)           |   124 |   127 |    4 | Texto    | Obligatorio Diferible
+   15 | Antigüedad en el puesto (en meses)        |   128 |   130 |    3 | Numérico | Obligatorio Diferible
+   16 | Sexo del trabajador (M/F)                 |   131 |   131 |    1 | Texto    | Obligatorio (con obs)
+   17 | Fecha de Nacimiento del trabajador        |   132 |   139 |    8 | Fecha    | Obligatorio (con obs)
+   18 | Fecha de Ocurrencia del accidente *       |   140 |   147 |    8 | Fecha    | Obligatorio
+   19 | Fecha Inicio Inasistencia                 |   148 |   155 |    8 | Fecha    | Obligatorio (con obs)
+   20 | Agente Material asociado                  |   156 |   160 |    5 | Numérico | Obligatorio
+   21 | Forma del Accidente                       |   161 |   163 |    3 | Numérico | Obligatorio
+   22 | Diagnóstico 1 (CIE-10) *                 |   164 |   167 |    4 | Texto    | Obligatorio
+   23 | Naturaleza de la Lesión 1                 |   168 |   169 |    2 | Numérico | Obligatorio
+   24 | Zona del Cuerpo 1                         |   170 |   172 |    3 | Numérico | Obligatorio
+   25 | Diagnóstico 2 (CIE-10)                    |   173 |   176 |    4 | Texto    | No obligatorio
+   26 | Naturaleza de la Lesión 2                 |   177 |   178 |    2 | Numérico | Obligatorio si hay Diagnóstico 2
+   27 | Zona del Cuerpo 2                         |   179 |   181 |    3 | Numérico | Obligatorio si hay Diagnóstico 2
+   28 | Diagnóstico 3 (CIE-10)                    |   182 |   185 |    4 | Texto    | No obligatorio
+   29 | Naturaleza de la Lesión 3                 |   186 |   187 |    2 | Numérico | Obligatorio si hay Diagnóstico 3
+   30 | Zona del Cuerpo 3                         |   188 |   190 |    3 | Numérico | Obligatorio si hay Diagnóstico 3
+   31 | Fecha Cese ILT (Incapacidad Lab. Temp.)   |   191 |   198 |    8 | Fecha    | Obligatorio (con obs)
+   32 | Secuelas Incapacitantes (S/N)             |   199 |   199 |    1 | Texto    | No obligatorio
+   33 | Motivo Cese ILT (L/P/D/I/A/B)            |   200 |   200 |    1 | Texto    | Obligatorio (con obs)
+   34 | Fecha Declaración ILP                     |   201 |   208 |    8 | Fecha    | Obligatorio si Secuelas Incapacitantes
+   35 | Tipo Incapacidad                          |   209 |   212 |    4 | Numérico | Obligatorio si Secuelas Incapacitantes
+   36 | Porcentaje Incapacidad (ej: 002840 = 28,40%) | 213 |   218 |    6 | Numérico | Obligatorio si Secuelas Incapacitantes
+   37 | Gran Invalidez (S/N)                      |   219 |   219 |    1 | Texto    | Obligatorio si Secuelas Incapacitantes
+   38 | Fecha Dictamen                            |   220 |   227 |    8 | Fecha    | Obligatorio si Secuelas Incapacitantes
+   39 | Expediente Comisión Médica                |   228 |   247 |   20 | Numérico | No obligatorio
+   40 | Patología Trazadora (S/N)                 |   248 |   248 |    1 | Texto    | Obligatorio si categoría CB o MT
+   41 | Fecha Alta Médica                         |   249 |   256 |    8 | Fecha    | No obligatorio (Diferible LRT)
+   42 | Nº Denuncia ROAM                          |   257 |   262 |    6 | Numérico | No obligatorio (Diferible LRT)
+   43 | Año Denuncia ROAM                         |   263 |   266 |    4 | Numérico | No obligatorio (Diferible LRT)
+   44 | Fecha Toma Conocimiento *                 |   267 |   274 |    8 | Fecha    | Obligatorio
+   45 | Código provincia del establecimiento      |   275 |   276 |    2 | Numérico | Obligatorio (con obs)
+   46 | Código localidad del establecimiento      |   277 |   280 |    4 | Numérico | Obligatorio (con obs)
+   47 | Calle del establecimiento                 |   281 |   380 |  100 | Texto    | Obligatorio (con obs)
+   48 | Número de calle del establecimiento       |   381 |   385 |    5 | Numérico | Obligatorio (con obs)
+   49 | Código postal del establecimiento         |   386 |   393 |    8 | Numérico | Obligatorio (con obs)
+   50 | Estrés postraumático (S/N)                |   394 |   394 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE
+   51 | Fecha rechazo                             |   395 |   402 |    8 | Fecha    | Obligatorio si categoría RE
+   52 | Motivo rechazo                            |   403 |   403 |    1 | Texto    | Obligatorio si categoría RE
+   53 | Fecha inicio período de transitoriedad    |   404 |   411 |    8 | Fecha    | No obligatorio
+   54 | Fecha fin período de transitoriedad       |   412 |   419 |    8 | Fecha    | No obligatorio
+   55 | Fecha estimada de alta médica             |   420 |   427 |    8 | Fecha    | Obligatorio si categoría CB
+   56 | Motivo cese transitoriedad                |   428 |   428 |    1 | Texto    | Obligatorio (con obs)
+   57 | Caso crónico (S/N)                        |   429 |   429 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE
+   58 | Recalificación                            |   430 |   430 |    1 | Texto    | Obligatorio si cat SB/CB/MT/RE
+   59 | Intercurrencia (S/N)                      |   431 |   431 |    1 | Texto    | Obligatorio
+   60 | Nro. registro AT origen intercurrencia    |   432 |   451 |   20 | Numérico | Obligatorio si Intercurrencia=S
+   61 | Ingreso base (entero + 2 dec, sin punto)  |   452 |   461 |   10 | Numérico | Obligatorio si Secuelas Incapacitantes
+   62 | Tratamiento médico asistencial pendiente  |   462 |   462 |    1 | Texto    | No obligatorio (Diferible)
+   63 | Especialidad médica 1 pendiente           |   463 |   464 |    2 | Numérico | No obligatorio
+   64 | Especialidad médica 2 pendiente           |   465 |   466 |    2 | Numérico | No obligatorio
+   65 | Especialidad médica 3 pendiente           |   467 |   468 |    2 | Numérico | No obligatorio
+   66 | Forma de ingreso de la denuncia           |   469 |   470 |    2 | Texto    | Obligatorio       [Disposición 1/2022]
+   67 | Fecha de defunción del trabajador         |   471 |   478 |    8 | Fecha    | Obligatorio si cat MT [Disposición 1/2022]
+   68 | Tipo prestador médico 1ª atención         |   479 |   479 |    1 | Numérico | Obligatorio       [Disposición 1/2022]
+   69 | Prestador médico 1ª atención              |   480 |   487 |    8 | Numérico | Obligatorio       [Disposición 1/2022]
+   70 | Descripción del siniestro (relato)        |   488 |   987 |  500 | Texto    | Obligatorio       [Disposición 1/2022]
+
+LONGITUD TOTAL DEL REGISTRO AT: 987 caracteres
+
+================================================================================
+VALORES VÁLIDOS PARA CAMPOS CODIFICADOS
+================================================================================
+
+CATEGORÍA DEL REGISTRO (Campo 8, 2 caracteres):
+  SB = Sin Baja Laboral
+  CB = Con Baja Laboral
+  MT = Mortal
+  RE = Rechazo
+  JU = Caso Judicializado (sin contrato laboral)
+  CO = Caso pendiente de admisibilidad (incorporado por Disposición 5/2020)
+
+TIPO DE SINIESTRO (Campo 5, 1 carácter):
+  T = Accidente en ocasión de Trabajo
+  R = Accidente In Itinere (en trayecto)
+  (El campo "Tipo de Operación" tiene prioridad sobre este campo)
+
+TIPO DE OPERACIÓN (Campo 3, 1 carácter):
+  A = Alta (primera presentación)
+  M = Modificación
+  B = Baja (solo para corrección de errores, plazo 30 días)
+
+SEXO (Campo 16, 1 carácter):
+  M = Masculino
+  F = Femenino
+
+OCURRENCIA EN VÍA PÚBLICA (Campo 6, 1 carácter):
+  S = Sí
+  N = No
+  - = No aplica (categorías JU)
+  Obligatorio para categorías: CO, SB, CB, RE
+
+SECUELAS INCAPACITANTES (Campo 32, 1 carácter):
+  S = Sí (completar con 'S' cuando cese de ILT es por declaración de ILP)
+
+MOTIVO CESE ILT (Campo 33, 1 carácter):
+  L = (ver tabla normativa)
+  P = (ver tabla normativa)
+  D = (ver tabla normativa)
+  I = (ver tabla normativa)
+  A = (ver tabla normativa)
+  B = (ver tabla normativa)
+
+TIPO DE PRESTADOR MÉDICO 1ª ATENCIÓN (Campo 68, 1 carácter):
+  1 = Establecimiento de la ART/EA
+  2 = Hospital Público
+  3 = Exceptuado
+
+TRATAMIENTO MÉDICO PENDIENTE (Campo 62, 1 carácter):
+  S = Sí
+  N = No
+  - = No aplica
+
+================================================================================
+REGLAS DE NEGOCIO CRÍTICAS — AT
+================================================================================
+
+1. FECHA ALTA MÉDICA debe coincidir con Fecha Cese ILT hasta los 365 días de la fecha
+   de siniestro, salvo para patologías contempladas en Res. SRT 1838/14.
+
+2. INTERCURRENCIA: Si un AT genera un reingreso, los reingresos se codifican con el
+   mismo nro. de siniestro cambiando el sufijo (00→01→02...).
+
+3. EXPEDIENTE COMISIÓN MÉDICA (Campo 39): Las 3 primeras posiciones = código de la
+   Comisión Médica u OHV. La 5ª posición = letra que identifica el origen del expediente.
+
+4. INGRESO BASE (Campo 61): Formato entero con 2 decimales implícitos (sin punto decimal).
+   Ej: "0000001234" = $12,34. Obligatorio en plazo de 72hs cuando el trabajador
+   inicia trámite ante Comisiones Médicas.
+
+5. ANTIGÜEDAD (Campo 15): Se redondea al mes siguiente si hay 15 o más días.
+   Ej: 3 meses y 15 días → informar 4. Ej: 3 meses y 14 días → informar 3.
+
+6. APELLIDO Y NOMBRE (Campo 13): Formato "APELLIDO NOMBRE" (sin comas, un espacio,
+   letras mayúsculas). Sin punto ni coma.
+
+7. PORCENTAJE INCAPACIDAD (Campo 36): Formato: NNNNDD (4 enteros + 2 decimales).
+   Ej: "002840" = 28,40%. Máximo: 4 números enteros y 2 decimales.
+
+8. CÓDIGO DE DIAGNÓSTICO CIE-10 (Campo 22): Validación estricta con punto decimal
+   implícito. Ej: "M545" = M54.5.
+
+9. FECHA DE INICIO DE INASISTENCIA (Campo 19): Debe consignarse como mínimo al día
+   siguiente de la Fecha de Ocurrencia (Campo 18).
+
+10. CASOS CERRADOS: Deben declararse con TODOS los campos obligatorios completos.
+    - SB: cerrado en el mismo momento que se reporta
+    - CB: cerrado cuando cesa la ILT o el período de transitoriedad
+    - MT: cerrado en la fecha de fallecimiento del trabajador
+    - RE: cerrado cuando la aseguradora notifica al trabajador y al empleador
+    - JU: cerrado en el mismo momento que se reporta
+
+================================================================================
+FORMATO DE FECHAS
+================================================================================
+Todas las fechas en formato: AAAAMMDD (8 caracteres numéricos)
+Ejemplo: 20240315 = 15 de marzo de 2024
+Campos en blanco si no corresponden: 8 espacios
+
+================================================================================
+FUENTE NORMATIVA
+================================================================================
+- Resolución SRT N° 3326/2014 (B.O. 11/12/2014): Crea el R.E.N.A.L.
+  Vigencia: 01/01/2015
+  URL: https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239411/norma.htm
+
+- Disposición SRT N° 1/2022 (B.O. 07/02/2022): Agrega campos 66-70 (forma ingreso,
+  fecha defunción, tipo/prestador médico, descripción del siniestro)
+  URL: https://www.boletinoficial.gob.ar/detalleAviso/primera/257177/20220207
+
+- Resolución SRT N° 3117/2014: Reforma estructura orgánico-funcional SRT
+- Ley N° 24.557: Ley de Riesgos del Trabajo
+- Decreto N° 472/2014: Período de Transitoriedad
