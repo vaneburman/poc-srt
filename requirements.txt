@@ -1,9 +1,13 @@
 # LLM
 google-generativeai>=0.8.0
 
-# RAG
-sentence-transformers>=3.0.0
-faiss-cpu>=1.8.0
+# RAG - búsqueda semántica
+# sentence-transformers y faiss-cpu activan el backend FAISS (más preciso).
+# Son OPCIONALES: sin ellos la app usa TF-IDF (sklearn) — suficiente para cloud free tier.
+# Descomentá para desarrollo local con búsqueda vectorial completa (~1 GB extra con torch).
+# sentence-transformers>=3.0.0
+# faiss-cpu>=1.8.0
+scikit-learn>=1.3.0            # fallback TF-IDF liviano (siempre instalado)
 pypdf>=4.0.0
 langchain-text-splitters>=0.2.0
 
@@ -15,8 +19,9 @@ fastapi>=0.110.0
 uvicorn>=0.29.0
 python-multipart>=0.0.9
 
-# Frontend (Streamlit - alternativa local)
-streamlit>=1.38.0
+# Frontend Streamlit (solo para desarrollo local con `streamlit run app.py`)
+# No se necesita en Docker/cloud — descomentá si querés la UI Streamlit.
+# streamlit>=1.38.0
 
 # Utilidades
 python-dotenv>=1.0.0

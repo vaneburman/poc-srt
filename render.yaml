@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agente-srt
+    runtime: docker
+    plan: free
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: USE_MOCK_DATA
+        value: "true"
