@@ -39,11 +39,11 @@
       "descripcion": "Tipo de operación",
       "posicion_inicio": 26,
       "longitud": 1,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["A", "M", "B"],
       "fuente_dato": "endpoint:tipoOperacionDescripcion"
     },
     {
@@ -63,13 +63,11 @@
       "descripcion": "Tipo de siniestro",
       "posicion_inicio": 38,
       "longitud": 1,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": [
-        "T o R"
-      ],
+      "valores_validos": ["T", "I", "R"],
       "fuente_dato": "endpoint:tipoSiniestroDescripcion"
     },
     {
@@ -81,7 +79,7 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:isViaPublica"
     },
     {
@@ -101,11 +99,11 @@
       "descripcion": "Categoría del registro",
       "posicion_inicio": 51,
       "longitud": 2,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["SB", "CB", "MT", "RE", "JU", "CO", "IN"],
       "fuente_dato": "endpoint:categoriaRegistroId"
     },
     {
@@ -201,9 +199,7 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": [
-        "M o F"
-      ],
+      "valores_validos": ["M", "F"],
       "fuente_dato": "endpoint:afiliadoSexo"
     },
     {
@@ -271,9 +267,9 @@
       "descripcion": "Diagnóstico 1 (CIE-10)",
       "posicion_inicio": 164,
       "longitud": 4,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": true,
       "valores_validos": null,
       "fuente_dato": "endpoint:cie101Desc"
@@ -307,9 +303,9 @@
       "descripcion": "Diagnóstico 2",
       "posicion_inicio": 173,
       "longitud": 4,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:cie102Desc"
@@ -322,7 +318,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:naturaleza2Desc"
     },
@@ -334,7 +330,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:zonaCuerpo2Desc"
     },
@@ -343,9 +339,9 @@
       "descripcion": "Diagnóstico 3",
       "posicion_inicio": 182,
       "longitud": 4,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:cie103Desc"
@@ -358,7 +354,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:naturaleza3Desc"
     },
@@ -370,7 +366,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:zonaCuerpo3Desc"
     },
@@ -382,7 +378,8 @@
       "tipo": "F",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
+      "obligatoriedad": "OD",
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaFinIlt"
     },
@@ -395,7 +392,8 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": false,
-      "valores_validos": null,
+      "obligatoriedad": "OD",
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:isSecuelasIncapacitantes"
     },
     {
@@ -403,18 +401,12 @@
       "descripcion": "Motivo Cese ILT",
       "posicion_inicio": 200,
       "longitud": 1,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
-      "obligatorio": true,
-      "valores_validos": [
-        "(L",
-        "P",
-        "D",
-        "I",
-        "A",
-        "B)"
-      ],
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
+      "obligatorio": false,
+      "obligatoriedad": "OD",
+      "valores_validos": ["L", "P", "D", "I", "A", "B"],
       "fuente_dato": "endpoint:motivoCeseILTDesc"
     },
     {
@@ -425,7 +417,7 @@
       "tipo": "F",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaDeclaracionILP"
     },
@@ -437,7 +429,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:tipoIncapacidadId"
     },
@@ -449,7 +441,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:porcentajeIncapacidad"
     },
@@ -461,8 +453,8 @@
       "tipo": "A",
       "padding_char": " ",
       "alineacion": "left",
-      "obligatorio": true,
-      "valores_validos": null,
+      "obligatorio": false,
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:isGranInvalidez"
     },
     {
@@ -473,7 +465,7 @@
       "tipo": "F",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaDictamen"
     },
@@ -498,7 +490,7 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:isPatologiaTrazadora"
     },
     {
@@ -510,6 +502,7 @@
       "padding_char": "0",
       "alineacion": "right",
       "obligatorio": false,
+      "obligatoriedad": "OD",
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaAltaMedica"
     },
@@ -566,7 +559,7 @@
       "descripcion": "Código localidad",
       "posicion_inicio": 277,
       "longitud": 4,
-      "tipo": "N",
+      "tipo": "A",
       "padding_char": "0",
       "alineacion": "right",
       "obligatorio": true,
@@ -602,7 +595,7 @@
       "descripcion": "Código postal",
       "posicion_inicio": 386,
       "longitud": 8,
-      "tipo": "N",
+      "tipo": "A",
       "padding_char": "0",
       "alineacion": "right",
       "obligatorio": true,
@@ -618,7 +611,7 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:isEstresPostraumatico"
     },
     {
@@ -629,7 +622,9 @@
       "tipo": "F",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "RE: obligatorio",
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaRechazo"
     },
@@ -641,7 +636,9 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "RE: obligatorio",
       "valores_validos": null,
       "fuente_dato": "endpoint:motivoRechazo"
     },
@@ -671,13 +668,15 @@
     },
     {
       "nombre": "fecha_estimada_de_alta_medica",
-      "descripcion": "Fecha estimada de alta médica",
+      "descripcion": "Fecha estimada de alta médica (Fecha Probable FIN ILT)",
       "posicion_inicio": 420,
       "longitud": 8,
       "tipo": "F",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "CB: obligatorio",
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaEstimadaAltaMedica"
     },
@@ -689,7 +688,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:motivoTransitoriedadId"
     },
@@ -702,7 +701,7 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:isCasoCronico"
     },
     {
@@ -710,10 +709,10 @@
       "descripcion": "Recalificación",
       "posicion_inicio": 430,
       "longitud": 1,
-      "tipo": "N",
+      "tipo": "A",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:tipoRecalificacionDesc"
     },
@@ -722,10 +721,10 @@
       "descripcion": "Intercurrencia",
       "posicion_inicio": 431,
       "longitud": 1,
-      "tipo": "N",
+      "tipo": "A",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:isIntercurrencia"
     },
@@ -737,7 +736,7 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
       "valores_validos": null,
       "fuente_dato": "endpoint:nroRegistroAccidenteOrigen"
     },
@@ -746,10 +745,12 @@
       "descripcion": "Ingreso base",
       "posicion_inicio": 452,
       "longitud": 10,
-      "tipo": "N",
+      "tipo": "A",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "Si secuelas_incapacitantes=S: obligatorio > 0.00",
       "valores_validos": null,
       "fuente_dato": "endpoint:ingresoBase"
     },
@@ -762,7 +763,7 @@
       "padding_char": " ",
       "alineacion": "left",
       "obligatorio": false,
-      "valores_validos": null,
+      "valores_validos": ["S", "N"],
       "fuente_dato": "endpoint:tratamientoMedicoPendiente"
     },
     {
@@ -806,11 +807,11 @@
       "descripcion": "Forma de ingreso de la denuncia",
       "posicion_inicio": 469,
       "longitud": 2,
-      "tipo": "N",
-      "padding_char": "0",
-      "alineacion": "right",
+      "tipo": "A",
+      "padding_char": " ",
+      "alineacion": "left",
       "obligatorio": true,
-      "valores_validos": null,
+      "valores_validos": ["TL", "CD", "EM", "PR", "ME", "ST", "PE"],
       "fuente_dato": "endpoint:formaIngresoId"
     },
     {
@@ -822,6 +823,8 @@
       "padding_char": "0",
       "alineacion": "right",
       "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "MT: obligatorio",
       "valores_validos": null,
       "fuente_dato": "endpoint:fechaDefuncion"
     },
@@ -833,8 +836,10 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
-      "valores_validos": null,
+      "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "CB/MT: obligatorio",
+      "valores_validos": ["1", "2", "3", "4"],
       "fuente_dato": "endpoint:tipoPresMedPMId"
     },
     {
@@ -845,7 +850,9 @@
       "tipo": "N",
       "padding_char": "0",
       "alineacion": "right",
-      "obligatorio": true,
+      "obligatorio": false,
+      "obligatoriedad": "OC",
+      "condicion": "CB/MT: obligatorio, debe empezar con 155",
       "valores_validos": null,
       "fuente_dato": "endpoint:presMedPMnombre"
     },
